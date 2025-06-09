@@ -1,0 +1,32 @@
+{
+  "extensionId": null,
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": {
+    "f02a30b0-9e77-4e85-9d82-3ef7babc05d1": null,
+    "d0cd8ae9-dfad-4cc7-98cc-50f1efe6df78": null,
+    "79b1c434-2eaf-4023-94eb-8487ad8264d6": null,
+    "092eb243-247c-4698-9424-42041a542915": null,
+    "089a2d8b-e8f7-4cd3-93f9-1cb7c34389f5": null,
+    "96dcb7d7-dd39-4662-a4f1-79d091ed671b": null,
+    "ed9a6d10-4d3e-447c-b691-62af3a39a286": null,
+    "dd1037b8-1302-4dbe-99d4-38659442af23": null,
+    "8d5f7afa-809a-401e-a893-6495c1abcebf": null,
+    "7fbd0f0d-39c9-44e7-a8b8-145c216cda73": null,
+    "f2f554c0-32cf-4f16-b9ec-943c83dac91a": null,
+    "7e4ddfa8-abdb-4db1-8973-0dd7ee9f8164": null,
+    "fc7d5b5e-1344-49ee-bca6-8579b0c68d50": null,
+    "2d6a1c61-98e7-4289-8eff-d70ef6dac1ff": {
+      "Default": {
+        "value": "C:\\\\steamworksSdk"
+      }
+    },
+    "c37a2e1d-c82f-4d90-9d0a-b4a2b3b3da08": null,
+    "2d512363-a8c0-4025-8b9f-b53e231b025d": {
+      "Default": {
+        "value": "2231450"
+      }
+    },
+    "96a61e5d-c4ac-4104-b5ac-c8ef936e2609": null
+  }
+}
