@@ -7404,7 +7404,6 @@
     {"id":{"name":"spr_tile_peppermanboss","path":"sprites/spr_tile_peppermanboss/spr_tile_peppermanboss.yy",},"order":9,},
     {"id":{"name":"spr_tile_tutorial","path":"sprites/spr_tile_tutorial/spr_tile_tutorial.yy",},"order":21,},
     {"id":{"name":"spr_tile_towerfloor3","path":"sprites/spr_tile_towerfloor3/spr_tile_towerfloor3.yy",},"order":18,},
-    {"id":{"name":"READ BEFORE TOUCHING","path":"notes/READ BEFORE TOUCHING/READ BEFORE TOUCHING.yy",},"order":3,},
   ],
   "Options": [
     {"name":"Android","path":"options/android/options_android.yy",},
