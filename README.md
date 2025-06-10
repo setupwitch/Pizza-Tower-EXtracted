@@ -7,6 +7,7 @@ A semi-accurate decompilation of Pizza Tower
 - [UndertaleModTool](https://github.com/UnderminersTeam/UndertaleModTool/releases/tag/0.8.2.0)
 - [GameMaker LTS IDE Version 2022.0.1.31](https://gms.yoyogames.com/GameMaker-Installer-2022.0.1.31.exe)
 - [GameMaker Runtime Version 2022.0.1.30](https://drive.google.com/file/d/1NGlNwAVUgff5biokP7SW8mbp4lYafb6e/view?usp=sharing)
+- [Steamworks SDK](https://partner.steamgames.com/?goto=%2Fdownloads%2Fsteamworks_sdk_155.zip)
 # How To Install
 
 <details>
@@ -24,6 +25,10 @@ A semi-accurate decompilation of Pizza Tower
   3. go to `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes` and extract the runtime. (the extracted location must match this file path: `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes\runtime-2022.0.1.30\receipt.json`)
      `NOTE: ProgramData is a hidden folder! make sure to enable hidden files inside windows explorer!`
   </details>
+
+  3. Download the [Steamworks SDK](https://partner.steamgames.com/?goto=%2Fdownloads%2Fsteamworks_sdk_155.zip)
+  4. extract the SDK to `C:\steamworksSdk` (the extracted location must match this file path: `C:\steamworksSdk\Readme.txt`)
+     
 </details>
 
 <details>
