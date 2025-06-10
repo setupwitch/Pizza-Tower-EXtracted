@@ -30,6 +30,8 @@ A semi-accurate decompilation of Pizza Tower
 
   Due to Pizza Tower costing money, I have created a script which should prevent anybody from compiling and playing this build.
 
+  (OPTIONAL) Disable `Real-time protection` in Windows Security, since this is going to copy a large amount of files it is heavily recommended.
+
   1. Download the 0.8.2.0 release build for [UndertaleModTool](https://github.com/UnderminersTeam/UndertaleModTool/releases/tag/0.8.2.0).
 
   2. Open the data.win file for Pizza Tower.
