@@ -300,11 +300,11 @@ enum states
 	teleporter = 297,
 	pizzaheadKO = 298,
 	follow = 299,
-	unknown300 = 300,
-	unknown301 = 301,
-	unknown302 = 302,
-	unknown303 = 303,
-	unknown304 = 304,
+	unknown300 = 300, // Mr. Stick wall kick
+	unknown301 = 301, // Mr. Stick air spin
+	unknown302 = 302, // Mr. Stick super jump
+	unknown303 = 303, // Mr. Stick fly cancel
+	unknown304 = 304, // Mr. Stick flight
 	machcancelstart = 305,
 	machcancel = 306,
 }
