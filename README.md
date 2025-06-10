@@ -15,7 +15,9 @@ A semi-accurate decompilation of Pizza Tower
 
   1. Install the [GameMaker LTS IDE Version 2022.0.1.31](https://gms.yoyogames.com/GameMaker-Installer-2022.0.1.31.exe).
   2. Attempt to install LTS runtime 2022.1.30.
-
+  3. Download the [Steamworks SDK](https://partner.steamgames.com/?goto=%2Fdownloads%2Fsteamworks_sdk_155.zip)
+  4. extract the SDK to a new directory: `C:\steamworksSdk` (the extracted location must match this file path: `C:\steamworksSdk\Readme.txt`)
+     
   <details>
     <summary><h2>If the runtime failed to install</h2></summary>
 
@@ -25,9 +27,6 @@ A semi-accurate decompilation of Pizza Tower
   3. go to `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes` and extract the runtime. (the extracted location must match this file path: `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes\runtime-2022.0.1.30\receipt.json`)
      `NOTE: ProgramData is a hidden folder! make sure to enable hidden files inside windows explorer!`
   </details>
-
-  3. Download the [Steamworks SDK](https://partner.steamgames.com/?goto=%2Fdownloads%2Fsteamworks_sdk_155.zip)
-  4. extract the SDK to `C:\steamworksSdk` (the extracted location must match this file path: `C:\steamworksSdk\Readme.txt`)
      
 </details>
 
