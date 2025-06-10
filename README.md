@@ -22,6 +22,7 @@ A semi-accurate decompilation of Pizza Tower
   1. Install [GameMaker Runtime Version 2022.0.1.30](https://drive.google.com/file/d/1NGlNwAVUgff5biokP7SW8mbp4lYafb6e/view?usp=sharing).
   2. close GameMaker LTS 
   3. go to `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes` and extract the runtime. (the extracted location must match this file path: `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes\runtime-2022.0.1.30\receipt.json`)
+     `NOTE: ProgramData is a hidden folder! make sure to enable hidden files inside windows explorer!`
   </details>
 </details>
 
