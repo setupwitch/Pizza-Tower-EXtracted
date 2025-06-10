@@ -1,4 +1,4 @@
-# Pizza Tower Extracted
+# Pizza Tower EXtracted
 A semi-accurate decompilation of Pizza Tower
 
 
@@ -29,13 +29,28 @@ A semi-accurate decompilation of Pizza Tower
   <summary><h2>Project setup</h2></summary>
 
   Due to Pizza Tower costing money, I have created a script which should prevent anybody from compiling and playing this build.
+
   1. Download the 0.8.2.0 release build for [UndertaleModTool](https://github.com/UnderminersTeam/UndertaleModTool/releases/tag/0.8.2.0).
+
   2. Open the data.win file for Pizza Tower.
+
   <img src=".github/Guide1.png">
+
   <img src=".github/Guide2.png">
+
   3. Press the `Run other script...` button.
+
   <img src=".github/Guide3.png">
+
   4. Run `SpriteRipper.csx`, this will rip the sprites from the data.win file and add them to the GameMaker project.
+
   <img src=".github/Guide4.png">
 
+  5. Select the `PizzaTower_GM2` project folder.
+
+  <img src=".github/Guide5.png">
 </details>
+
+# Find an issue or innacuracy?
+
+Please [report](https://github.com/crystallizedsparkle/Pizza-Tower-EXtracted/issues/new/choose) it!
