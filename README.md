@@ -28,7 +28,7 @@ A semi-accurate decompilation of Pizza Tower
 <details>
   <summary><h2>Project setup</h2></summary>
 
-  Due to Pizza Tower costing money, I have created a script which should prevent anybody from compiling and playing this build.
+  Due to Pizza Tower costing money, I have created a script which should prevent anybody from compiling and playing this build without owning a copy themselves.
 
   (OPTIONAL) Disable `Real-time protection` in Windows Security, since this is going to copy a large amount of files it is heavily recommended.
 
