@@ -20,31 +20,41 @@ A semi-accurate decompilation of Pizza Tower
      
   <details>
     <summary><h2>If the runtime failed to install</h2></summary>
-
+  
   As of 6/9/2025, Runtime version 2022.0.1.30 is unable to download from yoyogames, this is why I have included a download link for it.
-  1. Install [GameMaker Runtime Version 2022.0.1.30](https://drive.google.com/file/d/1NGlNwAVUgff5biokP7SW8mbp4lYafb6e/view?usp=sharing).
-  2. close GameMaker LTS 
-  3. go to `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes` and extract the runtime. (the extracted location must match this file path: `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes\runtime-2022.0.1.30\receipt.json`)
-     `NOTE: ProgramData is a hidden folder! make sure to enable hidden files inside windows explorer!`
-
-  4. Since a new runtime was downloaded, make sure to go into the `runtime.json` file in `C:\ProgramData\GameMakerStudio2-LTS`
-     it should look something like this:
-    ```json
-    {
-      "active": "2022.0.3.99",
-      "2022.0.3.99": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.3.99&https://gms.yoyogames.com/Zeus-Runtime-LTS.rss"
-    }
-    ```
-    you want to make sure to change it to something like:
-    ```json
-    {
-      "active": "2022.0.1.30",
-      "2022.0.1.30": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.1.30&https://gms.yoyogames.com/Zeus-Runtime-LTS.rss",
-      "2022.0.3.99": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.3.99&https://gms.yoyogames.com/Zeus-Runtime-LTS.rss",
-    }
-    ```
-    Doing this *SHOULD* fix the issue of the runtime not installing, for me I have had trial and error with it, sometimes I need to re-do the process over again after it doesnt work after one try.
-     
+  
+  ---
+  
+  1.  Install [GameMaker Runtime Version 2022.0.1.30](https://drive.google.com/file/d/1NGlNwAVUgff5biokP7SW8mbp4lYafb6e/view?usp=sharing).
+  2.  Close **GameMaker LTS**.
+  3.  Go to `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes` and extract the runtime. (The extracted location must match this file path: `C:\ProgramData\GameMakerStudio2-LTS\Cache\runtimes\runtime-2022.0.1.30\receipt.json`)
+      * **NOTE**: `ProgramData` is a hidden folder! Make sure to enable hidden files inside Windows Explorer!
+  
+  ---
+  
+  4.  Since a new runtime was downloaded, make sure to go into the `runtime.json` file in `C:\ProgramData\GameMakerStudio2-LTS`.
+  
+      It should look something like this:
+  
+      ```json
+      {
+        "active": "2022.0.3.99",
+        "2022.0.3.99": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.3.99&[https://gms.yoyogames.com/Zeus-Runtime-LTS.rss](https://gms.yoyogames.com/Zeus-Runtime-LTS.rss)"
+      }
+      ```
+  
+      You want to make sure to change it to something like:
+  
+      ```json
+      {
+        "active": "2022.0.1.30",
+        "2022.0.1.30": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.1.30&[https://gms.yoyogames.com/Zeus-Runtime-LTS.rss](https://gms.yoyogames.com/Zeus-Runtime-LTS.rss)",
+        "2022.0.3.99": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.3.99&[https://gms.yoyogames.com/Zeus-Runtime-LTS.rss](https://gms.yoyogames.com/Zeus-Runtime-LTS.rss)"
+      }
+      ```
+  
+      Doing this *SHOULD* fix the issue of the runtime not installing. For me, I have had trial and error with it; sometimes I need to re-do the process over again after it doesn't work after one try.
+  
   </details>
      
 </details>
