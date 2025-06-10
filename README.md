@@ -51,6 +51,8 @@ A semi-accurate decompilation of Pizza Tower
   5. Select the `PizzaTower_GM2` project folder.
 
   <img src=".github/Guide5.png">
+  
+  6. Edit or remove the .gitignore file from the repository, this will allow you to commit the assets in git.
 </details>
 
 # Find an issue or innacuracy?
