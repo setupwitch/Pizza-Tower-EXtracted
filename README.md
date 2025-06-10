@@ -56,6 +56,6 @@ A semi-accurate decompilation of Pizza Tower
   6. Edit or remove the .gitignore file from the repository, this will allow you to commit the assets in git.
 </details>
 
-# Find an issue or innacuracy?
+# Find an issue or inaccuracy?
 
 Please [report](https://github.com/crystallizedsparkle/Pizza-Tower-EXtracted/issues/new/choose) it!
