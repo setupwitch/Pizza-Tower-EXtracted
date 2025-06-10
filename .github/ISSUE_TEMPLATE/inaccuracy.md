@@ -1,5 +1,5 @@
 ---
-name: Innacuracy
+name: Inaccuracy
 about: report an inaccuracy with the decompilation.
 title: ''
 labels: ''
