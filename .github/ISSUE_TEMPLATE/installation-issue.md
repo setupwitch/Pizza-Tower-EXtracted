@@ -1,6 +1,6 @@
 ---
 name: Installation issue
-about: If there is an issue with the installation
+about: If there is an issue with the installation process
 title: ''
 labels: ''
 assignees: ''
