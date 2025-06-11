@@ -1178,11 +1178,6 @@ function gameframe_std_haxe_class(_id, _name) constructor {
 
 #region gameframe_tools_mon
 
-/*	ASM
--	> gml_Script_gameframe_tools_mon_get_active (locals=8, argc=0)
-+	> gml_Script_gameframe_tools_mon_get_active (locals=7, argc=0)
-*/
-
 function gameframe_tools_mon_get_active() {
 	// gameframe_tools_mon_get_active()->tools_GfMonInfo
 	/// @ignore
