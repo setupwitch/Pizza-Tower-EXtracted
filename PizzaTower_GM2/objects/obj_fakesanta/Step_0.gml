@@ -46,7 +46,7 @@ if (activated == true)
 			{
 				if (santaID == other.id)
 				{
-					c += 1;
+					c++;
 				}
 			}
 			if (c < 3)

@@ -176,6 +176,17 @@ function screen_clear(_color = c_black)
 
 function get_options()
 {
+	/*ASM
+	-	> gml_Script_get_options (locals=4, argc=0)
+	+	> gml_Script_get_options (locals=3, argc=0)
+	*/
+	// im going to assume that the local count issue is due to debug-exclusive lang stuff?
+	// if someone knows please correct this.
+	
+	// artificially inflate variable count
+	if (IS_DEBUG)
+		var _;
+	
 	ini_open("saveData.ini");
 	global.option_fullscreen = ini_read_real("Option", "fullscreen", 1);
 	global.option_resolution = ini_read_real("Option", "resolution", 1);
@@ -199,7 +210,7 @@ function get_options()
 		switch (os_lan)
 		{
 			case "zh":
-				region = os_get_region();
+				var region = os_get_region();
 				if (region == "HK" || region == "MO" || region == "TW")
 				{
 					lang = "tc";
@@ -216,7 +227,7 @@ function get_options()
 			case "pt": lang = "br"; break;
 			case "ru": lang = "ru"; break;
 			case "es":
-				region = os_get_region();
+				var region = os_get_region();
 				if (region == "ES" || region == "ESP")
 				{
 					lang = "spa";
@@ -240,12 +251,6 @@ function get_options()
 	}
 	global.offload_lang = noone;
 	global.option_screenshake = ini_read_real("Option", "screenshake", 1);
-	/*ASM
-		pushglb.v global.option_lang
-		pop.v.v global.lang
-		pushi.e 1
-	-	conv.i.b
-	*/
 	global.lang = global.option_lang;
 	if (IS_WINDOWS && steam_utils_is_steam_running_on_steam_deck())
 	{
