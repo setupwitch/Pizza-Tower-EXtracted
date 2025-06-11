@@ -240,6 +240,12 @@ function get_options()
 	}
 	global.offload_lang = noone;
 	global.option_screenshake = ini_read_real("Option", "screenshake", 1);
+	/*ASM
+		pushglb.v global.option_lang
+		pop.v.v global.lang
+		pushi.e 1
+	-	conv.i.b
+	*/
 	global.lang = global.option_lang;
 	if (IS_WINDOWS && steam_utils_is_steam_running_on_steam_deck())
 	{
