@@ -1213,7 +1213,7 @@ function gameframe_tools_mon_get_active() {
 		*/
 		// possibly the wrong version of gameframe?
 		// for now lets just inflate the var count
-		var _;
+		if (false) var _;
 		var __item = __list[|_i];
 		var __mntr = __item[0/* screen */];
 		if (__cx1 >= __mntr[0/* x */] && __cy1 >= __mntr[1/* y */] && __cx1 < __mntr[0/* x */] + __mntr[2/* width */] && __cy1 < __mntr[1/* y */] + __mntr[3/* height */]) return __item;
