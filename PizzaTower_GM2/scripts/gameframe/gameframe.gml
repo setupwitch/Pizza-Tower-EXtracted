@@ -1194,26 +1194,8 @@ function gameframe_tools_mon_get_active() {
 	var __count = gameframe_get_monitors(__list);
 	var __cx1 = window_get_x() + (window_get_width() div 2);
 	var __cy1 = window_get_y() + (window_get_height() div 2);
-
-		/*ASM
-			pop.v.v local.__cy1
-			pushi.e 0
-			pop.v.i local._i
-		-	pushloc.v local.__count
-		-	pop.v.v local.__g1
-		*/
-	for (var _i = 0; _i < __count; _i++) {
-		/*ASM
-			:[679]
-			pushloc.v local._i
-		-	pushloc.v local.__g1
-		+	pushloc.v local.__count
-			cmp.v.v LT
-			bf [688]
-		*/
-		// possibly the wrong version of gameframe?
-		// for now lets just inflate the var count
-		if (false) var _;
+	var _i = 0;
+	for (var __g1 = __count; _i < __g1; _i++) {
 		var __item = __list[|_i];
 		var __mntr = __item[0/* screen */];
 		if (__cx1 >= __mntr[0/* x */] && __cy1 >= __mntr[1/* y */] && __cx1 < __mntr[0/* x */] + __mntr[2/* width */] && __cy1 < __mntr[1/* y */] + __mntr[3/* height */]) return __item;
