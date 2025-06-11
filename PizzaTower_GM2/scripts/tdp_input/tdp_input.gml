@@ -34,7 +34,7 @@ function tdp_input_update(_device = -1)
 	var num = ds_map_size(global.input_list);
 	for (var i = 0; i < num; i++)
 	{
-		ds_map_find_value(global.input_list, key).update(_device);
+		global.input_list[? key].update(_device);
 		key = ds_map_find_next(global.input_list, key);
 	}
 }

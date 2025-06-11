@@ -56,7 +56,7 @@ function totem_count(_totem)
 		{
 			if (cheeseID[i] != noone)
 			{
-				c += #010000;
+				c++;
 			}
 		}
 		return c;

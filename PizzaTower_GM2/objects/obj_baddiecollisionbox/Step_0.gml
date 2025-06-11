@@ -210,7 +210,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player) && obj_player.c
 			{
 				switch (pogochargeactive)
 				{
-					case 0:
+					case false:
 						pogospeedprev = false;
 						other.baddieID.vsp = -3;
 						fmod_event_one_shot_3d("event:/sfx/enemies/stomp", x, y);
@@ -221,7 +221,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player) && obj_player.c
 						}
 						sprite_index = spr_playerN_pogobounce;
 						break;
-					case 1:
+					case true:
 						pogospeedprev = false;
 						scr_throwenemy();
 						sprite_index = spr_playerN_pogobouncemach;
