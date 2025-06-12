@@ -1,3 +1,4 @@
+/// @context obj_player
 function scr_player_stringjump()
 {
 	hsp = xscale * movespeed;
@@ -34,6 +35,7 @@ function scr_player_stringjump()
 	}
 }
 
+/// @context obj_player
 function scr_player_stringfall()
 {
 	if (instance_exists(stringid))

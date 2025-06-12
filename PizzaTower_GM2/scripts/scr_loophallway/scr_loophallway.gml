@@ -1,3 +1,4 @@
+/// @deprecated
 function scr_loophallway(_inst)
 {
 	if (_inst.start)

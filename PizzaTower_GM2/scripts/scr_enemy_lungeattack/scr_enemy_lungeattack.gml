@@ -1,3 +1,4 @@
+/// @context obj_baddie
 function scr_enemy_lungeattack()
 {
 	hsp = -image_xscale * 4;

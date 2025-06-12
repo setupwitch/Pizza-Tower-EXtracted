@@ -1,3 +1,4 @@
+/// @desc - Runs screen_apply_size after 1 frame
 function screen_apply_size_delayed()
 {
 	with (obj_screensizer)
@@ -6,6 +7,7 @@ function screen_apply_size_delayed()
 	}
 }
 
+/// @desc - Updates the screen after a size change.
 function screen_apply_size()
 {
 	with (obj_screensizer)
@@ -26,6 +28,7 @@ function screen_apply_size()
 	}
 }
 
+/// @desc - Applies the vertical synchronization setting
 function screen_apply_vsync()
 {
 	if (room != Loadiingroom)
@@ -35,6 +38,8 @@ function screen_apply_vsync()
 	}
 }
 
+/// @desc - Applies the fullscreen setting in the options menu, creates obj_screenconfirm.
+/// @arg {Real} _fullscreen - The fullscreen status
 function screen_option_apply_fullscreen(_fullscreen)
 {
 	var opt = global.option_fullscreen;
@@ -50,6 +55,8 @@ function screen_option_apply_fullscreen(_fullscreen)
 	}
 }
 
+/// @desc - Applies the fullscreen setting.
+/// @arg {Real} - _fullscreen The fullscreen status
 function screen_apply_fullscreen(_fullscreen)
 {
 	if (_fullscreen == 0)
@@ -67,12 +74,16 @@ function screen_apply_fullscreen(_fullscreen)
 	}
 }
 
+/// @desc - Resets the surface target, then sets the target to the given surface.
+/// @arg {Id.Surface} _surf - The surface to set as the target for drawing.
 function surface_safe_set_target(_surf)
 {
 	surface_reset_target();
 	surface_set_target(_surf);
 }
 
+/// @desc - Safely resets the draw target, then sets the target to the given surface.
+/// @arg {Id.Surface} _surf - The surface to set as the target for drawing.
 function set_gui_target(_surf)
 {
 	while (surface_get_target() != -1 && surface_get_target() != application_surface)
@@ -82,6 +93,7 @@ function set_gui_target(_surf)
 	surface_set_target(_surf);
 }
 
+/// @desc - Safely resets the draw target.
 function surface_safe_reset_target()
 {
 	if (surface_get_target() != -1 && surface_get_target() != application_surface)
@@ -90,6 +102,7 @@ function surface_safe_reset_target()
 	}
 }
 
+/// @desc - Safely resets the draw target, then sets the surface target to obj_screensizer.gui_surf.
 function reset_gui_target()
 {
 	while (surface_get_target() != -1 && surface_get_target() != application_surface)
@@ -106,11 +119,13 @@ function reset_gui_target()
 	}
 }
 
+/// @desc - Resets the blendmode settings to default.
 function reset_blendmode()
 {
 	gpu_set_blendmode_ext(bm_max, bm_inv_src_alpha);
 }
 
+/// @desc - Resets current shader, then re-applies shd_alphafix.
 function reset_shader_fix()
 {
 	if (shader_current() != -1)
@@ -120,28 +135,40 @@ function reset_shader_fix()
 	shader_set(shd_alphafix);
 }
 
+/// @desc - Converts a window X coordinate to the corresponding GUI X coordinate.
+/// @arg {Real} _x - The X position in window coordinates to convert.
 function window_to_gui_x(_x)
 {
 	var _win_pos = _x / window_get_width();
 	return display_get_gui_width() * _win_pos;
 }
 
+/// @desc - Converts a window Y coordinate to the corresponding GUI Y coordinate.
+/// @arg {Real} _y - The Y position in window coordinates to convert.
 function window_to_gui_y(_y)
 {
 	var _win_pos = _y / window_get_height();
 	return display_get_gui_height() * _win_pos;
 }
 
+/// @desc - Calculates the GUI xscale when resizing the window.
+/// @arg {Real} _xscale - The xscale of the game
 function window_to_gui_xscale(_xscale)
 {
 	return (_xscale * display_get_gui_width()) / window_get_width();
 }
 
+/// @desc - Calculates the GUI yscale when resizing the window.
+/// @arg {Real} _yscale - The yscale of the game
 function window_to_gui_yscale(_yscale)
 {
 	return (_yscale * display_get_gui_height()) / window_get_height();
 }
 
+/// @desc - Obtains the width of a resolution for a specific aspect ratio.
+/// @arg {Real} res - The index of the resolution in the aspect ratio array.
+/// @arg {Real} ratio - The aspect ratio to use.
+/// @return {Real} - The width of the specified resolution.
 function get_resolution_width(_res, _ratio = aspectratios.ratio_16_9)
 {
 	if (_res < 0 || _res >= array_length(global.resolutions[_ratio]))
@@ -151,6 +178,10 @@ function get_resolution_width(_res, _ratio = aspectratios.ratio_16_9)
 	return global.resolutions[_ratio][_res][0];
 }
 
+/// @desc - Obtains the height of a resolution for a specific aspect ratio.
+/// @arg {Real} res - The index of the resolution in the aspect ratio array.
+/// @arg {Real} ratio - The aspect ratio to use.
+/// @return {Real} - The height of the specified resolution.
 function get_resolution_height(_res, _ratio = aspectratios.ratio_16_9)
 {
 	if (_res < 0 || _res >= array_length(global.resolutions[_ratio]))
@@ -160,6 +191,10 @@ function get_resolution_height(_res, _ratio = aspectratios.ratio_16_9)
 	return global.resolutions[_ratio][_res][1];
 }
 
+/// @desc - Obtains the width and height of a resolution for a specific aspect ratio.
+/// @arg {Real} res - The index of the resolution in the aspect ratio array.
+/// @arg {Real} ratio - The aspect ratio to use.
+/// @return {Id.Instance, Array<Real>} - The width and height of the specified resolution.
 function get_resolution(_res, _ratio = aspectratios.ratio_16_9)
 {
 	if (_res < 0 || _res >= array_length(global.resolutions[_ratio]))
@@ -169,11 +204,14 @@ function get_resolution(_res, _ratio = aspectratios.ratio_16_9)
 	return global.resolutions[_ratio][_res];
 }
 
+/// @desc - Clears the screen with the provided color.
+/// @arg {Constant.Color} _color - The color to clear the screen with.
 function screen_clear(_color = c_black)
 {
 	draw_rectangle_color(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, _color, _color, _color, _color, false);
 }
 
+/// @desc - Sets the global.option_* variables from the save data and handles the language of the OS.
 function get_options()
 {
 	/*ASM
@@ -182,10 +220,6 @@ function get_options()
 	*/
 	// im going to assume that the local count issue is due to debug-exclusive lang stuff?
 	// if someone knows please correct this.
-	
-	// artificially inflate variable count
-	if (IS_DEBUG)
-		var _;
 	
 	ini_open("saveData.ini");
 	global.option_fullscreen = ini_read_real("Option", "fullscreen", 1);
@@ -202,6 +236,25 @@ function get_options()
 	global.option_unfocus_mute = ini_read_real("Option", "unfocus_mute", 0);
 	global.option_texfilter = ini_read_real("Option", "texfilter", 1);
 	global.option_vsync = ini_read_real("Option", "vsync", 0);
+	
+	
+	if (IS_DEBUG)
+	{
+		// artificially inflate variable count
+		var _;
+		
+		// its probably related to something like setting the language
+		// e.g:
+		/*
+		if (keyboard_check_pressed(vk_f9))
+		{
+			var _chosenlang = get_string();
+			quick_ini_write_string("Option", "lang", _chosenlang);
+		}
+		*/
+		// this is just a shot in the dark though.
+	}
+		
 	var lang = ini_read_string("Option", "lang", "none");
 	if (lang == "none")
 	{
