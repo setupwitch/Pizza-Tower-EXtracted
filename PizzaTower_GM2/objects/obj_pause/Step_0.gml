@@ -374,12 +374,12 @@ if (pause && !instance_exists(obj_option) && !instance_exists(obj_achievement_pa
 	}
 	if (key_jump)
 	{
-		array_get(ds_map_find_value(pause_menu_map, array_get(pause_menu, selected)), 1)();
+		pause_menu_map[? pause_menu[selected]][1]();
 	}
 }
 if (pause)
 {
-	scr_pauseicons_update(array_get(ds_map_find_value(pause_menu_map, array_get(pause_menu, selected)), 0));
+	scr_pauseicons_update(pause_menu_map[? pause_menu[selected]][0]);
 }
 else
 {

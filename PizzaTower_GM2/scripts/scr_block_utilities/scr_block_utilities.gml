@@ -80,7 +80,7 @@ function scr_cutoff()
 		var num = instance_place_list(x + d[0], y + d[1], obj_cutoff, list, false);
 		for (var j = 0; j < ds_list_size(list); j++)
 		{
-			var b = ds_list_find_value(list, j);
+			var b = list[| j];
 			if (!is_undefined(b) && instance_exists(b))
 			{
 				with (b)

@@ -373,7 +373,7 @@ if (DEBUG)
 		{
 			exit;
 		}
-		_state = ds_map_find_value(state_map, _state);
+		_state = state_map[? _state];
 		if (!is_undefined(_state))
 		{
 			with (obj_player)
@@ -429,7 +429,7 @@ if (DEBUG)
 	{
 		for (var i = 0; i < ds_list_size(command_list); i++)
 		{
-			var b = ds_list_find_value(command_list, i);
+			var b = command_list[| i];
 			if (b.command_id == _command)
 			{
 				return b;

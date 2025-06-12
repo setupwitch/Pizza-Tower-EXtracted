@@ -263,7 +263,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Unused",
-    "path": "folders/Rooms/Unused.yy",
+    "name": "Dragon's Lair",
+    "path": "folders/Rooms/Unused/Levels/Dragon's Lair.yy",
   },
 }

@@ -1,13 +1,13 @@
 function scr_sound_multiple(_snd, _x, _y)
 {
-	if (ds_map_find_value(global.sound_map, _snd) == undefined)
+	if (global.sound_map[? _snd] == undefined)
 	{
 		ds_map_set(global.sound_map, _snd, ds_list_create());
 	}
-	var _list = ds_map_find_value(global.sound_map, _snd);
+	var _list = global.sound_map[? _snd];
 	for (var i = 0; i < ds_list_size(_list); i++)
 	{
-		b = ds_list_find_value(_list, i);
+		b = _list[| i];
 		fmod_event_instance_stop(b, false);
 		fmod_event_instance_release(b);
 	}

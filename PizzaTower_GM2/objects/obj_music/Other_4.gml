@@ -1,6 +1,6 @@
 if (!global.panic)
 {
-	var mu = ds_map_find_value(music_map, room);
+	var mu = music_map[? room];
 	if (!is_undefined(mu))
 	{
 		var prevmusic = music;

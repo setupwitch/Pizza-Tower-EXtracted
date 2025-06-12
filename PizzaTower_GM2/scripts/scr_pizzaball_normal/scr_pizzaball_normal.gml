@@ -28,7 +28,7 @@ function scr_pizzaball_normal()
 		var num = instance_place_list(x + hsp, y, obj_enemyblock, global.instancelist, false);
 		for (var i = 0; i < num; i++)
 		{
-			var b = ds_list_find_value(global.instancelist, i);
+			var b = global.instancelist[| i];
 			instance_destroy(b);
 		}
 		ds_list_clear(global.instancelist);

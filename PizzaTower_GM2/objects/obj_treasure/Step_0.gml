@@ -21,7 +21,7 @@ if (player == 0 && place_meeting(x, y, obj_player))
 	var num = instance_place_list(x, y, obj_player, global.instancelist, false);
 	for (var i = 0; i < num; i++)
 	{
-		var _player = ds_list_find_value(global.instancelist, i);
+		var _player = global.instancelist[| i];
 		with (_player)
 		{
 			if (state != states.gotoplayer)

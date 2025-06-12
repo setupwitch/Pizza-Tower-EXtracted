@@ -144,11 +144,9 @@ if (global.panic)
 	}
 	draw_sprite(timerspr, pizzaface_index, timer_x + 320, timer_y + 10);
 	var minutes = 0;
-	var seconds = ceil(global.fill / 12);
-	while (seconds > 59)
+	for (var seconds = ceil(global.fill / 12); seconds > 59; seconds -= 60;)
 	{
 		minutes++;
-		seconds -= 60;
 	}
 	if (seconds < 10)
 	{

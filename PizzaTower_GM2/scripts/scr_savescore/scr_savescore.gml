@@ -145,7 +145,7 @@ function scr_write_rank(_level)
 	ds_map_set(_map, "a", 3);
 	ds_map_set(_map, "s", 4);
 	ds_map_set(_map, "p", 5);
-	if (ds_map_find_value(_map, global.rank) >= ds_map_find_value(_map, _rank))
+	if (_map[? global.rank] >= _map[? _rank])
 	{
 		ini_write_string("Ranks", _level, global.rank);
 	}

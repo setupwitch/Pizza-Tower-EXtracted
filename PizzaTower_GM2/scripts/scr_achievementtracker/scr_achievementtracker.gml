@@ -88,7 +88,7 @@ function achievement_add_variable(_name, _value, _save = false, _resettable = fa
 
 function achievement_get_variable(_name)
 {
-	return ds_map_find_value(variables, _name);
+	return variables[? _name];
 }
 
 function achievement_get_all_variables()
@@ -98,7 +98,7 @@ function achievement_get_all_variables()
 	var size = ds_map_size(variables);
 	for (var i = 0; i < size; i++)
 	{
-		array_push(arr, ds_map_find_value(variables, key));
+		array_push(arr, variables[? key]);
 		key = ds_map_find_next(variables, key);
 	}
 	return arr;
@@ -132,7 +132,7 @@ function scr_steam_unlock_achievement(_achievement)
 {
 	if (global.steam_api)
 	{
-		var steamach = ds_map_find_value(global.steam_achievements, _achievement);
+		var steamach = global.steam_achievements[? _achievement];
 		if (!is_undefined(steamach))
 		{
 			trace("Steam achievement unlocked! ", steamach);
@@ -196,7 +196,7 @@ function achievement_reset_variables(_achievements)
 			var key = ds_map_find_first(variables);
 			for (var j = 0; j < size; j++)
 			{
-				var q = ds_map_find_value(variables, key);
+				var q = variables[? key];
 				if (q.resettable)
 				{
 					q.value = q.init_value;
@@ -219,7 +219,7 @@ function achievement_save_variables(_achievements)
 			var key = ds_map_find_first(variables);
 			for (var j = 0; j < size; j++)
 			{
-				var q = ds_map_find_value(variables, key);
+				var q = variables[? key];
 				if (q.save)
 				{
 					ini_write_real("achievements_variables", key, q.value);
@@ -260,7 +260,7 @@ function achievements_load(_achievements)
 			var key = ds_map_find_first(variables);
 			for (var j = 0; j < size; j++)
 			{
-				var q = ds_map_find_value(variables, key);
+				var q = variables[? key];
 				if (q.save)
 				{
 					q.value = ini_read_real("achievements_variables", key, q.init_value);

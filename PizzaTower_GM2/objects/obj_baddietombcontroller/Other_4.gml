@@ -3,7 +3,7 @@ if (!ds_list_empty(global.baddietomb))
 	var i = 0;
 	repeat (ds_list_size(global.baddietomb))
 	{
-		var arr = ds_list_find_value(global.baddietomb, i);
+		var arr = global.baddietomb[| i];
 		var tombRoom = arr[0];
 		var X = arr[1];
 		var Y = arr[2];

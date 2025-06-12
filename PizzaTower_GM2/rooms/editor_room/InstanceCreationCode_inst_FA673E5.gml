@@ -30,7 +30,7 @@ with (instance_create_depth(0, 0, depth - 1, obj_itemlist))
 				var b = _arr[i];
 				if (b.depth == value.depth)
 				{
-					b.sprite_index = ds_list_find_value(items, _item_index);
+					b.sprite_index = items[| _item_index];
 					break;
 				}
 			}

@@ -49,7 +49,7 @@ function get_percentage()
 		{
 			extracount++;
 		}
-		count += ds_map_find_value(_rank_map, r);
+		count += _rank_map[? r];
 		count += ini_read_real("Secret", level, 0);
 		var ac = 0;
 		for (var j = 0; j < 3; j++)
@@ -80,7 +80,7 @@ function get_percentage()
 		{
 			extracount++;
 		}
-		count += ds_map_find_value(_rank_map, r);
+		count += _rank_map[? r];
 	}
 	for (var i = 0; i < array_length(bossach); i++)
 	{

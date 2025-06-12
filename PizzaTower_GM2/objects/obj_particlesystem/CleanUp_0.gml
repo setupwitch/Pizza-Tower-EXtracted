@@ -1,13 +1,11 @@
 part_emitter_destroy(global.particle_system, global.part_emitter);
-var i = particletypes.first;
-while (i < particletypes.last)
+for (var i = particletypes.first; i < particletypes.last; i++)
 {
-	var k = ds_map_find_value(global.part_map, i);
+	var k = global.part_map[? i];
 	if (!is_undefined(k))
 	{
 		part_type_destroy(k);
 	}
-	i++;
 }
 part_system_destroy(global.particle_system);
 ds_map_destroy(global.part_map);

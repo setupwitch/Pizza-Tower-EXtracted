@@ -41,7 +41,7 @@ with (instance_create_depth(0, 32, depth - 1, obj_itemlist))
 	{
 		if (_item_id < ds_list_size(items))
 		{
-			change_room(ds_list_find_value(items, _item_id));
+			change_room(items[| _item_id]);
 			toggle_panel(5);
 		}
 	};

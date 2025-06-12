@@ -327,7 +327,7 @@ add_achievement_notify("pal_tv", noone, function(_array)
 		for (var i = 0; i < array_length(lvl); i++)
 		{
 			var rank = ini_read_string("Ranks", lvl[i], "d");
-			if (ds_map_find_value(map, rank) < ds_map_find_value(map, "p"))
+			if (map[? rank] < map[? "p"])
 			{
 				_found = true;
 			}
@@ -401,7 +401,7 @@ add_achievement_notify("pal_golden", noone, function(_array)
 		for (var i = 0; i < array_length(lvl); i++)
 		{
 			var rank = ini_read_string("Ranks", lvl[i], "d");
-			if (ds_map_find_value(map, rank) < ds_map_find_value(map, "s"))
+			if (map[? rank] < map[? "s"])
 			{
 				_found = true;
 			}

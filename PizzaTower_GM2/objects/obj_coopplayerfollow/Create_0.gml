@@ -7,7 +7,7 @@ followqueue = ds_queue_create();
 spritequeue = ds_queue_create();
 ds_list_insert(global.followerlist, 0, id);
 pos = ds_list_find_index(global.followerlist, id);
-followid = (pos > 0) ? ds_list_find_value(global.followerlist, pos - 1) : noone;
+followid = (pos > 0) ? global.followerlist[| pos - 1] : noone;
 following_character_calculate();
 dir = obj_player1.xscale;
 space = 0;
