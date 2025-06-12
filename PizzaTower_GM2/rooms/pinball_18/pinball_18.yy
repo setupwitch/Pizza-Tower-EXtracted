@@ -212,7 +212,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Unused",
-    "path": "folders/Rooms/Unused.yy",
+    "name": "Pinball",
+    "path": "folders/Rooms/Unused/Levels/Pinball.yy",
   },
 }

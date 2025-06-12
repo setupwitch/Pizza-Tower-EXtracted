@@ -5,12 +5,10 @@ function load_level_update(_level)
 	{
 		save_step++;
 		load_array = [];
-		var file = file_find_first(path + "rooms/*.json", 0);
-		while (file != "")
+		for (var file = file_find_first(path + "rooms/*.json", 0); file != ""; file = file_find_next();)
 		{
 			trace("Loading file: ", file);
 			array_push(load_array, path + "rooms/" + file);
-			file = file_find_next();
 		}
 		if (array_length(load_array) <= 0)
 		{
@@ -47,10 +45,10 @@ function load_level_update(_level)
 				var size = ds_map_size(other.object_map);
 				for (var j = 0; j < size; j++)
 				{
-					var category = ds_map_find_value(other.object_map, key);
+					var category = other.object_map[? key];
 					for (var l = 0; l < ds_list_size(category); l++)
 					{
-						var object_template = ds_list_find_value(category, l);
+						var object_template = category[| l];
 						if (object_template.ID == ID)
 						{
 							object_apply_values(object_template);
@@ -60,13 +58,13 @@ function load_level_update(_level)
 					}
 					key = ds_map_find_next(other.object_map, key);
 				}
-				if (!is_undefined(ds_map_find_value(obj_editor.properties_map, ID)))
+				if (!is_undefined(obj_editor.properties_map[? ID]))
 				{
-					var list = ds_map_find_value(obj_editor.properties_map, ID);
+					var list = obj_editor.properties_map[? ID];
 					for (var j = 0; j < array_length(list); j++)
 					{
 						var property = list[j];
-						variable_instance_set(id, property, variable_struct_get(b, property));
+						id[property] = b[property];
 					}
 				}
 				array_push(new_room.instances, id);
@@ -78,7 +76,7 @@ function load_level_update(_level)
 	else
 	{
 		editor_state = saved_editor_state;
-		change_room(ds_list_find_value(global.current_level.rooms, 0));
+		change_room(global.current_level.rooms[| 0]);
 		with (obj_itemlist)
 		{
 			dirty = true;

@@ -1,6 +1,6 @@
 for (var i = 0; i < ds_list_size(global.afterimage_list); i++)
 {
-	var b = ds_list_find_value(global.afterimage_list, i);
+	var b = global.afterimage_list[| i];
 	with (b)
 	{
 		if (visible)

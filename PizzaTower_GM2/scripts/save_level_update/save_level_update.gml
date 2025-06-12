@@ -8,7 +8,7 @@ function save_level_update(_levelname)
 	}
 	else if (save_step < ds_list_size(global.current_level.rooms))
 	{
-		var _room = ds_list_find_value(global.current_level.rooms, save_step);
+		var _room = global.current_level.rooms[| save_step];
 		var struct = 
 		{
 			width: _room.width,
@@ -45,9 +45,9 @@ function save_level_update(_levelname)
 					object_index: object_get_name(b.object),
 					ID: b.ID
 				};
-				if (!is_undefined(ds_map_find_value(obj_editor.properties_map, ID)))
+				if (!is_undefined(obj_editor.properties_map[? ID]))
 				{
-					var list = ds_map_find_value(obj_editor.properties_map, ID);
+					var list = obj_editor.properties_map[? ID];
 					for (var j = 0; j < array_length(list); j++)
 					{
 						var property = list[j];

@@ -61,7 +61,7 @@ function warbg_generic(_start_func, _end_func, _map = noone)
 					_found = true;
 				}
 			}
-			if (_map != noone && is_undefined(ds_map_find_value(_map, layer_get_name(_id))))
+			if (_map != noone && is_undefined(_map[? layer_get_name(_id)]))
 			{
 				_found = false;
 			}

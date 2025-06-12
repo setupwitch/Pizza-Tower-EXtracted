@@ -9,7 +9,7 @@ for (var i = 0; i < size; i++)
 }
 array_sort(_categories, function(elm1, elm2)
 {
-	return ds_map_find_value(obj_editor.object_order_map, elm1) - ds_map_find_value(obj_editor.object_order_map, elm2);
+	return obj_editor.object_order_map[? elm1] - obj_editor.object_order_map[? elm2];
 });
 for (var i = 0; i < array_length(_categories); i++)
 {
@@ -48,10 +48,10 @@ with (instance_create_depth(32, 0, depth - 1, obj_itemlist))
 	{
 		dirty = false;
 		ds_list_clear(items);
-		var list = ds_map_find_value(obj_editor.object_map, value);
+		var list = obj_editor.object_map[? value];
 		for (var i = 0; i < ds_list_size(list); i++)
 		{
-			ds_list_add(items, ds_list_find_value(list, i));
+			ds_list_add(items, list[| i]);
 		}
 	};
 	
@@ -59,7 +59,7 @@ with (instance_create_depth(32, 0, depth - 1, obj_itemlist))
 	{
 		if (_item_index < ds_list_size(items))
 		{
-			var item = ds_list_find_value(items, _item_index);
+			var item = items[| _item_index];
 			with (obj_editor)
 			{
 				selected_object = item;

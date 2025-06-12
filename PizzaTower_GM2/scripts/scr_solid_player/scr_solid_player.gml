@@ -9,7 +9,7 @@ function scr_solid_player(_x, _y)
 	var _collided = false;
 	for (var i = 0; i < num; i++)
 	{
-		var b = ds_list_find_value(global.instancelist, i);
+		var b = global.instancelist[| i];
 		if (instance_exists(b))
 		{
 			switch (b.object_index)
@@ -55,7 +55,7 @@ function scr_solid_player(_x, _y)
 		_collided = false;
 		for (var i = 0; i < num; i++)
 		{
-			var b = ds_list_find_value(global.instancelist, i);
+			var b = global.instancelist[| i];
 			if (!place_meeting(x, old_y, b) && place_meeting(x, y, b))
 			{
 				_collided = true;

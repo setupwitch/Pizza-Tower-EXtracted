@@ -9,7 +9,7 @@ for (var i = 0; i < array_length(pref); i++)
 	{
 		ID: pref[i],
 		image_index: i,
-		name: ds_map_find_value(global.lang_available, array_get(pref, i)).name,
+		name: global.lang_available[? pref[i]].name,
 		spr_name: noone
 	};
 	q.name = string_replace_all(q.name, "\\n", "\n");
@@ -56,7 +56,7 @@ for (var i = 0; i < ds_map_size(global.lang_available); i++)
 		array_push(lang, 
 		{
 			ID: key,
-			name: ds_map_find_value(global.lang_available, key).name,
+			name: global.lang_available[? key].name,
 			image_index: sprite_get_number(spr_lang_flags) - 1,
 			spr_name: noone
 		});

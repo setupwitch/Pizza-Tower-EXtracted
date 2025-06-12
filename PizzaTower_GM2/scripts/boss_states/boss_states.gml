@@ -25,7 +25,7 @@ function state_boss_walk(_func)
 	{
 		if (object_index != obj_mrstickboss)
 		{
-			var b = ds_map_find_value(player_hurtstates, targetplayer.state);
+			var b = player_hurtstates[? targetplayer.state];
 			if (!is_undefined(b))
 			{
 				boss_decide_taunt(130);
@@ -107,7 +107,7 @@ function state_boss_taunt()
 		if (place_meeting(x, y, obj_player))
 		{
 			var playerinst = instance_place(x, y, obj_player);
-			var s = ds_map_find_value(player_hurtstates, playerinst.state);
+			var s = player_hurtstates[? playerinst.state];
 			if (!is_undefined(s))
 			{
 				attack_cooldown = floor(attack_max[phase - 1] / 2);

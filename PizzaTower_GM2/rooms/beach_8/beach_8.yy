@@ -224,7 +224,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Unused",
-    "path": "folders/Rooms/Unused.yy",
+    "name": "Beach",
+    "path": "folders/Rooms/Unused/Levels/Beach.yy",
   },
 }

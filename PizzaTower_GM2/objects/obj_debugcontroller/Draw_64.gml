@@ -19,8 +19,8 @@ if (DEBUG)
 	var ys = 128 - (16 * ds_list_size(text_list));
 	for (var i = 0; i < ds_list_size(text_list); i++)
 	{
-		var t = array_get(ds_list_find_value(text_list, i), 0);
-		var txt = array_get(ds_list_find_value(text_list, i), 1);
+		var t = text_list[| i][0];
+		var txt = text_list[| i][1];
 		var str = txt;
 		var c = c_white;
 		switch (t)
@@ -46,7 +46,7 @@ if (DEBUG)
 		search_y += 8;
 		for (var w = 0; w < ds_list_size(search_commands); w++)
 		{
-			var b = ds_list_find_value(search_commands, w);
+			var b = search_commands[| w];
 			if (b != undefined)
 			{
 				draw_text_color(8, search_y + (16 * w), b, c_white, c_white, c_white, c_white, 1);

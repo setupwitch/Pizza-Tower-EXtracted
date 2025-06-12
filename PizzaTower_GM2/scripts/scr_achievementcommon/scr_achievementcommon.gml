@@ -48,7 +48,7 @@ function add_rank_achievements(_world, _rank, _spr, _index, _level_array)
 			{
 				var b = n[i];
 				var s = ini_read_string("Ranks", b, "d");
-				if (ds_map_find_value(map, s) < ds_map_find_value(map, rank))
+				if (map[? s] < map[? rank])
 				{
 					_finished = false;
 				}

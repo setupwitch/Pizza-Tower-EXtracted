@@ -119,7 +119,7 @@ switch (state)
 		scr_bosscontroller_draw_health(boss_hpsprite, boss_rowmax, boss_columnmax, boss_prevhp, boss_maxhp, boss_hp_x, boss_hp_y, boss_xpad, boss_ypad, boss_index, image_alpha, bpal, bpalsel, btex);
 		for (var i = 0; i < ds_list_size(particlelist); i++)
 		{
-			var b = ds_list_find_value(particlelist, i);
+			var b = particlelist[| i];
 			with (b)
 			{
 				if (type == 0)
