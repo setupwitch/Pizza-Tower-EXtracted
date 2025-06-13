@@ -61,7 +61,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Unused",
-    "path": "folders/Rooms/Unused.yy",
+    "name": "Bosses",
+    "path": "folders/Rooms/Unused/Bosses.yy",
   },
 }
