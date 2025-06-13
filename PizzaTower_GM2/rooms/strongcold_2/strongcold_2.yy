@@ -366,7 +366,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Unused",
-    "path": "folders/Rooms/Unused.yy",
+    "name": "Strongcold",
+    "path": "folders/Rooms/Unused/Levels/Strongcold.yy",
   },
 }
