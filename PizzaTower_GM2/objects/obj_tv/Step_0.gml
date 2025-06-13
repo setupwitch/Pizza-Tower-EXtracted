@@ -191,7 +191,7 @@ switch (state)
 		{
 			if (!ds_list_empty(tvprompts_list))
 			{
-				var b = tvprompts_list[| 0];
+				var b = ds_list_find_value(tvprompts_list, 0);
 				prompt_buffer = prompt_max;
 				if (b[0] != "" && b[0] != noone)
 				{

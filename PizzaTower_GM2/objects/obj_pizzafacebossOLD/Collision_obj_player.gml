@@ -30,9 +30,12 @@ if (phase == 0 && attacking)
 				if (lostattacks > 0)
 				{
 					lostattacks--;
-					for (var choseattack = noone, j = 0; choseattack == noone; choseattack = phase1attacks[j];)
+					var choseattack = noone;
+					var j = 0;
+					while (choseattack == noone)
 					{
 						j = irandom_range(1, array_length(phase1attacks)) - 1;
+						choseattack = phase1attacks[j];
 					}
 					phase1attacks[j] = noone;
 					with (instance_create(x, y, obj_pizzafacepart))

@@ -4,7 +4,7 @@ function editor_is_cursor_on_ui(_x, _y)
 	var found = false;
 	for (var i = 0; i < num; i++)
 	{
-		with (global.instancelist[| i])
+		with (ds_list_find_value(global.instancelist, i))
 		{
 			if (active)
 			{

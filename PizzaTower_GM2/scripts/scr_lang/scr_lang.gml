@@ -22,15 +22,17 @@ function scr_get_languages()
 		global.lang = "en";
 	}
 	var arr = [];
-	for (var def = file_find_first("lang/*.def", 0); def != ""; def = file_find_next();)
+	var def = file_find_first("lang/*.def", 0);
+	while (def != "")
 	{
 		array_push(arr, def);
+		def = file_find_next();
 	}
 	file_find_close();
 	for (var i = 0; i < array_length(arr); i++)
 	{
 		var str = scr_lang_get_file_arr("lang/" + arr[i]);
-		ds_map_set(global.lang_available, str[0], 
+		ds_map_set(global.lang_available, array_get(str, 0), 
 		{
 			name: str[1],
 			file: str[2]
@@ -46,9 +48,11 @@ function scr_get_languages()
 function lang_read_file(_file)
 {
 	var fo = file_text_open_read("lang/" + _file);
-	for (var str = ""; !file_text_eof(fo); str += "\n";)
+	var str = "";
+	while (!file_text_eof(fo))
 	{
 		str += file_text_readln(fo);
+		str += "\n";
 	}
 	file_text_close(fo);
 	return str;
@@ -67,9 +71,11 @@ function lang_parse_file(_file)
 function scr_lang_get_file_arr(_file)
 {
 	var fo = file_text_open_read(_file);
-	for (var arr = array_create(0); !file_text_eof(fo); file_text_readln(fo);)
+	var arr = array_create(0);
+	while (!file_text_eof(fo))
 	{
 		array_push(arr, file_text_read_string(fo));
+		file_text_readln(fo);
 	}
 	file_text_close(fo);
 	return arr;
@@ -88,13 +94,15 @@ function scr_lang_get_noise_credits()
 	{
 		var _name = arr[i++];
 		var _heads = array_create(0);
-		for (var _head = arr[i++]; _head != ""; _head = arr[i++];)
+		var _head = arr[i++];
+		while (_head != "")
 		{
 			array_push(_heads, real(_head) - 1);
 			if (i >= array_length(arr))
 			{
 				break;
 			}
+			_head = arr[i++];
 		}
 		i--;
 		array_push(credits, 
@@ -108,10 +116,10 @@ function scr_lang_get_noise_credits()
 
 function lang_get_value_raw(_language, _entry)
 {
-	var n = global.lang_map[? _language][? _entry];
+	var n = ds_map_find_value(ds_map_find_value(global.lang_map, _language), _entry);
 	if (is_undefined(n))
 	{
-		n = global.lang_map[? "en"][? _entry];
+		n = ds_map_find_value(ds_map_find_value(global.lang_map, "en"), _entry);
 	}
 	if (is_undefined(n))
 	{
@@ -145,7 +153,7 @@ function lang_parse(_str)
 	var list = ds_list_create();
 	lang_lexer(list, _str);
 	var map = lang_exec(list);
-	var lang = map[? "lang"];
+	var lang = ds_map_find_value(map, "lang");
 	ds_map_set(global.lang_map, lang, map);
 	ds_list_destroy(list);
 	return lang;
@@ -262,12 +270,12 @@ function lang_exec(_list)
 	var pos = 0;
 	while (pos < len)
 	{
-		var q = _list[| pos++];
+		var q = ds_list_find_value(_list, pos++);
 		switch (q[0])
 		{
 			case langtoken_type.equal:
-				var ident = _list[| pos - 2][2];
-				var val = _list[| pos++][2];
+				var ident = array_get(ds_list_find_value(_list, pos - 2), 2);
+				var val = array_get(ds_list_find_value(_list, pos++), 2);
 				ds_map_set(map, ident, val);
 				break;
 		}
@@ -278,25 +286,25 @@ function lang_exec(_list)
 function lang_get_custom_font(_langfont, _language)
 {
 	var _dir = concat(_langfont, "_dir");
-	var _ttf = _language[? "use_ttf"];
+	var _ttf = ds_map_find_value(_language, "use_ttf");
 	if (!is_undefined(_ttf) && _ttf)
 	{
-		if (!is_undefined(_language[? _dir]))
+		if (!is_undefined(ds_map_find_value(_language, _dir)))
 		{
-			var font_size = _language[? concat(_langfont, "_size")];
+			var font_size = ds_map_find_value(_language, concat(_langfont, "_size"));
 			font_size = real(font_size);
-			return font_add(concat("lang/", _language[? _dir]), font_size, false, false, 32, 127);
+			return font_add(concat("lang/", ds_map_find_value(_language, _dir)), font_size, false, false, 32, 127);
 		}
 	}
-	else if (!is_undefined(_language[? _dir]))
+	else if (!is_undefined(ds_map_find_value(_language, _dir)))
 	{
-		var font_map = _language[? concat(_langfont, "_map")];
+		var font_map = ds_map_find_value(_language, concat(_langfont, "_map"));
 		var font_size = string_length(font_map);
-		var font_sep = _language[? concat(_langfont, "_sep")];
+		var font_sep = ds_map_find_value(_language, concat(_langfont, "_sep"));
 		font_sep = real(font_sep);
 		var font_xorig = 0;
 		var font_yorig = 0;
-		var spr = sprite_add(concat("lang/", _language[? _dir]), font_size, false, false, font_xorig, font_yorig);
+		var spr = sprite_add(concat("lang/", ds_map_find_value(_language, _dir)), font_size, false, false, font_xorig, font_yorig);
 		return font_add_sprite_ext(spr, font_map, false, font_sep);
 	}
 	return lang_get_font(_langfont);
@@ -304,10 +312,10 @@ function lang_get_custom_font(_langfont, _language)
 
 function lang_get_font(_langfont)
 {
-	var n = global.font_map[? lang_get_value(_langfont)];
+	var n = ds_map_find_value(global.font_map, lang_get_value(_langfont));
 	if (!is_undefined(n))
 	{
 		return n;
 	}
-	return global.font_map[? concat(_langfont, "_en")];
+	return ds_map_find_value(global.font_map, concat(_langfont, "_en"));
 }

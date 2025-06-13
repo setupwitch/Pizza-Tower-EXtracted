@@ -26,6 +26,6 @@ if (backgroundID != noone)
 		{
 			ix = frac(ix);
 		}
-		chunks[i][3] = ix;
+		array_set(array_get(chunks, i), 3, ix);
 	}
 }

@@ -34,7 +34,8 @@ for (var i = 0; i < array_length(input); i++)
 	tdp_draw_set_halign(1);
 	tdp_draw_set_valign(1);
 	tdp_draw_set_font(lang_get_font("tutorialfont"));
-	for (var j = array_length(icon_array) - 1; j >= 0; j--)
+	var j = array_length(icon_array) - 1;
+	while (j >= 0)
 	{
 		var q = icon_array[j];
 		draw_sprite_ext(q.sprite_index, q.image_index, x2, yy, 1, 1, 0, c, 1);
@@ -43,6 +44,7 @@ for (var i = 0; i < array_length(input); i++)
 			tdp_draw_text_color(x2 + 16, yy + 14, q.str, 0, 0, 0, 0, 1);
 		}
 		x2 -= 48;
+		j--;
 	}
 }
 tdp_text_commit(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);

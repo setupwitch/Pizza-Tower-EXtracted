@@ -18,7 +18,7 @@ function set_master_gain(_mastervol)
 	for (var i = 0; i < num; i++)
 	{
 		var info = audio_get_listener_info(i);
-		audio_set_master_gain(info[? "index"], _mastervol);
+		audio_set_master_gain(ds_map_find_value(info, "index"), _mastervol);
 		ds_map_destroy(info);
 	}
 }

@@ -7,7 +7,8 @@ function scr_anybutton_pressed(_device)
 	}
 	else if (gamepad_is_connected(_index))
 	{
-		for (var i = gp_face1; i < gp_axisrv; i++)
+		var i = gp_face1;
+		while (i < gp_axisrv)
 		{
 			if (gamepad_button_check_pressed(_index, i))
 			{
@@ -18,6 +19,7 @@ function scr_anybutton_pressed(_device)
 				}
 				return _index;
 			}
+			i++;
 		}
 		var _threshold = 0.5;
 		var _up = gamepad_axis_value(_index, gp_axislv) < -_threshold;

@@ -124,7 +124,7 @@ function scr_menu_getinput()
 				{
 					_bool = (_dvc < 0) ? tdp_input_get(input[1]).held : tdp_input_get(input[1] + "C").held;
 				}
-				id[input[0]] = _bool;
+				variable_instance_set(id, input[0], _bool);
 			}
 		}
 		if (key_left >= 0)

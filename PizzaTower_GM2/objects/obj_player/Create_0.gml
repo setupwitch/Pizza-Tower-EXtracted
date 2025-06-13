@@ -620,7 +620,7 @@ if (!variable_global_exists("saveroom"))
 	var key = ds_map_find_first(global.lang_map);
 	for (var i = 0; i < ds_map_size(global.lang_map); i++)
 	{
-		var lang = global.lang_map[? key];
+		var lang = ds_map_find_value(global.lang_map, key);
 		lang_load_fonts(key);
 		key = ds_map_find_next(global.lang_map, key);
 	}

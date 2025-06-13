@@ -13,7 +13,7 @@ function scr_collide_destructibles()
 					num = instance_place_list(x + b[0], y + b[1], obj_destructibles, global.instancelist, false);
 					for (var j = 0; j < num; j++)
 					{
-						var inst = global.instancelist[| j];
+						var inst = ds_list_find_value(global.instancelist, j);
 						if (inst != noone && inst != -1 && inst != undefined)
 						{
 							with (inst)
@@ -68,7 +68,7 @@ function scr_collide_destructibles()
 				num = instance_place_list(x, y + vy, obj_destructibles, global.instancelist, false);
 				for (var i = 0; i < num; i++)
 				{
-					with (global.instancelist[| i])
+					with (ds_list_find_value(global.instancelist, i))
 					{
 						GamepadSetVibration(0, 0.8, 0.8, 0.5);
 						instance_destroy();
@@ -132,7 +132,7 @@ function scr_collide_destructibles()
 		var num = instance_place_list(x, y + 1, obj_destructibleplatform, global.instancelist, false);
 		for (var k = 0; k < num; k++)
 		{
-			with (global.instancelist[| k])
+			with (ds_list_find_value(global.instancelist, k))
 			{
 				if (!falling)
 				{
@@ -186,7 +186,7 @@ function scr_collide_destructibles()
 				num = instance_place_list(x, y + vsp + 2, obj_destructibles, global.instancelist, false);
 				for (var j = 0; j < num; j++)
 				{
-					instance_destroy(global.instancelist[| j]);
+					instance_destroy(ds_list_find_value(global.instancelist, j));
 				}
 				ds_list_clear(global.instancelist);
 			}

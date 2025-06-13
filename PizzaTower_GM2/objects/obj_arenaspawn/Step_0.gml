@@ -54,7 +54,7 @@ switch (state)
 		{
 			for (var i = 0; i < ds_list_size(baddielist); i++)
 			{
-				var b = baddielist[| i];
+				var b = ds_list_find_value(baddielist, i);
 				if (b[0] == wave)
 				{
 					instance_activate_object(b[1]);

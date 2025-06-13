@@ -37,7 +37,9 @@ draw_set_valign(fa_bottom);
 draw_set_font(global.smallfont);
 draw_set_alpha(1);
 draw_set_color(c_white);
-for (var yy = 0, i = array_length(str) - 1; i >= 0; i--)
+var yy = 0;
+var i = array_length(str) - 1;
+while (i >= 0)
 {
 	var b = str[i];
 	if (!global.option_speedrun_timer)
@@ -47,4 +49,5 @@ for (var yy = 0, i = array_length(str) - 1; i >= 0; i--)
 	var len = string_length(b) - 1;
 	draw_text(SCREEN_WIDTH - (len * string_width("A")), SCREEN_HEIGHT - 8 - (string_height("A") * yy), b);
 	yy++;
+	i--;
 }

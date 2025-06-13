@@ -59,7 +59,7 @@ with (instance_create_depth(32, 0, depth - 1, obj_itemlist))
 			{
 				if (ID == 8)
 				{
-					value = other.items[| _item_index];
+					value = ds_list_find_value(other.items, _item_index);
 				}
 			}
 		}

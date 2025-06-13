@@ -11,7 +11,7 @@ if (frames <= 0)
 	var ch = camera_get_view_height(view_camera[0]);
 	for (var i = 0; i < ds_list_size(cull_list); i++)
 	{
-		var b = cull_list[| i];
+		var b = ds_list_find_value(cull_list, i);
 		if (rectangle_in_rectangle(b.bbox_left, b.bbox_top, b.bbox_right, b.bbox_bottom, cx - offset, cy - offset, cx + cw + offset, cy + ch + offset))
 		{
 			instance_activate_object(b.ID);
