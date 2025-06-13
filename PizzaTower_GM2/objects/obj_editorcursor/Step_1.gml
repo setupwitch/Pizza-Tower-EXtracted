@@ -22,7 +22,7 @@ var _depth = 10000;
 var obj = noone;
 for (var i = 0; i < num; i++)
 {
-	var b = global.instancelist[| i];
+	var b = ds_list_find_value(global.instancelist, i);
 	with (b)
 	{
 		if (depth < _depth)

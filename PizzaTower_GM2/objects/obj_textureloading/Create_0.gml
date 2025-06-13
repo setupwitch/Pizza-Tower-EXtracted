@@ -16,9 +16,11 @@ ext_tex_pos = 0;
 lang_max = ds_queue_size(global.lang_to_load);
 lang_tex_max = 0;
 var arr = [];
-for (var file = file_find_first("lang/graphics/", 0); file != ""; file = file_find_next();)
+var file = file_find_first("lang/graphics/", 0);
+while (file != "")
 {
 	lang_tex_max++;
+	file = file_find_next();
 }
 lang_tex_max -= lang_max;
 lang_tex = lang_tex_max;

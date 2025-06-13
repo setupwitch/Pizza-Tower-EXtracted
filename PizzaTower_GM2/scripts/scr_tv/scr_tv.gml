@@ -38,7 +38,7 @@ function tv_push_prompt(_text, _type, _spr, _textspd)
 				var placed = false;
 				for (var i = 0; i < ds_list_size(tvprompts_list); i++)
 				{
-					var b2 = tvprompts_list[| i];
+					var b2 = ds_list_find_value(tvprompts_list, i);
 					if (b2[1] == tv_prompttypes.transformation)
 					{
 						if (i == 0)
@@ -86,7 +86,7 @@ function tv_push_prompt_once(_prompt, _ini_key)
 		{
 			return false;
 		}
-		var b = special_prompts[? _ini_key];
+		var b = ds_map_find_value(special_prompts, _ini_key);
 		if (is_undefined(b))
 		{
 			return false;

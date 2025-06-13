@@ -16,7 +16,7 @@ function scr_solid(_x, _y)
 		var _collided = false;
 		for (var i = 0; i < num; i++)
 		{
-			var b = global.instancelist[| i];
+			var b = ds_list_find_value(global.instancelist, i);
 			if (id != b.id && !place_meeting(x, old_y, b) && place_meeting(x, y, b))
 			{
 				_collided = true;

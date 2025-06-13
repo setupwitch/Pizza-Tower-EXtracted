@@ -28,7 +28,7 @@ for (var i = 0; i < ds_list_size(items); i++)
 	}
 	var yy = (i * item_height) + scroll;
 	draw_sprite_ext(item_sprite, _index, 0, yy, image_xscale, item_height / sprite_get_height(item_sprite), 0, c_white, image_alpha);
-	on_item_draw(0, yy, items[| i], _index);
+	on_item_draw(0, yy, ds_list_find_value(items, i), _index);
 	if (yy > (sprite_height + item_height))
 	{
 		break;

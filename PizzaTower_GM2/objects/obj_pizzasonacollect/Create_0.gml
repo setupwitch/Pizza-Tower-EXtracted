@@ -8,7 +8,8 @@ showtext = false;
 state = states.normal;
 image_speed = 0.35;
 depth = 0;
-for (var r = -1; r == -1 || r == 8;)
+var r = -1;
+while (r == -1 || r == 8)
 {
 	r = irandom_range(1, 55);
 }

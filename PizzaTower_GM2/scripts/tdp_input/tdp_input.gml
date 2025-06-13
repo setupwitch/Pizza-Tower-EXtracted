@@ -41,7 +41,7 @@ function tdp_input_update(_device = -1)
 
 function tdp_input_get(_inputname)
 {
-	return global.input_list[? _inputname];
+	return ds_map_find_value(global.input_list, _inputname);
 }
 
 function tdp_input_ini_read(_inputkey, _input)

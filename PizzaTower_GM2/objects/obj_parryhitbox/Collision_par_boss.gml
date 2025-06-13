@@ -6,8 +6,8 @@ if (collisioned)
 }
 with (_boss)
 {
-	var upb = boss_unparryablestates[? state];
-	var sb = boss_hurtstates[? state];
+	var upb = ds_map_find_value(boss_unparryablestates, state);
+	var sb = ds_map_find_value(boss_hurtstates, state);
 	if (!is_undefined(sb) && is_undefined(upb))
 	{
 		var p = (hb.player_id == 1) ? obj_player1.id : obj_player2.id;

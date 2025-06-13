@@ -17,7 +17,7 @@ function instance_edit_init()
 			{
 				b.mask_index = obj.mask_index;
 			}
-			ds_list_add(object_map[? category.name], b);
+			ds_list_add(ds_map_find_value(object_map, category.name), b);
 			if (variable_struct_exists(obj, "components"))
 			{
 				ds_map_set(component_map, obj.ID, obj.components);
@@ -25,7 +25,7 @@ function instance_edit_init()
 			}
 		}
 	}
-	selected_object = object_map[? "General"][| 0];
+	selected_object = ds_list_find_value(ds_map_find_value(object_map, "General"), 0);
 	selected_instance = noone;
 	instance_state = 0;
 }

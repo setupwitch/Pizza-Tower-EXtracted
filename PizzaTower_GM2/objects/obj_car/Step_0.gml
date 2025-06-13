@@ -6,7 +6,7 @@ switch (state)
 			var num = instance_place_list(x, y, obj_player, global.instancelist, false);
 			for (var i = 0; i < num; i++)
 			{
-				var b = global.instancelist[| i];
+				var b = ds_list_find_value(global.instancelist, i);
 				if (b.state == states.mach3)
 				{
 					player_inst = b;

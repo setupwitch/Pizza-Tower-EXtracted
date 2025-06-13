@@ -5,7 +5,7 @@ if (storedx != noone && storedy != noone)
 	{
 		repeat (ds_list_size(global.baddietomb))
 		{
-			var arr = global.baddietomb[| i];
+			var arr = ds_list_find_value(global.baddietomb, i);
 			var tombRoom = arr[0];
 			var X = arr[1];
 			var Y = arr[2];

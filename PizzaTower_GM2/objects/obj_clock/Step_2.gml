@@ -5,19 +5,21 @@ if (!instance_exists(objectID))
 }
 x = objectID.x;
 y = objectID.y - ypad;
+var time, _max;
 if (timedgate)
 {
-	var time = global.timedgatetime;
-	var _max = global.timedgatetimemax;
+	time = global.timedgatetime;
+	_max = global.timedgatetimemax;
 }
 else
 {
+	var m, s, mm, ms;
 	with (obj_deliverytimer)
 	{
-		var m = minutes;
-		var s = seconds;
-		var mm = maxminutes;
-		var ms = maxseconds;
+		m = minutes;
+		s = seconds;
+		mm = maxminutes;
+		ms = maxseconds;
 	}
 	while (m > 0)
 	{

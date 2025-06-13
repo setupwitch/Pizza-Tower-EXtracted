@@ -36,7 +36,7 @@ function following_character_delete()
 			if (id != _id)
 			{
 				pos = ds_list_find_index(global.followerlist, id);
-				followid = (pos > 0) ? global.followerlist[| pos - 1] : noone;
+				followid = (pos > 0) ? ds_list_find_value(global.followerlist, pos - 1) : noone;
 			}
 		}
 	}
@@ -47,7 +47,7 @@ function following_character_calculate()
 	with (obj_followcharacter)
 	{
 		pos = ds_list_find_index(global.followerlist, id);
-		followid = (pos > 0) ? global.followerlist[| pos - 1] : noone;
+		followid = (pos > 0) ? ds_list_find_value(global.followerlist, pos - 1) : noone;
 	}
 }
 
@@ -65,7 +65,7 @@ function following_add_to_front()
 	}
 	ds_list_insert(global.followerlist, 0, id);
 	pos = ds_list_find_index(global.followerlist, id);
-	followid = (pos > 0) ? global.followerlist[| pos - 1] : noone;
+	followid = (pos > 0) ? ds_list_find_value(global.followerlist, pos - 1) : noone;
 	following_character_calculate();
 }
 
@@ -84,7 +84,7 @@ function following_has_follower(_obj)
 {
 	for (var i = 0; i < ds_list_size(global.followerlist); i++)
 	{
-		var b = global.followerlist[| i];
+		var b = ds_list_find_value(global.followerlist, i);
 		if (instance_exists(b) && b.object_index == _obj)
 		{
 			return true;
@@ -98,7 +98,7 @@ function following_count(_obj)
 	var n = 0;
 	for (var i = 0; i < ds_list_size(global.followerlist); i++)
 	{
-		var b = global.followerlist[| i];
+		var b = ds_list_find_value(global.followerlist, i);
 		if (instance_exists(b) && b.object_index == _obj)
 		{
 			n++;

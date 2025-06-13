@@ -2,7 +2,7 @@ function create_components(_component, _inst)
 {
 	with (obj_editor)
 	{
-		var q = component_map[? _component];
+		var q = ds_map_find_value(component_map, _component);
 		if (!is_undefined(q))
 		{
 			for (var i = 0; i < array_length(q); i++)

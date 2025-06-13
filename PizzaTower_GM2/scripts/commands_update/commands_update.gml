@@ -4,7 +4,7 @@ function commands_update()
 	{
 		if (command_current < ds_list_size(commands_list))
 		{
-			var cmd = commands_list[| command_current++];
+			var cmd = ds_list_find_value(commands_list, command_current++);
 			cmd.execute();
 		}
 	}
@@ -12,7 +12,7 @@ function commands_update()
 	{
 		if (command_current > 0)
 		{
-			var cmd = commands_list[| --command_current];
+			var cmd = ds_list_find_value(commands_list, --command_current);
 			cmd.undo();
 		}
 	}

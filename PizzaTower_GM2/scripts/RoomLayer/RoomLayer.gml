@@ -63,7 +63,7 @@ function room_layer_delete(_layerid)
 			for (var i = 0; i < array_length(arr); i++)
 			{
 				var b = arr[i];
-				if (b.depth == items[| selected_item].depth)
+				if (b.depth == ds_list_find_value(items, selected_item).depth)
 				{
 					array_delete(arr, i, 1);
 					b = undefined;
@@ -94,7 +94,7 @@ function room_layer_move_up(_layerid)
 			for (var i = 0; i < array_length(_arr); i++)
 			{
 				var b = _arr[i];
-				if (b.depth == items[| selected_item].depth)
+				if (b.depth == ds_list_find_value(items, selected_item).depth)
 				{
 					b.move_up(_arr);
 					search_depth = b.depth;
@@ -125,7 +125,7 @@ function room_layer_move_down(_layerid)
 			for (var i = 0; i < array_length(_arr); i++)
 			{
 				var b = _arr[i];
-				if (b.depth == items[| selected_item].depth)
+				if (b.depth == ds_list_find_value(items, selected_item).depth)
 				{
 					b.move_down(_arr);
 					search_depth = b.depth;
@@ -183,7 +183,7 @@ function room_layer_item_dirty(_layerid)
 	for (var i = 0; i < array_length(_arr); i++)
 	{
 		ds_list_add(items, _arr[i]);
-		if (items[| i].depth == search_depth)
+		if (ds_list_find_value(items, i).depth == search_depth)
 		{
 			selected_item = i;
 		}
