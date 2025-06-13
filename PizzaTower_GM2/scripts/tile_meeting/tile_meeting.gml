@@ -5,6 +5,8 @@ enum tilemeeting_flags
 	slope = 8,
 }
 
+/// @deprecated
+/// @returns {Bool}
 function tile_meeting(_xspd, _yspd, _tilemap, _flag = tilemeeting_flags.all_solid)
 {
 	var _tm = layer_tilemap_get_id(_tilemap);

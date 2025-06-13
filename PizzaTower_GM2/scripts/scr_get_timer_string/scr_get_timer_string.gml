@@ -1,8 +1,8 @@
-/// @desc - Formats a timer
+/// @desc - Returns a formatted timer
 /// @arg {Real} _mins - Minutes that have passed.
 /// @arg {Real} _secs - Seconds that have passed.
 /// @arg {Bool} _do_hours - Whether to add hours to the timer or not.
-/// @returns {String} - The Formatted timer string.
+/// @returns {String}
 function scr_get_timer_string(_mins, _secs, _do_hours = false)
 {
 	if (_secs < 10)
