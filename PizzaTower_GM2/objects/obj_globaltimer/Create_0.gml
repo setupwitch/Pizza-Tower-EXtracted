@@ -33,7 +33,7 @@ if (use_livesplit)
 	var MAGIC = [194, 90, 23, 101, 190, 77, 223, 214, 242, 28, 209, 59, 167, 166, 31, 195, 183, 56, 233, 233, 194, 252, 191, 9, 171, 159, 95, 22, 174, 20, 237, 100];
 	MAGICsize = array_length(MAGIC);
 	var Mi = 0;
-	for (var Ml = MAGICsize; Mi < Ml; Mi++;)
+	for (var Ml = MAGICsize; Mi < Ml; Mi++)
 	{
 		buffer_write(ls_buffer, buffer_u8, MAGIC[Mi]);
 	}
