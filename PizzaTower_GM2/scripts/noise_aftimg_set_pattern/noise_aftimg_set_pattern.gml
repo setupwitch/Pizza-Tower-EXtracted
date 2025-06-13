@@ -1,3 +1,6 @@
+/// @desc - Sets the pattern for noise afterimages.
+/// @arg {Asset.Sprite} _spr - The pattern sprite.
+/// @arg {Real} _subimg - The frame of the sprite.
 function noise_aftimg_set_pattern(_spr, _subimg)
 {
 	if (_spr == noone)

@@ -1,8 +1,14 @@
+/// @desc - Checks if the player isnt peppino in swap mode.
+/// @returns {Bool}
 function swap_is_player2()
 {
 	return global.swapmode && obj_player1.ispeppino != obj_savesystem.ispeppino;
 }
 
+/// @desc - Swaps the player in swap mode.
+/// @arg {Bool} _hurtswap - Whether the swap was caused by the player being hurt or not.
+/// @arg {Bool} _jumpscare - Whether the swap was caused by the player being jumpscared or not.
+/// @returns {Bool}
 function swap_player(_hurtswap = false, _jumpscare = false)
 {
 	if (global.swapmode)

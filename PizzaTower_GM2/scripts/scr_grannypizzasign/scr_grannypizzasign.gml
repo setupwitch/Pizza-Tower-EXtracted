@@ -1,3 +1,7 @@
+/// @desc - Adds a boss level to the granny pizza sign.
+/// @arg {String} _ini_section - The section inside of the INI file.
+/// @arg {String} _ini_key - The key inside of the INI file.
+/// @arg {Asset.Sprite} _icon - The icon for the level.
 function scr_add_grannypizzaboss(_ini_section, _ini_key, _icon)
 {
 	var q = scr_add_grannypizzalevel(_ini_key, _icon, false, false, false, true);
@@ -8,7 +12,14 @@ function scr_add_grannypizzaboss(_ini_section, _ini_key, _icon)
 	}
 	ini_close();
 }
-
+/// @desc - Adds a boss level to the granny pizza sign.
+/// @arg {String} _ini_key - The key inside of the INI file.
+/// @arg {Asset.Sprite} _icon - The icon for the level.
+/// @arg {Bool} _secrets - Include secrets
+/// @arg {Bool} _toppins - Include toppins
+/// @arg {Bool} _treasure - Include the treasure
+/// @arg {Bool} _rank - Include the rank
+/// @returns {Struct}
 function scr_add_grannypizzalevel(_ini_key, _icon, _secrets = true, _toppins = true, _treasure = true, _rank = true)
 {
 	var q = 
