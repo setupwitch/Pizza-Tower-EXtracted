@@ -44,6 +44,7 @@ destroyed = false;
 playerdestroyed = false;
 colliding = true;
 
+/// @deprecated
 function SUPER_player_destroy(_player)
 {
 	depth = _player.depth;
@@ -82,6 +83,7 @@ function SUPER_player_destroy(_player)
 	}
 }
 
+/// @deprecated
 function SUPER_boss_destroy(_boss)
 {
 	destroyed = true;
@@ -138,6 +140,7 @@ function SUPER_boss_destroy(_boss)
 	}
 }
 
+/// @deprecated
 function SUPER_boss_hurt(_dmg, _player)
 {
 	if (important)
@@ -210,6 +213,7 @@ function SUPER_boss_hurt(_dmg, _player)
 	}
 }
 
+/// @deprecated
 function SUPER_boss_hurt_noplayer(_hp)
 {
 	if (important)
@@ -250,6 +254,7 @@ function SUPER_boss_hurt_noplayer(_hp)
 	}
 }
 
+/// @deprecated
 function SUPER_player_hurt(_hp, _player)
 {
 	if (instance_exists(obj_bosscontroller))
@@ -311,26 +316,31 @@ function SUPER_player_hurt(_hp, _player)
 	}
 }
 
+/// @deprecated
 function player_destroy(_player)
 {
 	SUPER_player_destroy(_player);
 }
 
+/// @deprecated
 function boss_destroy(_boss)
 {
 	SUPER_boss_destroy(_boss);
 }
 
+/// @deprecated
 function player_hurt(_dmg, _player)
 {
 	SUPER_player_hurt(_dmg, _player);
 }
 
+/// @deprecated
 function boss_hurt(_dmg, _boss)
 {
 	SUPER_boss_hurt(_dmg, _boss);
 }
 
+/// @deprecated
 function boss_hurt_noplayer(_boss)
 {
 	SUPER_boss_hurt_noplayer(_boss);

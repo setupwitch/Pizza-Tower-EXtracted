@@ -9,6 +9,7 @@ direction = point_direction(x, y, t.x, t.y) + irandom_range(-4, 4);
 parryable = true;
 parried = false;
 
+/// @deprecated
 function parry()
 {
 	var prevparried = parried;

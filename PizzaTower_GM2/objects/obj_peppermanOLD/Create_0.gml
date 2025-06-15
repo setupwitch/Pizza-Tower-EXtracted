@@ -76,11 +76,13 @@ superattack_hpthreshold = 500;
 superattack_buffer = 0;
 superattack_max = 360;
 
+/// @deprecated
 function player_destroy(_player)
 {
 	SUPER_player_destroy(_player);
 }
 
+/// @deprecated
 function boss_destroy(_boss)
 {
 	hitstate = states.normal;
@@ -95,6 +97,7 @@ function boss_destroy(_boss)
 	stunned = 1000;
 }
 
+/// @deprecated
 function boss_hurt(_dmg, _boss)
 {
 	if (targetstunned > 0)
@@ -114,6 +117,7 @@ function boss_hurt(_dmg, _boss)
 	targetxscale = -_boss.xscale;
 }
 
+/// @deprecated
 function boss_hurt_noplayer(_dmg)
 {
 	if (targetstunned > 0)
@@ -132,6 +136,7 @@ function boss_hurt_noplayer(_dmg)
 	SUPER_boss_hurt_noplayer(_dmg);
 }
 
+/// @deprecated
 function player_hurt(_dmg, _player)
 {
 	if (_player.state != states.backbreaker || _player.parry_inst == noone)

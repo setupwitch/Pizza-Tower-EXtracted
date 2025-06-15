@@ -1,3 +1,4 @@
+/// @desc
 if (instance_number(obj_monstertrackingrooms) > 1)
 {
 	instance_destroy();
@@ -74,6 +75,9 @@ effect_max = 1800;
 player_posX = ds_grid_value_x(room_grid, 0, 0, map_width - 1, map_height - 1, room_get_name(room));
 player_posY = ds_grid_value_y(room_grid, 0, 0, map_width - 1, map_height - 1, room_get_name(room));
 
+/// @desc - Creates a robot animatronic.
+/// @arg {Bool} _is_triggered - Whether the animatronic is triggered or not.
+/// @arg {Bool} _is_fake - Whether the animatronic is fake or not.
 function robot_create(_is_triggered, _is_fake)
 {
 	if (!instance_exists(obj_robotmonster))
@@ -136,6 +140,9 @@ function robot_create(_is_triggered, _is_fake)
 	}
 }
 
+/// @desc - Creates a blob animatronic.
+/// @arg {Bool} _is_triggered - Whether the animatronic is triggered or not.
+/// @arg {Bool} _is_fake - Whether the animatronic is fake or not.
 function blob_create(_is_triggered, _is_fake)
 {
 	if (!instance_exists(obj_blobmonster))
@@ -208,11 +215,17 @@ function blob_create(_is_triggered, _is_fake)
 	}
 }
 
+/// @desc - Creates a puppet animatronic.
+/// @arg {Bool} _is_triggered - Whether the animatronic is triggered or not.
+/// @arg {Bool} _is_fake - Whether the animatronic is fake or not.
 function puppet_create(_is_triggered, _is_fake)
 {
 	instance_create_unique(0, 0, obj_puppetmonster);
 }
 
+/// @desc - Creates a hillbilly animatronic.
+/// @arg {Bool} _is_triggered - Whether the animatronic is triggered or not.
+/// @arg {Bool} _is_fake - Whether the animatronic is fake or not.
 function hillbilly_create(_is_triggered, _is_fake)
 {
 	if (!instance_exists(obj_hillbillymonster))
@@ -275,6 +288,10 @@ function hillbilly_create(_is_triggered, _is_fake)
 	}
 }
 
+/// @desc - Checks if a point in room_grid is not noone.
+/// @arg {Real} _x - The X point of the ds_grid.
+/// @arg {Real} _y - The Y point of the ds_grid.
+/// @returns {Bool}
 function grid_meeting(_x, _y)
 {
 	if (_x < 0 || _x > (map_width - 1) || _y < 0 || _y > (map_height - 1))
@@ -288,6 +305,11 @@ function grid_meeting(_x, _y)
 	return false;
 }
 
+/// @desc - Returns the number of consecutive grid cells that arent noone horizontally from a starting point.
+/// @arg {Real} _x - The X point of the ds_grid.
+/// @arg {Real} _y - The Y point of the ds_grid.
+/// @arg {Real} _length - The horizontal spacing between each check.
+/// @returns {Real}
 function grid_length_x(_x, _y, _length)
 {
 	var count = 0;
@@ -299,6 +321,10 @@ function grid_length_x(_x, _y, _length)
 	return count;
 }
 
+/// @desc - Returns the data inside room_grid.
+/// @arg {Real} _x - The X point of the ds_grid.
+/// @arg {Real} _y - The Y point of the ds_grid.
+/// @returns {String}
 function room_place(_x, _y)
 {
 	if (_x < 0 || _x > (map_width - 1) || _y < 0 || _y > (map_height - 1))

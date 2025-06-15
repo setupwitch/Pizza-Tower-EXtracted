@@ -75,6 +75,7 @@ targetstunnedminus[4] = 30;
 targetstunnedminus[5] = 30;
 targetstunnedminus[6] = 30;
 
+/// @deprecated
 function boss_destroy(_boss)
 {
 	SUPER_boss_destroy(_boss);
@@ -84,6 +85,7 @@ function boss_destroy(_boss)
 	quick_ini_write_real(get_savefile_ini(), "cutscene", "mrstick3", true);
 }
 
+/// @deprecated
 function boss_hurt(_dmg, _boss)
 {
 	if (targetstunned > 0)
@@ -103,6 +105,7 @@ function boss_hurt(_dmg, _boss)
 	targetxscale = -_boss.xscale;
 }
 
+/// @deprecated
 function boss_hurt_noplayer(_boss)
 {
 	if (targetstunned > 0)
@@ -121,6 +124,7 @@ function boss_hurt_noplayer(_boss)
 	SUPER_boss_hurt_noplayer(_boss);
 }
 
+/// @deprecated
 function player_hurt(_dmg, _player)
 {
 	if (!_player.inv_frames && (_player.state != states.backbreaker || _player.parry_inst == noone))

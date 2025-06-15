@@ -119,6 +119,7 @@ targetstunnedminus[6] = 30;
 targetstunnedminus[7] = 30;
 targetstunnedminus[8] = 30;
 
+/// @deprecated
 function boss_destroy(_boss)
 {
 	SUPER_boss_destroy(_boss);
@@ -144,6 +145,7 @@ function boss_destroy(_boss)
 	}
 }
 
+/// @deprecated
 function boss_hurt(_dmg, _boss)
 {
 	if (targetstunned > 0)
@@ -169,6 +171,7 @@ function boss_hurt(_dmg, _boss)
 	targetxscale = -_boss.xscale;
 }
 
+/// @deprecated
 function boss_hurt_noplayer(_boss)
 {
 	if (targetstunned > 0)
@@ -187,6 +190,7 @@ function boss_hurt_noplayer(_boss)
 	SUPER_boss_hurt_noplayer(_boss);
 }
 
+/// @deprecated
 function player_hurt(_dmg, _player)
 {
 	if (!_player.inv_frames && (_player.state != states.backbreaker || _player.parry_inst == noone))

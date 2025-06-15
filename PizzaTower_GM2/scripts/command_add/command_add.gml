@@ -1,3 +1,4 @@
+/// @desc - Add a command.
 function command_add(_command)
 {
 	with (obj_editor)
