@@ -1,3 +1,4 @@
+/// @desc
 player_input_device[0] = -2;
 player_input_device[1] = -2;
 switch_input_buffer = 0;
@@ -62,6 +63,9 @@ setVibration = function(_player, _lmotor, _rmotor, _strength)
 	}
 };
 
+/// @desc - Checks whether an input device is being used.
+/// @arg {Bool} - The index of the input device.
+/// @returns {Bool}
 function CheckUsedIndex(_index)
 {
 	for (var _x = 0; _x < 2; _x++)

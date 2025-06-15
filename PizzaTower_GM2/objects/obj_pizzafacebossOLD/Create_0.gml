@@ -30,6 +30,7 @@ knightbuffer = 0;
 spawnpool = [obj_forknight, obj_cheeseslime];
 hitplayer = false;
 
+/// @deprecated
 function player_hurt(_dmg, _player)
 {
 	var _prevstate = state;
@@ -46,6 +47,7 @@ function player_hurt(_dmg, _player)
 	}
 }
 
+/// @deprecated
 function boss_hurt(_dmg, _boss)
 {
 	if (phase == 0)
@@ -84,6 +86,7 @@ function boss_hurt(_dmg, _boss)
 	}
 }
 
+/// @deprecated
 function boss_hurt_noplayer(_dmg)
 {
 	if (inv_timer <= 0)

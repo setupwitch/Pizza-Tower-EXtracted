@@ -3,6 +3,7 @@ dmg = 10;
 col_buffer = 0;
 col_max = 10;
 
+/// @deprecated
 function player_hurt(_dmg, _player)
 {
 	if (!collisioned && _player.state != states.arenaround)

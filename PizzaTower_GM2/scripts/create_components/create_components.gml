@@ -1,3 +1,4 @@
+/// @desc - Create a component in the editor.
 function create_components(_component, _inst)
 {
 	with (obj_editor)
@@ -58,6 +59,9 @@ function create_components(_component, _inst)
 	}
 }
 
+/// @desc - Gets the dock from a string.
+/// @arg {String} _str - The string to get the dock from.
+/// @returns {Real, Id.Instance}
 function component_get_dock(_str)
 {
 	switch (_str)

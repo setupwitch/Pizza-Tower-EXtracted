@@ -4,6 +4,7 @@ parryable = false;
 parried = false;
 team = 1;
 
+/// @deprecated
 function SUPER_player_hurt(_dmg, _player)
 {
 	if (!collisioned && _player.state != states.arenaround)
@@ -45,6 +46,7 @@ function SUPER_player_hurt(_dmg, _player)
 	}
 }
 
+/// @deprecated
 function SUPER_parry()
 {
 	if (!parried)
@@ -54,6 +56,7 @@ function SUPER_parry()
 	}
 }
 
+/// @deprecated
 function SUPER_boss_hurt(_boss)
 {
 	if (!collisioned && team != _boss.team)
@@ -66,16 +69,19 @@ function SUPER_boss_hurt(_boss)
 	}
 }
 
+/// @deprecated
 function boss_hurt(_boss)
 {
 	SUPER_boss_hurt(_boss);
 }
 
+/// @deprecated
 function parry()
 {
 	SUPER_parry();
 }
 
+/// @deprecated
 function player_hurt(_dmg, _player)
 {
 	SUPER_player_hurt(_dmg, _player);

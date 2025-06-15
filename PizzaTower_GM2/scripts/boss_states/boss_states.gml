@@ -1,3 +1,4 @@
+/// @deprecated
 function state_boss_chainsaw()
 {
 	hsp = 0;
@@ -17,6 +18,7 @@ function state_boss_chainsaw()
 	}
 }
 
+/// @deprecated
 function state_boss_walk(_func)
 {
 	image_speed = 0.35;
@@ -49,6 +51,7 @@ function state_boss_walk(_func)
 	}
 }
 
+/// @deprecated
 function state_boss_bump()
 {
 	movespeed = 0;
@@ -64,6 +67,7 @@ function state_boss_bump()
 	}
 }
 
+/// @deprecated
 function state_boss_arenaround()
 {
 	image_speed = 0.35;
@@ -92,10 +96,12 @@ function state_boss_arenaround()
 	}
 }
 
+/// @deprecated
 function boss_decide_taunt(arg0)
 {
 }
 
+/// @deprecated
 function state_boss_taunt()
 {
 	image_speed = 0;
@@ -141,6 +147,7 @@ function state_boss_taunt()
 	}
 }
 
+/// @deprecated
 function state_boss_parry()
 {
 	image_speed = 0.35;
@@ -160,6 +167,7 @@ function state_boss_parry()
 	}
 }
 
+/// @deprecated
 function state_player_arenaround()
 {
 	var _normal_spd = 6;

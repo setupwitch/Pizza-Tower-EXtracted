@@ -1,3 +1,5 @@
+/// @desc - Changes the room in the level editor.
+/// @arg {Struct.EditorRoom} - The EditorRoom to change to.
 function change_room(_room)
 {
 	if (global.current_level.current_room != _room)

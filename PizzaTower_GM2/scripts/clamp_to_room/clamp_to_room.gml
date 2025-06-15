@@ -1,3 +1,5 @@
+/// @desc - Clamps object position to the room.
+/// @arg {Struct.EditorRoom} _room - The EditorRoom to clamp to.
 function clamp_to_room(_room)
 {
 	while (bbox_top < _room.y)

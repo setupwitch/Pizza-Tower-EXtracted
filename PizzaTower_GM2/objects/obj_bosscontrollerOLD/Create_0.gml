@@ -1,5 +1,6 @@
 depth = obj_drawcontroller.depth + 2;
 
+/// @deprecated
 function get_player_hp()
 {
 }

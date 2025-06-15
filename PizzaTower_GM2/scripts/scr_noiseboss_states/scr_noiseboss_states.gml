@@ -5,7 +5,7 @@ enum noise_behaviour
 	far = 2,
 	anywhere = 3,
 }
-
+/// @deprecated
 function boss_noise_decide_attack()
 {
 	if (attack_cooldown > 0)
@@ -21,6 +21,7 @@ function boss_noise_decide_attack()
 	}
 }
 
+/// @deprecated
 function get_attack()
 {
 	var chance = irandom(100) > 40;

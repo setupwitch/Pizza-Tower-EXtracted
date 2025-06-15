@@ -3,6 +3,7 @@ dmg = 30;
 spd = 25;
 parryable = true;
 
+/// @deprecated
 function player_hurt(_dmg, _player)
 {
 	if (!collisioned)
@@ -24,6 +25,7 @@ function player_hurt(_dmg, _player)
 	}
 }
 
+/// @deprecated
 function parry()
 {
 	var prevparried = parried;

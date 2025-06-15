@@ -1,3 +1,4 @@
+/// @desc - Clear all commands inside commands_list.
 function commands_clear()
 {
 	for (var i = 0; i < ds_list_size(commands_list); i++)
