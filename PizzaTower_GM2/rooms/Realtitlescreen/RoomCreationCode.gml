@@ -63,7 +63,7 @@ enum states
 	highjump = 60,
 	chainsaw = 61,
 	facestomp = 62,
-	mach4 = 63,
+	mach4 = 63, // doesnt exist
 	timesup = 64,
 	machroll = 65,
 	shotgun = 66,
@@ -110,7 +110,7 @@ enum states
 	hurt = 107,
 	freefall = 108,
 	hang = 109,
-	unknown110 = 110,
+	unknown110 = 110, // turning, doesnt exist
 	freefallland = 111,
 	door = 112,
 	barrel = 113,
@@ -131,18 +131,18 @@ enum states
 	charge = 128,
 	pizzagoblinthrow = 129,
 	turn = 130,
-	unknown131 = 131,
-	unknown132 = 132,
-	rolling = 133,
+	unknown131 = 131, // hitceiling, doesnt exist
+	unknown132 = 132, // hitwall, doesnt exist
+	rolling = 133, // groundpoundland
 	walk = 134,
 	fall = 135,
 	land = 136,
 	hit = 137,
 	stun = 138,
-	unknown139 = 139,
-	unknown140 = 140,
+	unknown139 = 139, // recovery, doesnt exist
+	unknown140 = 140, // stomped, doesnt exist
 	chase = 141,
-	arenaspawn = 142,
+	arenaspawn = 142, // spawnenemy
 	arenaend = 143,
 	arenaintro = 144,
 	arenaround = 145,
@@ -152,7 +152,7 @@ enum states
 	float = 149,
 	tube = 150,
 	unknown151 = 151,
-	taxi2 = 152,
+	taxi2 = 152, // policetaxi
 	shoulderbash = 153,
 	pummel = 154,
 	staggered = 155,
@@ -209,7 +209,7 @@ enum states
 	blockstance = 206,
 	balloon = 207,
 	debugstate = 208,
-	trashstart = 209,
+	trashstart = 209, // trashjumpprep
 	trashjump = 210,
 	trashroll = 211,
 	stringfling = 212,
@@ -217,15 +217,21 @@ enum states
 	stringfall = 214,
 	noisejetpack = 215,
 	spiderweb = 216,
+
+	// robot states start
 	monsteridle = 217,
 	monsterintro = 218,
-	monsterwalk = 219,
+	monsterwalk = 219, // roaming
 	monsterchase = 220,
 	monsterinvestigate = 221,
-	monsterrun = 222,
+	monsterrun = 222, // seeking
+	// robot states end
+
 	flushidle = 223,
-	flushflip = 224,
+	flushflip = 224, // flushtransition
 	animatronic = 225,
+
+	// pizzaface states start
 	moustache = 226,
 	mouth = 227,
 	eyes = 228,
@@ -244,14 +250,16 @@ enum states
 	eat = 241,
 	surprisebox = 242,
 	spinningrun = 243,
-	spin = 244,
+	spin = 244, // spinningkick
 	spinningpunch = 245,
 	groundpunch = 246,
 	bigkick = 247,
 	slamhead = 248,
 	slamhead2 = 249,
-	whitenoise = 250,
-	expression = 251,
+	// pizzaface states end
+
+	whitenoise = 250, // tv
+	expression = 251, // tv
 	playersuperattack = 252,
 	unknown253 = 253,
 	jetpackjump = 254,
@@ -289,21 +297,21 @@ enum states
 	noiseballooncrash = 286,
 	swinging = 287,
 	stomp = 288,
-	finale = 289,
+	finale = 289, // ending
 	backtohub = 290,
-	ghostcaught = 291,
+	ghostcaught = 291, // johnghost
 	spaceshuttle = 292,
 	animation = 293,
 	pizzaheadjump = 294,
 	fightball = 295,
-	secretportal = 296,
-	teleporter = 297,
+	secretportal = 296, // secretenter
+	teleporter = 297, // teleport
 	pizzaheadKO = 298,
-	follow = 299,
-	unknown300 = 300, // Mr. Stick wall kick
-	unknown301 = 301, // Mr. Stick air spin
-	unknown302 = 302, // Mr. Stick super jump
-	unknown303 = 303, // Mr. Stick fly cancel
+	follow = 299, // camera_followtarget
+	unknown300 = 300, // Mr. Stick wallkick
+	unknown301 = 301, // Mr. Stick airspin
+	unknown302 = 302, // Mr. Stick superjump
+	unknown303 = 303, // Mr. Stick flycancel, used in obj_stickhat
 	unknown304 = 304, // Mr. Stick flight
 	machcancelstart = 305,
 	machcancel = 306,
