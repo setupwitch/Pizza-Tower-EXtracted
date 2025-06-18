@@ -1,7 +1,11 @@
+/*
+	tested in rm_testing4, but unused.
+*/
+
 enum tilemeeting_flags
 {
 	all_solid = 2,
-	solid = 4,
+	solid = 4, // platform
 	slope = 8,
 }
 
