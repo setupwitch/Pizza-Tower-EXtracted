@@ -1,3 +1,5 @@
+exit;
+/*
 var rm = roomtorestart;
 scr_pause_stop_sounds();
 global.levelattempts++;
@@ -30,3 +32,4 @@ if (rm == boss_pizzaface || rm == boss_noise || rm == boss_pepperman || rm == bo
 {
 	global.bossintro = true;
 }
+*/
