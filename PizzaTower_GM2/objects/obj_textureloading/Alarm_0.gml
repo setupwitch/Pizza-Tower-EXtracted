@@ -10,10 +10,7 @@ else if (!scr_lang_load_update())
 	{
 		var tex = array_pop(tex_list);
 		trace("Loading texture: ", tex);
-		if (!texture_is_ready(tex))
-		{
-			texture_prefetch(tex);
-		}
+		texture_prefetch(tex);
 	}
 	else
 	{
