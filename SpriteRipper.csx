@@ -133,8 +133,11 @@ void ProcessSprite(string sprDir)
             GMSprite.GMSpriteFrame frame = sprite.frames[i];
             string frameDir = Path.Combine(layerDir, frame.name);
             Directory.CreateDirectory(frameDir);
-            tw.ExportAsPNG(sprData.Textures[i].Texture, Path.Combine(frameDir, layer.name) + ".png", null, true);
-            File.Copy(Path.Combine(frameDir, layer.name) + ".png", Path.Combine(sprDir, frame.name) + ".png", true);
+
+            string pngPath = Path.Combine(frameDir, layer.name) + ".png";
+            tw.ExportAsPNG(sprData.Textures[i].Texture, pngPath, null, true);
+
+            File.Copy(pngPath, Path.Combine(sprDir, frame.name) + ".png", true);
         }
     }
     IncrementProgressParallel();

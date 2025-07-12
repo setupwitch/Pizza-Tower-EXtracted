@@ -2,7 +2,7 @@ enum editorstates
 {
 	init = 0,
 	instance_edit = 1,
-	unknown2 = 2,
+	unknown2 = 2, // toggles layer 1, but is unused.
 	resize_room = 3,
 	save_level = 4,
 	load_level = 5,

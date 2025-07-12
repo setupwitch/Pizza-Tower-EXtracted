@@ -27,7 +27,7 @@ vibration[1][2] = 0;
 
 switch_get_single_player = function(_device)
 {
-	while (1)
+	while (true)
 	{
 		switch_controller_joycon_set_holdtype(1);
 		switch_controller_set_supported_styles(31);
