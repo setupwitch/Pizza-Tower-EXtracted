@@ -10,6 +10,8 @@ image_speed = 0;
 depth = -500;
 backbuffer = 2;
 savedmusicmuffle = 0;
+offload_textures = false;
+offload_arr = noone;
 pause_menu = ["pause_resume", "pause_options", "pause_restart", "pause_exit"];
 pause_menu_map = ds_map_create();
 ds_map_set(pause_menu_map, "pause_resume", [0, function()
@@ -104,17 +106,16 @@ var exit_function = function()
 			scr_characterspr();
 		}
 	}
+	offload_arr = arr;
+	offload_textures = true;
 	ds_list_add(il, id);
-	with (textures_offload(arr))
-	{
-		ds_list_clear(sound_list);
-		ds_list_clear(instance_list);
-		ds_list_copy(sound_list, sl);
-		ds_list_copy(instance_list, il);
-		pause = true;
-		pauseID = other.id;
-	}
-	instance_deactivate_object(id);
+	
+	alarm[3] = 1;
+	scr_pause_activate_objects();
+	instance_destroy(obj_option);
+	instance_destroy(obj_keyconfig);
+	pause = false;
+	
 	ds_list_destroy(sl);
 	ds_list_destroy(il);
 };

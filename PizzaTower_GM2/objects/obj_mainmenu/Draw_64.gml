@@ -36,7 +36,7 @@ if (state == states.bombdelete)
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	var _str = embed_value_string(lang_get_value_newline("menu_delete"), [string(currentselect + 1)]);
-	tdp_draw_text_color(SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 2) - 30, _str, 255, 255, 255, 255, 1);
+	tdp_draw_text_color(SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 2) - 30, _str, c_red, c_red, c_red, c_red, 1);
 	var w = string_width(_str) / 2;
 	var spr = spr_menu_filedelete;
 	var ix = index;
