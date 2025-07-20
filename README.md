@@ -39,7 +39,7 @@ A semi-accurate decompilation of Pizza Tower
       ```json
       {
         "active": "2022.0.3.99",
-        "2022.0.3.99": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.3.99&[https://gms.yoyogames.com/Zeus-Runtime-LTS.rss](https://gms.yoyogames.com/Zeus-Runtime-LTS.rss)"
+        "2022.0.3.99": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.3.99&https://gms.yoyogames.com/Zeus-Runtime-LTS.rss"
       }
       ```
   
@@ -48,8 +48,8 @@ A semi-accurate decompilation of Pizza Tower
       ```json
       {
         "active": "2022.0.1.30",
-        "2022.0.1.30": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.1.30&[https://gms.yoyogames.com/Zeus-Runtime-LTS.rss](https://gms.yoyogames.com/Zeus-Runtime-LTS.rss)",
-        "2022.0.3.99": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.3.99&[https://gms.yoyogames.com/Zeus-Runtime-LTS.rss](https://gms.yoyogames.com/Zeus-Runtime-LTS.rss)"
+        "2022.0.1.30": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.1.30&https://gms.yoyogames.com/Zeus-Runtime-LTS.rss",
+        "2022.0.3.99": "C:\\ProgramData/GameMakerStudio2-LTS/Cache/runtimes\\runtime-2022.0.3.99&https://gms.yoyogames.com/Zeus-Runtime-LTS.rss"
       }
       ```
   
