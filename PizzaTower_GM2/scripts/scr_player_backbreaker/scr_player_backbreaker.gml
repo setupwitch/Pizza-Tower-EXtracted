@@ -48,7 +48,7 @@ function scr_player_backbreaker()
 					}
 					if (destroyable)
 					{
-						c += #010000;
+						c++;
 					}
 					instance_create(x, y, obj_parryeffect);
 					alarm[3] = 3;

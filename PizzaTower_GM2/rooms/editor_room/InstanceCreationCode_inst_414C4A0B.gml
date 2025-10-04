@@ -40,7 +40,7 @@ with (instance_create_depth(0, 0, depth - 1, obj_itemlist))
 	{
 		if (_item_id < ds_list_size(items))
 		{
-			ds_list_find_value(items, _item_id).func();
+			items[| _item_id].func();
 		}
 	};
 }
