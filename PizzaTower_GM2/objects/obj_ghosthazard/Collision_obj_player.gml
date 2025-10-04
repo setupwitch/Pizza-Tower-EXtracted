@@ -16,7 +16,7 @@ with (other)
 			create_transformation_tip(lang_get_value("ghosttipN"), "ghostN");
 		}
 		fmod_event_one_shot("event:/sfx/pep/ghostintro");
-		grav /= 2;
+		grav = grav / 2;
 		state = states.ghost;
 		movespeed = hsp;
 		ghostdash = false;

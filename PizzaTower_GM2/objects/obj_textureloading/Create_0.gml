@@ -1,6 +1,7 @@
 scr_get_languages();
+global.texture_load_count = ds_list_create();
 tex_list = noone;
-var group_arr = ["hubgroup", "playergroup", "noisegroup", "introgroup", "smallgroup", "hudgroup"];
+var group_arr = ["hubgroup", "playergroup", "noisegroup", "introgroup", "smallgroup", "hudgroup", "levelstructuregroup", "baddiegroup"];
 tex_list = array_create(0);
 tex_pos = 0;
 for (var i = 0; i < array_length(group_arr); i++)
