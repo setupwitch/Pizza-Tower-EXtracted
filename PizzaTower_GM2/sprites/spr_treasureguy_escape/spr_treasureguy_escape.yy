@@ -91,6 +91,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Treasure Guy",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Treasure Guy.yy",
+    "path": "folders/Sprites/Baddies/Treasure Guy.yy",
   },
 }

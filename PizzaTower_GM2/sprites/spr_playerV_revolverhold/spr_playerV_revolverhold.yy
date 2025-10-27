@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "Vigilante",
+    "path": "folders/Sprites/Bosses/Vigilante.yy",
   },
 }

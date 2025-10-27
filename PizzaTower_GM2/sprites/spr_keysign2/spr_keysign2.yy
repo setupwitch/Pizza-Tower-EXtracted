@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "World",
-    "path": "folders/Sprites/World.yy",
+    "name": "Key",
+    "path": "folders/Sprites/Room Structure/Level Structure/Key.yy",
   },
 }

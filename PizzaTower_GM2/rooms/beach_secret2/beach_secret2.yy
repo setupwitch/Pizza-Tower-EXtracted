@@ -145,7 +145,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Beach",
-    "path": "folders/Rooms/Unused/Levels/Beach.yy",
+    "name": "Crust Cove",
+    "path": "folders/Rooms/World/Floor 3/Crust Cove.yy",
   },
 }

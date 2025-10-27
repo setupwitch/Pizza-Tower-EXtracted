@@ -101,6 +101,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Kentuky Kenny",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Kentuky Kenny.yy",
+    "path": "folders/Sprites/Baddies/Kentuky Kenny.yy",
   },
 }

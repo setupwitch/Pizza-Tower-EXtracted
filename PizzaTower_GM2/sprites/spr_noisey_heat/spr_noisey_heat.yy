@@ -92,7 +92,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Noisey",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Noisey.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/Unused.yy",
   },
 }

@@ -72,7 +72,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "Collectables",
+    "path": "folders/Sprites/Room Structure/Level Structure/Collectables.yy",
   },
 }

@@ -82,7 +82,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "Doors",
+    "path": "folders/Sprites/Room Structure/Warps/Doors.yy",
   },
 }

@@ -102,7 +102,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Gerome",
-    "path": "folders/Sprites/Room Structure/Level Structure/Gerome.yy",
+    "name": "Escape Followers",
+    "path": "folders/Sprites/Room Structure/Hub Structure/Escape Followers.yy",
   },
 }

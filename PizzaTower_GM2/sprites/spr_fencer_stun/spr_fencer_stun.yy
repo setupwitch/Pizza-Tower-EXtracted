@@ -73,6 +73,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Fencer",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Fencer.yy",
+    "path": "folders/Sprites/Baddies/Fencer.yy",
   },
 }

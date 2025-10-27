@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Shrimp",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Shrimp.yy",
+    "path": "folders/Sprites/Baddies/Shrimp.yy",
   },
 }

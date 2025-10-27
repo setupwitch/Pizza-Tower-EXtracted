@@ -76,7 +76,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "Pizzascare",
+    "path": "folders/Sprites/World/Floor 5/Pizzascare.yy",
   },
 }

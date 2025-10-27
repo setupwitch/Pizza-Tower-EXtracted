@@ -73,6 +73,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Peasanto",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Peasanto.yy",
+    "path": "folders/Sprites/Baddies/Peasanto.yy",
   },
 }

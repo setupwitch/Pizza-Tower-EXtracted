@@ -79,6 +79,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Ranch Shooter",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Ranch Shooter.yy",
+    "path": "folders/Sprites/Baddies/Ranch Shooter.yy",
   },
 }

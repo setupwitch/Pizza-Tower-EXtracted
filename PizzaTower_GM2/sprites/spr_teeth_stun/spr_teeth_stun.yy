@@ -73,6 +73,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Teeth",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Patroller/Teeth.yy",
+    "path": "folders/Sprites/Baddies/Patroller/Teeth.yy",
   },
 }
