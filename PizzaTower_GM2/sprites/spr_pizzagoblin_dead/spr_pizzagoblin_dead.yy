@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Pizza Goblin",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Pizza Goblin.yy",
+    "path": "folders/Sprites/Baddies/Pizza Goblin.yy",
   },
 }

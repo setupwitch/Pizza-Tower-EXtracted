@@ -127,6 +127,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Soldier",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Soldier.yy",
+    "path": "folders/Sprites/Baddies/Soldier.yy",
   },
 }

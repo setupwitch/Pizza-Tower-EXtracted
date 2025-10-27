@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Pizzard",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Pizzard.yy",
+    "path": "folders/Sprites/Baddies/Pizzard.yy",
   },
 }

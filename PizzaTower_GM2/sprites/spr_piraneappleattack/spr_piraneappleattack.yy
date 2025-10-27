@@ -82,7 +82,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Gimmicks",
-    "path": "folders/Sprites/Room Structure/Level Structure/Gimmicks.yy",
+    "name": "Piraneapple",
+    "path": "folders/Sprites/Baddies/Piraneapple.yy",
   },
 }

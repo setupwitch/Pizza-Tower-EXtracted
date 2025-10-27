@@ -77,6 +77,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Bad Rat",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Bad Rat.yy",
+    "path": "folders/Sprites/Baddies/Bad Rat.yy",
   },
 }

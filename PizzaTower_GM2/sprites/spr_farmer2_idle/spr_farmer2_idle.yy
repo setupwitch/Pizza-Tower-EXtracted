@@ -89,6 +89,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Farmer Eggplant",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Farmer Eggplant.yy",
+    "path": "folders/Sprites/Baddies/Farmer Eggplant.yy",
   },
 }

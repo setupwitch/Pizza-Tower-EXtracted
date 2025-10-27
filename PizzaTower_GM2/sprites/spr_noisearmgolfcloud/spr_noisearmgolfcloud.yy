@@ -70,7 +70,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "GOLF",
-    "path": "folders/Sprites/World/Floor 3/GOLF.yy",
+    "name": "Greaseball Strokes",
+    "path": "folders/Sprites/HUD/Greaseball Strokes.yy",
   },
 }

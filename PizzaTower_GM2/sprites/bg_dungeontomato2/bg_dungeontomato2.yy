@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "Bloodsauce Dungeon",
+    "path": "folders/Sprites/World/Floor 1/Bloodsauce Dungeon.yy",
   },
 }
