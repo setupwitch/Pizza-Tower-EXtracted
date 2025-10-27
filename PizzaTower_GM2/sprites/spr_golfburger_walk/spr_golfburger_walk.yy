@@ -89,6 +89,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Golf Burger",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Golf Burger.yy",
+    "path": "folders/Sprites/Baddies/Golf Burger.yy",
   },
 }

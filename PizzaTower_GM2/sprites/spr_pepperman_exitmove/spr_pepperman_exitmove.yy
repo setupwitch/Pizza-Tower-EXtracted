@@ -94,7 +94,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "Escape Followers",
+    "path": "folders/Sprites/Room Structure/Hub Structure/Escape Followers.yy",
   },
 }

@@ -81,6 +81,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Minijohn",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Minijohn.yy",
+    "path": "folders/Sprites/Baddies/Minijohn.yy",
   },
 }
