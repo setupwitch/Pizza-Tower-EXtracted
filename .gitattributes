@@ -1,6 +1,7 @@
-* text eol=crlf
-*.png -text
-*.jpg -text
-*.exe -text
-*.dll -text
+* text=auto
+
+# Force CRLF for GameMaker files
+*.yy  text eol=crlf
+*.gml text eol=crlf
+*.yyp text eol=crlf
 
