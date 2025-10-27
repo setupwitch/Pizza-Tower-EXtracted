@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "Ventilator",
+    "path": "folders/Sprites/Room Structure/Level Structure/Gimmicks/Ventilator.yy",
   },
 }
