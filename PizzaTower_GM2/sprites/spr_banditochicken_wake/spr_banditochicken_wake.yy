@@ -87,6 +87,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Bandito Chicken",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Bandito Chicken.yy",
+    "path": "folders/Sprites/Baddies/Bandito Chicken.yy",
   },
 }

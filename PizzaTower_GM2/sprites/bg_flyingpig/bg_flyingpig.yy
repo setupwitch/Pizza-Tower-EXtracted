@@ -72,7 +72,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Deep-Dish 9",
-    "path": "folders/Sprites/World/Floor 3/Deep-Dish 9.yy",
+    "name": "Pig City",
+    "path": "folders/Sprites/World/Floor 4/Pig City.yy",
   },
 }

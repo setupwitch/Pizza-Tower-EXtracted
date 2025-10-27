@@ -93,6 +93,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Flying Anchovi",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Flying Anchovi.yy",
+    "path": "folders/Sprites/Baddies/Flying Anchovi.yy",
   },
 }

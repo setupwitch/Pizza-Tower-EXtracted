@@ -111,6 +111,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Canon Goblin",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Canon Goblin.yy",
+    "path": "folders/Sprites/Baddies/Canon Goblin.yy",
   },
 }

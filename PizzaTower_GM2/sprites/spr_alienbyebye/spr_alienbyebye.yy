@@ -80,7 +80,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Deep-Dish 9",
-    "path": "folders/Sprites/World/Floor 3/Deep-Dish 9.yy",
+    "name": "Oregano Desert",
+    "path": "folders/Sprites/World/Floor 2/Oregano Desert.yy",
   },
 }

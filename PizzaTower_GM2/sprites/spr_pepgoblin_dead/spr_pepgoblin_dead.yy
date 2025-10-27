@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Pepperoni Goblin",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Pepperoni Goblin.yy",
+    "path": "folders/Sprites/Baddies/Pepperoni Goblin.yy",
   },
 }

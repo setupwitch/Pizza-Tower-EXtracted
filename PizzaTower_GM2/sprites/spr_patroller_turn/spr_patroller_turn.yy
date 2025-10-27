@@ -107,6 +107,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Patroller",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Patroller.yy",
+    "path": "folders/Sprites/Baddies/Patroller.yy",
   },
 }

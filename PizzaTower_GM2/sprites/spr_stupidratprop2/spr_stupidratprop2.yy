@@ -72,7 +72,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "World",
-    "path": "folders/Sprites/World.yy",
+    "name": "Don't Make A Sound",
+    "path": "folders/Sprites/World/Floor 5/Don't Make A Sound.yy",
   },
 }

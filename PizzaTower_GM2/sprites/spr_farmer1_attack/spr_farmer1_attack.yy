@@ -75,6 +75,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Farmer Potato",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Farmer Potato.yy",
+    "path": "folders/Sprites/Baddies/Farmer Potato.yy",
   },
 }

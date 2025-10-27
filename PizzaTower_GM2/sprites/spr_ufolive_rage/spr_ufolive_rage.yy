@@ -78,7 +78,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Ufolive",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Ufolive.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/Unused.yy",
   },
 }
