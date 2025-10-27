@@ -4,8 +4,8 @@ enum editorstates
 	instance_edit = 1,
 	unknown2 = 2, // toggles layer 1, but is unused.
 	resize_room = 3,
-	save_level = 4,
-	load_level = 5,
+	level_save = 4,
+	level_load = 5,
 }
 
 enum instancestates
