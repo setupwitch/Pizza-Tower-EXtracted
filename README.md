@@ -1,6 +1,6 @@
 <img src=".github/logo.png">
 
-# A semi-accurate decompilation of Pizza Tower
+## A semi-accurate decompilation of Pizza Tower
 
 
 # Dependencies
