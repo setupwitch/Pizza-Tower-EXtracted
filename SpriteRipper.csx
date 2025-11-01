@@ -120,10 +120,12 @@ void ProcessSprite(string sprDir)
     .Select(x => x.idx)
     .DefaultIfEmpty(-1)
     .First();
-
+    
+    if (index == -1)
+        throw new Exception("Could not find sprite for " + yyPath);
 
     UndertaleSprite sprData = Data.Sprites[index];
-
+    
     string layerDir = Path.Combine(sprDir, "layers");
     Directory.CreateDirectory(layerDir);
     foreach (GMSprite.GMImageLayer layer in sprite.layers)
