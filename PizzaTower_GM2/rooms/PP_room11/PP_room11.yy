@@ -67,6 +67,7 @@
   "creationCodeFile": "${project_dir}/rooms/PP_room11/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_5E01D550","path":"rooms/PP_room11/PP_room11.yy",},
     {"name":"inst_414D819D","path":"rooms/PP_room11/PP_room11.yy",},
     {"name":"inst_42C56C9","path":"rooms/PP_room11/PP_room11.yy",},
     {"name":"inst_470B2BF4","path":"rooms/PP_room11/PP_room11.yy",},
@@ -77,7 +78,6 @@
     {"name":"inst_156555CE","path":"rooms/PP_room11/PP_room11.yy",},
     {"name":"inst_58442AF9","path":"rooms/PP_room11/PP_room11.yy",},
     {"name":"inst_1B230025","path":"rooms/PP_room11/PP_room11.yy",},
-    {"name":"inst_5E01D550","path":"rooms/PP_room11/PP_room11.yy",},
     {"name":"inst_20E0AA7C","path":"rooms/PP_room11/PP_room11.yy",},
     {"name":"inst_63BF7FA7","path":"rooms/PP_room11/PP_room11.yy",},
   ],

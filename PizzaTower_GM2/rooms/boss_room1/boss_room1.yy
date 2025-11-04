@@ -43,12 +43,12 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_6778204","path":"rooms/boss_room1/boss_room1.yy",},
-    {"name":"inst_4956572F","path":"rooms/boss_room1/boss_room1.yy",},
     {"name":"inst_C352C5B","path":"rooms/boss_room1/boss_room1.yy",},
     {"name":"inst_4F140186","path":"rooms/boss_room1/boss_room1.yy",},
     {"name":"inst_11F2D6B2","path":"rooms/boss_room1/boss_room1.yy",},
     {"name":"inst_54D1ABDD","path":"rooms/boss_room1/boss_room1.yy",},
     {"name":"inst_17B08109","path":"rooms/boss_room1/boss_room1.yy",},
+    {"name":"inst_4956572F","path":"rooms/boss_room1/boss_room1.yy",},
     {"name":"inst_5A8F5634","path":"rooms/boss_room1/boss_room1.yy",},
     {"name":"inst_1D6E2B60","path":"rooms/boss_room1/boss_room1.yy",},
     {"name":"inst_604D008B","path":"rooms/boss_room1/boss_room1.yy",},

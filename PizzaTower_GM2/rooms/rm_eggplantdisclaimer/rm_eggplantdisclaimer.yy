@@ -33,8 +33,8 @@
   "creationCodeFile": "${project_dir}/rooms/rm_eggplantdisclaimer/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_761EE6B7","path":"rooms/rm_eggplantdisclaimer/rm_eggplantdisclaimer.yy",},
     {"name":"inst_38FDBBE3","path":"rooms/rm_eggplantdisclaimer/rm_eggplantdisclaimer.yy",},
+    {"name":"inst_761EE6B7","path":"rooms/rm_eggplantdisclaimer/rm_eggplantdisclaimer.yy",},
     {"name":"inst_7BDC910E","path":"rooms/rm_eggplantdisclaimer/rm_eggplantdisclaimer.yy",},
     {"name":"inst_3EBB663A","path":"rooms/rm_eggplantdisclaimer/rm_eggplantdisclaimer.yy",},
   ],

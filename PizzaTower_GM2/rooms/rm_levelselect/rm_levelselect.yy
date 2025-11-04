@@ -42,9 +42,9 @@
   "creationCodeFile": "${project_dir}/rooms/rm_levelselect/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_5B2DFFB","path":"rooms/rm_levelselect/rm_levelselect.yy",},
     {"name":"inst_7FF535A3","path":"rooms/rm_levelselect/rm_levelselect.yy",},
     {"name":"inst_42D40ACF","path":"rooms/rm_levelselect/rm_levelselect.yy",},
-    {"name":"inst_5B2DFFB","path":"rooms/rm_levelselect/rm_levelselect.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

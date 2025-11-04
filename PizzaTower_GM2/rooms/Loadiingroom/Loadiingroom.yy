@@ -28,10 +28,10 @@
   "creationCodeFile": "${project_dir}/rooms/Loadiingroom/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_20FB130D","path":"rooms/Loadiingroom/Loadiingroom.yy",},
-    {"name":"inst_63D9E838","path":"rooms/Loadiingroom/Loadiingroom.yy",},
-    {"name":"inst_26B8BD64","path":"rooms/Loadiingroom/Loadiingroom.yy",},
     {"name":"inst_6997928F","path":"rooms/Loadiingroom/Loadiingroom.yy",},
+    {"name":"inst_20FB130D","path":"rooms/Loadiingroom/Loadiingroom.yy",},
+    {"name":"inst_26B8BD64","path":"rooms/Loadiingroom/Loadiingroom.yy",},
+    {"name":"inst_63D9E838","path":"rooms/Loadiingroom/Loadiingroom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
