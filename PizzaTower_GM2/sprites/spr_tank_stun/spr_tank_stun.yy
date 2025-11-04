@@ -73,6 +73,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Tank",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Tank.yy",
+    "path": "folders/Sprites/Baddies/Tank.yy",
   },
 }

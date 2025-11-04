@@ -83,6 +83,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Pickle",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Pickle.yy",
+    "path": "folders/Sprites/Baddies/Pickle.yy",
   },
 }

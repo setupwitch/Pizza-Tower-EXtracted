@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "R-R-Freezerator",
+    "path": "folders/Sprites/World/Floor 4/R-R-Freezerator.yy",
   },
 }

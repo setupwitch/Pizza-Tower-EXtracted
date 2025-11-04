@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Peppibot Factory",
-    "path": "folders/Sprites/World/Floor 4/Peppibot Factory.yy",
+    "name": "Don't Make A Sound",
+    "path": "folders/Sprites/World/Floor 5/Don't Make A Sound.yy",
   },
 }

@@ -73,6 +73,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Pizza Ghoul",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Pizza Ghoul.yy",
+    "path": "folders/Sprites/Baddies/Pizza Ghoul.yy",
   },
 }

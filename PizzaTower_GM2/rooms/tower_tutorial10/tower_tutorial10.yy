@@ -154,9 +154,9 @@
   "creationCodeFile": "${project_dir}/rooms/tower_tutorial10/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_18C84695","path":"rooms/tower_tutorial10/tower_tutorial10.yy",},
     {"name":"inst_130A9C3E","path":"rooms/tower_tutorial10/tower_tutorial10.yy",},
     {"name":"inst_55E97169","path":"rooms/tower_tutorial10/tower_tutorial10.yy",},
-    {"name":"inst_18C84695","path":"rooms/tower_tutorial10/tower_tutorial10.yy",},
     {"name":"inst_5BA71BC0","path":"rooms/tower_tutorial10/tower_tutorial10.yy",},
     {"name":"inst_1E85F0EC","path":"rooms/tower_tutorial10/tower_tutorial10.yy",},
     {"name":"inst_6164C617","path":"rooms/tower_tutorial10/tower_tutorial10.yy",},

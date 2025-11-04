@@ -73,6 +73,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Pepperoni Bat",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Pepperoni Bat.yy",
+    "path": "folders/Sprites/Baddies/Pepperoni Bat.yy",
   },
 }

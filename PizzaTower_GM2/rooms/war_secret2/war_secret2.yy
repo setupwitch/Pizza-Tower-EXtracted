@@ -83,8 +83,8 @@
   "creationCodeFile": "${project_dir}/rooms/war_secret2/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_CC65661","path":"rooms/war_secret2/war_secret2.yy",},
     {"name":"inst_4FA52B8C","path":"rooms/war_secret2/war_secret2.yy",},
+    {"name":"inst_CC65661","path":"rooms/war_secret2/war_secret2.yy",},
     {"name":"inst_128400B8","path":"rooms/war_secret2/war_secret2.yy",},
     {"name":"inst_5562D5E3","path":"rooms/war_secret2/war_secret2.yy",},
     {"name":"inst_1841AB0F","path":"rooms/war_secret2/war_secret2.yy",},

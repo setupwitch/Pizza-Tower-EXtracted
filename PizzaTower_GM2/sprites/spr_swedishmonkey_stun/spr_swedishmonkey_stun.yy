@@ -73,6 +73,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Swedish Monkey",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Swedish Monkey.yy",
+    "path": "folders/Sprites/Baddies/Swedish Monkey.yy",
   },
 }

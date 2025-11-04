@@ -89,6 +89,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Kentukybomber",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Kentukybomber.yy",
+    "path": "folders/Sprites/Baddies/Kentukybomber.yy",
   },
 }

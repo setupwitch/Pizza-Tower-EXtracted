@@ -49,7 +49,7 @@ function totem_clear(_totem)
 
 function totem_count(_totem)
 {
-	var c = c_black;
+	var c = 0;
 	with (_totem) 
 	{
 		for (var i = 0; i < array_length(cheeseID); i++)

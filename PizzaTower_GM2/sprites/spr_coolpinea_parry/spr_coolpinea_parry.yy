@@ -102,7 +102,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Pineacool",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Pineacool.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/Unused.yy",
   },
 }

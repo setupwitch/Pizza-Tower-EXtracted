@@ -81,6 +81,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Sausageman",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Sausageman.yy",
+    "path": "folders/Sprites/Baddies/Sausageman.yy",
   },
 }

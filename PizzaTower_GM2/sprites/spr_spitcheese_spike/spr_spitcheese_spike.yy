@@ -95,6 +95,6 @@
   },
   "parent": {
     "name": "Spit Cheese",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Spit Cheese.yy",
+    "path": "folders/Sprites/Baddies/Spit Cheese.yy",
   },
 }

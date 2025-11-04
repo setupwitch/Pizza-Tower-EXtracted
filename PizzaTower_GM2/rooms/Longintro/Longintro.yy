@@ -34,8 +34,8 @@
   "creationCodeFile": "${project_dir}/rooms/Longintro/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_7D40B3E0","path":"rooms/Longintro/Longintro.yy",},
     {"name":"inst_401F890C","path":"rooms/Longintro/Longintro.yy",},
+    {"name":"inst_7D40B3E0","path":"rooms/Longintro/Longintro.yy",},
     {"name":"inst_2FE5E38","path":"rooms/Longintro/Longintro.yy",},
   ],
   "inheritCreationOrder": false,

@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Unused",
-    "path": "folders/Objects/Unused.yy",
+    "name": "Vigilante",
+    "path": "folders/Objects/Boss/Vigilante.yy",
   },
 }

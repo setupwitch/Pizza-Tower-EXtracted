@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Unused",
-    "path": "folders/Objects/Unused.yy",
+    "name": "Destroyables",
+    "path": "folders/Objects/Room Structure/Destroyables.yy",
   },
 }

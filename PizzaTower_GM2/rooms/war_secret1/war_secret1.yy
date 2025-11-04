@@ -66,8 +66,8 @@
   "creationCodeFile": "${project_dir}/rooms/war_secret1/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_5038521","path":"rooms/war_secret1/war_secret1.yy",},
     {"name":"inst_47E25A4C","path":"rooms/war_secret1/war_secret1.yy",},
+    {"name":"inst_5038521","path":"rooms/war_secret1/war_secret1.yy",},
     {"name":"inst_AC12F78","path":"rooms/war_secret1/war_secret1.yy",},
     {"name":"inst_4DA004A3","path":"rooms/war_secret1/war_secret1.yy",},
     {"name":"inst_107ED9CF","path":"rooms/war_secret1/war_secret1.yy",},

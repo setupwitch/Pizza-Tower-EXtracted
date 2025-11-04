@@ -74,7 +74,7 @@ foreach (var tsDir in Directory.GetDirectories(tilesetPath))
     string yyPath = Path.Combine(tsDir, $"{tilesetName}.yy");
 
     if (!File.Exists(yyPath))
-        throw new FileNotFoundException(yyPath + " not found.");
+        throw new FileNotFoundException($"{yyPath} not found.");
 
     string json = File.ReadAllText(yyPath);
     var tileset = JsonSerializer.Deserialize<GMTileSet>(json, jsonOptions);
@@ -109,7 +109,7 @@ void ProcessSprite(string sprDir)
         return;
 
     if (!File.Exists(yyPath))
-        throw new FileNotFoundException(yyPath + " not found.");
+        throw new FileNotFoundException($"{yyPath} not found.");
 
     string json = File.ReadAllText(yyPath);
     var sprite = JsonSerializer.Deserialize<GMSprite>(json, jsonOptions);
@@ -120,10 +120,12 @@ void ProcessSprite(string sprDir)
     .Select(x => x.idx)
     .DefaultIfEmpty(-1)
     .First();
-
+    
+    if (index == -1)
+        throw new Exception($"Could not find sprite for {yyPath}");
 
     UndertaleSprite sprData = Data.Sprites[index];
-
+    
     string layerDir = Path.Combine(sprDir, "layers");
     Directory.CreateDirectory(layerDir);
     foreach (GMSprite.GMImageLayer layer in sprite.layers)

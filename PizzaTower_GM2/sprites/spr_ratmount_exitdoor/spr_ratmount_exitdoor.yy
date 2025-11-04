@@ -96,7 +96,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "Gustavo & Brick",
+    "path": "folders/Sprites/Player/Gustavo & Brick.yy",
   },
 }

@@ -57,7 +57,6 @@
   "instanceCreationOrder": [
     {"name":"inst_5702E01","path":"rooms/ufo_secret6/ufo_secret6.yy",},
     {"name":"inst_484F032C","path":"rooms/ufo_secret6/ufo_secret6.yy",},
-    {"name":"inst_B2DD858","path":"rooms/ufo_secret6/ufo_secret6.yy",},
     {"name":"inst_4E0CAD83","path":"rooms/ufo_secret6/ufo_secret6.yy",},
     {"name":"inst_10EB82AF","path":"rooms/ufo_secret6/ufo_secret6.yy",},
     {"name":"inst_53CA57DA","path":"rooms/ufo_secret6/ufo_secret6.yy",},
@@ -72,6 +71,7 @@
     {"name":"inst_2D9FD662","path":"rooms/ufo_secret6/ufo_secret6.yy",},
     {"name":"inst_707EAB8D","path":"rooms/ufo_secret6/ufo_secret6.yy",},
     {"name":"inst_335D80B9","path":"rooms/ufo_secret6/ufo_secret6.yy",},
+    {"name":"inst_B2DD858","path":"rooms/ufo_secret6/ufo_secret6.yy",},
     {"name":"inst_763C55E4","path":"rooms/ufo_secret6/ufo_secret6.yy",},
     {"name":"inst_391B2B10","path":"rooms/ufo_secret6/ufo_secret6.yy",},
     {"name":"inst_7BFA003B","path":"rooms/ufo_secret6/ufo_secret6.yy",},
