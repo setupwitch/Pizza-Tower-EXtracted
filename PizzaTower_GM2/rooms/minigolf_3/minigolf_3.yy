@@ -333,6 +333,8 @@
     {"name":"inst_72711BF8","path":"rooms/minigolf_3/minigolf_3.yy",},
     {"name":"inst_354FF124","path":"rooms/minigolf_3/minigolf_3.yy",},
     {"name":"inst_782EC64F","path":"rooms/minigolf_3/minigolf_3.yy",},
+    {"name":"inst_189B9D71","path":"rooms/minigolf_3/minigolf_3.yy",},
+    {"name":"inst_5B7A729C","path":"rooms/minigolf_3/minigolf_3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

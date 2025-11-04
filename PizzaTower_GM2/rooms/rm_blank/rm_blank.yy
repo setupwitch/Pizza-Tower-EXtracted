@@ -17,7 +17,7 @@
   ],
   "layers": [],
   "inheritLayers": false,
- "creationCodeFile": "${project_dir}/rooms/rm_blank/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/rm_blank/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [],
   "inheritCreationOrder": false,

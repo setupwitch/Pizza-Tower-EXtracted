@@ -71,10 +71,10 @@
   "instanceCreationOrder": [
     {"name":"inst_20DCE239","path":"rooms/badland_8b/badland_8b.yy",},
     {"name":"inst_63BBB764","path":"rooms/badland_8b/badland_8b.yy",},
-    {"name":"inst_269A8C90","path":"rooms/badland_8b/badland_8b.yy",},
     {"name":"inst_697961BB","path":"rooms/badland_8b/badland_8b.yy",},
     {"name":"inst_2C5836E7","path":"rooms/badland_8b/badland_8b.yy",},
     {"name":"inst_6F370C12","path":"rooms/badland_8b/badland_8b.yy",},
+    {"name":"inst_269A8C90","path":"rooms/badland_8b/badland_8b.yy",},
     {"name":"inst_3215E13E","path":"rooms/badland_8b/badland_8b.yy",},
     {"name":"inst_74F4B669","path":"rooms/badland_8b/badland_8b.yy",},
     {"name":"inst_37D38B95","path":"rooms/badland_8b/badland_8b.yy",},

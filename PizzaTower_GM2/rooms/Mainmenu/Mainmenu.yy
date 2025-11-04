@@ -41,8 +41,8 @@
   "creationCodeFile": "${project_dir}/rooms/Mainmenu/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_19A3B66","path":"rooms/Mainmenu/Mainmenu.yy",},
     {"name":"inst_44791091","path":"rooms/Mainmenu/Mainmenu.yy",},
+    {"name":"inst_19A3B66","path":"rooms/Mainmenu/Mainmenu.yy",},
     {"name":"inst_757E5BD","path":"rooms/Mainmenu/Mainmenu.yy",},
     {"name":"inst_4A36BAE8","path":"rooms/Mainmenu/Mainmenu.yy",},
     {"name":"inst_D159014","path":"rooms/Mainmenu/Mainmenu.yy",},

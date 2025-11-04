@@ -30,8 +30,8 @@
   "creationCodeFile": "${project_dir}/rooms/hub_loadingscreen/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_3E381D0C","path":"rooms/hub_loadingscreen/hub_loadingscreen.yy",},
     {"name":"inst_116F238","path":"rooms/hub_loadingscreen/hub_loadingscreen.yy",},
+    {"name":"inst_3E381D0C","path":"rooms/hub_loadingscreen/hub_loadingscreen.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

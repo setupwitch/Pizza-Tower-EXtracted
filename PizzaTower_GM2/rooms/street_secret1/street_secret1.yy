@@ -94,6 +94,7 @@
     {"name":"inst_4BB898A3","path":"rooms/street_secret1/street_secret1.yy",},
     {"name":"inst_E976DCF","path":"rooms/street_secret1/street_secret1.yy",},
     {"name":"inst_517642FA","path":"rooms/street_secret1/street_secret1.yy",},
+    {"name":"inst_517642FA","path":"rooms/street_secret1/street_secret1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
