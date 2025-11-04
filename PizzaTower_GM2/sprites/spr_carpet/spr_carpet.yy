@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Deep-Dish 9",
-    "path": "folders/Sprites/World/Floor 3/Deep-Dish 9.yy",
+    "name": "Don't Make A Sound",
+    "path": "folders/Sprites/World/Floor 5/Don't Make A Sound.yy",
   },
 }

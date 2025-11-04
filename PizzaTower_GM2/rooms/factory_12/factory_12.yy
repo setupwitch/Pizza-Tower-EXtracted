@@ -299,8 +299,8 @@
   "creationCodeFile": "${project_dir}/rooms/factory_12/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_5D1F785E","path":"rooms/factory_12/factory_12.yy",},
     {"name":"inst_1FFE4D8A","path":"rooms/factory_12/factory_12.yy",},
+    {"name":"inst_5D1F785E","path":"rooms/factory_12/factory_12.yy",},
     {"name":"inst_62DD22B5","path":"rooms/factory_12/factory_12.yy",},
     {"name":"inst_25BBF7E1","path":"rooms/factory_12/factory_12.yy",},
     {"name":"inst_689ACD0C","path":"rooms/factory_12/factory_12.yy",},

@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "Peppino",
+    "path": "folders/Sprites/Player/Peppino.yy",
   },
 }

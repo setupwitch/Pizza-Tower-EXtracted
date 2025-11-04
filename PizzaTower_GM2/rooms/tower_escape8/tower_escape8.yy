@@ -230,6 +230,7 @@
     {"name":"inst_7468F981","path":"rooms/tower_escape8/tower_escape8.yy",},
     {"name":"inst_3747CEAD","path":"rooms/tower_escape8/tower_escape8.yy",},
     {"name":"inst_7A26A3D8","path":"rooms/tower_escape8/tower_escape8.yy",},
+    {"name":"inst_7A26A3D8","path":"rooms/tower_escape8/tower_escape8.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

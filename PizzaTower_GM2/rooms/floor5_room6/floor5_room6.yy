@@ -75,6 +75,7 @@
   "creationCodeFile": "${project_dir}/rooms/floor5_room6/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_3686F4E7","path":"rooms/floor5_room6/floor5_room6.yy",},
     {"name":"inst_383A516C","path":"rooms/floor5_room6/floor5_room6.yy",},
     {"name":"inst_7B192697","path":"rooms/floor5_room6/floor5_room6.yy",},
     {"name":"inst_3DF7FBC3","path":"rooms/floor5_room6/floor5_room6.yy",},
@@ -119,7 +120,6 @@
     {"name":"inst_6DEA7564","path":"rooms/floor5_room6/floor5_room6.yy",},
     {"name":"inst_30C94A90","path":"rooms/floor5_room6/floor5_room6.yy",},
     {"name":"inst_73A81FBB","path":"rooms/floor5_room6/floor5_room6.yy",},
-    {"name":"inst_3686F4E7","path":"rooms/floor5_room6/floor5_room6.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

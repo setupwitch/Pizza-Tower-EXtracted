@@ -82,7 +82,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Spit Cheese",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Spit Cheese.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/Unused.yy",
   },
 }

@@ -154,6 +154,7 @@
     {"name":"inst_57DA88B5","path":"rooms/medieval_7/medieval_7.yy",},
     {"name":"inst_1AB95DE1","path":"rooms/medieval_7/medieval_7.yy",},
     {"name":"inst_5D98330C","path":"rooms/medieval_7/medieval_7.yy",},
+    {"name":"inst_5D98330C","path":"rooms/medieval_7/medieval_7.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

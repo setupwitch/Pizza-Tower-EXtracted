@@ -73,6 +73,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Peppino Clone",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Peppino Clone.yy",
+    "path": "folders/Sprites/Baddies/Peppino Clone.yy",
   },
 }

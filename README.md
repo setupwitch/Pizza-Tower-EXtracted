@@ -1,5 +1,6 @@
-# Pizza Tower EXtracted
-A semi-accurate decompilation of Pizza Tower
+<img src=".github/logo.png">
+
+## A semi-accurate decompilation of Pizza Tower
 
 
 # Dependencies

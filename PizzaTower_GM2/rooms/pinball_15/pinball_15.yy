@@ -140,7 +140,6 @@
   "instanceCreationOrder": [
     {"name":"inst_B62A97A","path":"rooms/pinball_15/pinball_15.yy",},
     {"name":"inst_4E417EA5","path":"rooms/pinball_15/pinball_15.yy",},
-    {"name":"inst_112053D1","path":"rooms/pinball_15/pinball_15.yy",},
     {"name":"inst_53FF28FC","path":"rooms/pinball_15/pinball_15.yy",},
     {"name":"inst_16DDFE28","path":"rooms/pinball_15/pinball_15.yy",},
     {"name":"inst_59BCD353","path":"rooms/pinball_15/pinball_15.yy",},
@@ -222,6 +221,7 @@
     {"name":"inst_33E41C3F","path":"rooms/pinball_15/pinball_15.yy",},
     {"name":"inst_76C2F16A","path":"rooms/pinball_15/pinball_15.yy",},
     {"name":"inst_39A1C696","path":"rooms/pinball_15/pinball_15.yy",},
+    {"name":"inst_112053D1","path":"rooms/pinball_15/pinball_15.yy",},
     {"name":"inst_7C809BC1","path":"rooms/pinball_15/pinball_15.yy",},
     {"name":"inst_3F5F70ED","path":"rooms/pinball_15/pinball_15.yy",},
     {"name":"inst_23E4619","path":"rooms/pinball_15/pinball_15.yy",},

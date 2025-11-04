@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Snowman",
-    "path": "folders/Sprites/Room Structure/Level Structure/Baddies/Snowman.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/Unused.yy",
   },
 }

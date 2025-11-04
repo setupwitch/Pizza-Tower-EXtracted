@@ -1,9 +1,9 @@
-if (editor_state == editorstates.save_level)
+if (editor_state == editorstates.level_save)
 {
 	save_level_update(global.current_level.name);
 	exit;
 }
-if (editor_state == editorstates.load_level)
+if (editor_state == editorstates.level_load)
 {
 	load_level_update(global.current_level.name);
 	exit;

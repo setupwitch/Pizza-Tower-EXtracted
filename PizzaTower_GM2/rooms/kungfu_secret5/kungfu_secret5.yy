@@ -71,9 +71,7 @@
   "instanceCreationOrder": [
     {"name":"inst_17C0A6D6","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
     {"name":"inst_5A9F7C01","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
-    {"name":"inst_1D7E512D","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
     {"name":"inst_605D2658","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
-    {"name":"inst_233BFB84","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
     {"name":"inst_661AD0AF","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
     {"name":"inst_28F9A5DB","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
     {"name":"inst_6BD87B06","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
@@ -101,6 +99,8 @@
     {"name":"inst_2AFECCC4","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
     {"name":"inst_6DDDA1EF","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
     {"name":"inst_30BC771B","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
+    {"name":"inst_1D7E512D","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
+    {"name":"inst_233BFB84","path":"rooms/kungfu_secret5/kungfu_secret5.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
