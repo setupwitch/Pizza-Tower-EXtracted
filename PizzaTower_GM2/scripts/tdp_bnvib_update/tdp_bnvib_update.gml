@@ -23,11 +23,11 @@ function tdp_bnvib_update() { // Inaccurate, probably. Decompiled by yours truly
 	            v8 = (view_wport[0] / 2 - v2[$ "x"]) / v9;
 	        }
         
-	        gamepad_set_vibration(v2[$ "pad_id"], v8, 0, 1, v8, 0, 1, v2[$ "pad_id"], 0, v4 * gamepad_axis_value(0, 0, 1), v5, v6);
+	        gamepad_set_vibration(v2[$ "pad_id"], v8, 0, 1, v8, 0, 1, v2[$ "pad_id"], 0, v4 * gamepad_axis_value(0, 1), v5, v6);
         
 	        if (v2[$ "pad_type"] == 8 || v2[$ "pad_type"] == 16)
 	        {
-	            gamepad_set_vibration(v2[$ "pad_id"], v7, 0, 1, v7, 0, 1, v2[$ "pad_id"], 1, v4 * gamepad_axis_value(0, 0, 1), v5, v6);
+	            gamepad_set_vibration(v2[$ "pad_id"], v7, 0, 1, v7, 0, 1, v2[$ "pad_id"], 1, v4 * gamepad_axis_value(0, 1), v5, v6);
 	        }
         
 	        v2[$ "position"]++;
