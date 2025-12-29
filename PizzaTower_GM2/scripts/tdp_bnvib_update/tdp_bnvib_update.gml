@@ -1,3 +1,10 @@
+
+function tdp_bnvib_update()
+{
+
+}
+
+/*
 function tdp_bnvib_update() { // Inaccurate, probably. Decompiled by yours truly, x64dbg.ru
 	if (IS_SWITCH) { var _; // TODO: Finish
 	    for (var v1 = 0; v1 < ds_list_size(global.bnvib_instances); v1++) {
@@ -34,3 +41,4 @@ function tdp_bnvib_update() { // Inaccurate, probably. Decompiled by yours truly
 	    }
 	}
 }
+*/
