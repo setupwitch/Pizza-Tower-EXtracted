@@ -2,7 +2,7 @@ switch (state)
 {
 	case 1:
 		var p = 4;
-		var t = bg_chateauscrolldeco;
+		var t = 0;
 		if (yy > p)
 		{
 			yy -= 32;
