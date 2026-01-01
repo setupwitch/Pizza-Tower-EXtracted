@@ -16,5 +16,5 @@ depth = -999;
 gui = false;
 usepalette = false;
 paletteselect = 0;
-spr_palette = bg_chateauscrolldeco;
+spr_palette = 0;
 d = 255; // c_red
