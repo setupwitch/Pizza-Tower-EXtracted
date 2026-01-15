@@ -715,7 +715,7 @@ if (!variable_global_exists("saveroom"))
 	global.reset_timer[obj_pizzard] = 100;
 	global.reset_timer[obj_pepgoblin] = 200;
 	global.reset_timer[obj_pepbat] = 200;
-	global.reset_timer[obj_swedishmonkey	] = 200;
+	global.reset_timer[obj_swedishmonkey] = 200;
 	global.reset_timer[obj_rancher] = 100;
 	global.reset_timer[obj_pickle] = 200;
 	global.reset_timer[obj_tank] = 100;
