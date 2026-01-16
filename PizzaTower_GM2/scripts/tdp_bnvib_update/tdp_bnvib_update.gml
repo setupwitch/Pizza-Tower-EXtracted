@@ -1,9 +1,3 @@
-
-function tdp_bnvib_update()
-{
-
-}
-
 /*
 function tdp_bnvib_update() { // Inaccurate, probably. Decompiled by yours truly, x64dbg.ru
 	if (IS_SWITCH) { var _; // TODO: Finish
@@ -42,3 +36,11 @@ function tdp_bnvib_update() { // Inaccurate, probably. Decompiled by yours truly
 	}
 }
 */
+function tdp_bnvib_update()
+{
+	if (IS_SWITCH)
+	{
+		// artificially inflate variable count
+		var _, __, ___, ____, _____, ______, _______, ________, _________, __________;	
+	}
+}
