@@ -230,7 +230,7 @@ function draw_player()
 		with (obj_swapgusfightball)
 		{
 			b = get_dark(image_blend, _use_dark);
-			var _info = [[sprite_index, get_pep_palette_info()], [1763, get_noise_palette_info()]];
+			var _info = [[sprite_index, get_pep_palette_info()], [spr_playerN_fightballratmount, get_noise_palette_info()]];
 			for (var i = 0; i < array_length(_info); i++)
 			{
 				var sprite = _info[i][0];
