@@ -1,6 +1,6 @@
 sprite_index = spr_pepperman_idle;
 pm_dialog[0] = [dialog_create("Seems you don't have either a bottle or a piece of paper.")];
-pm_dialog[1] = [dialog_create("Beach	 boat")];
+pm_dialog[1] = [dialog_create("Beach     boat")];
 pm_scene_info =
 [
 	[cutscene_do_dialog, [dialog_create("Here you go")]],
