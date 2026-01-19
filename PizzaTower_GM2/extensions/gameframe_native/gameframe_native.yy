@@ -2,6 +2,9 @@
   "resourceType": "GMExtension",
   "resourceVersion": "1.2",
   "name": "gameframe_native",
+  "ConfigValues": {
+    "Switch": {"copyToTargets":"64",},
+  },
   "optionsFile": "options.json",
   "options": [],
   "exportToGame": true,
@@ -14,10 +17,9 @@
   "license": "Proprietary",
   "description": "",
   "helpfile": "",
-  "iosProps": true,
+  "iosProps": false,
   "tvosProps": false,
-  "androidProps": true,
-  "html5Props": false,
+  "androidProps": false,
   "installdir": "",
   "files": [
     {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"gameframe.dll","origname":"extensions\\gameframe.dll","init":"","final":"","kind":1,"uncompress":false,"functions":[
@@ -96,7 +98,6 @@
         {"name":"gameframe_is_natively_minimized","path":"extensions/gameframe_native/gameframe_native.yy",},
       ],},
   ],
-  "HTML5CodeInjection": "",
   "classname": "",
   "tvosclassname": "",
   "tvosdelegatename": "",

@@ -2,6 +2,9 @@
   "resourceType": "GMExtension",
   "resourceVersion": "1.2",
   "name": "fmod_gms",
+  "ConfigValues": {
+    "Switch": {"copyToTargets":"144115188075855936",},
+  },
   "optionsFile": null,
   "options": [],
   "exportToGame": true,
@@ -10,17 +13,16 @@
   "packageId": "",
   "productId": "",
   "author": "",
-  "date": "2025-03-07T22:13:42.0936637-05:00",
+  "date": "2025-03-07T23:13:42.0936637-04:00",
   "license": "",
   "description": "",
   "helpfile": "",
   "iosProps": false,
   "tvosProps": false,
   "androidProps": false,
-  "html5Props": false,
   "installdir": "",
   "files": [
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"fmod-gamemaker.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","ConfigValues":{"Switch":{"copyToTargets":"144115188075855936",},},"filename":"fmod-gamemaker.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"fmod_init","externalName":"FMOD_Init","kind":1,"help":"","hidden":false,"returnType":2,"argCount":1,"args":[
             2,
           ],"documentation":"",},
@@ -113,16 +115,15 @@
           ],"documentation":"",},
       ],"constants":[],"ProxyFiles":[
         {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"fmod_gms.nro","TargetMask":57,},
+        {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"fmod_gms.nrr","ConfigValues":{"Switch":{"TargetMask":"57",},},"TargetMask":0,},
       ],"copyToTargets":64,"usesRunnerInterface":false,"order":[],},
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"fmod.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[
-        {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"libfmod.a","TargetMask":6,},
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","ConfigValues":{"Switch":{"copyToTargets":"144115188075855936",},},"filename":"fmod.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[
+        {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"libfmod.a","ConfigValues":{"Switch":{"TargetMask":"57",},},"TargetMask":6,},
       ],"copyToTargets":64,"usesRunnerInterface":false,"order":[],},
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"fmodstudio.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","ConfigValues":{"Switch":{"copyToTargets":"144115188075855936",},},"filename":"fmodstudio.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[
         {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"libfmodstudio.a","TargetMask":57,},
       ],"copyToTargets":64,"usesRunnerInterface":false,"order":[],},
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"fmod_gms.nrr","origname":"","init":"","final":"","kind":4,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[],"copyToTargets":144115188075855872,"usesRunnerInterface":false,"order":[],},
   ],
-  "HTML5CodeInjection": "",
   "classname": "",
   "tvosclassname": null,
   "tvosdelegatename": null,
