@@ -1,37 +1,42 @@
-function tdp_bnvib_update() { // Decompiled by yours truly, x64dbg.ru
-	if (IS_SWITCH) {
-	    for (var v1 = 0; v1 < ds_list_size(global.bnvib_instances); v1++) {
-	        var v2 = ds_list_find_value(global.bnvib_instances, v1);
+function tdp_bnvib_update() // Decompiled by yours truly, x64dbg.ru
+{
+	if (IS_SWITCH)
+	{
+	    for (var i = 0; i < ds_list_size(global.bnvib_instances); i++)
+		{
+			// fetch the instance
+	        var _bnvib_inst = global.bnvib_instances[| i];
 	        
-	        if (v2[$ "position"] == v2[$ "length"])
+	        if (_bnvib_inst[$ "position"] == _bnvib_inst[$ "length"])
 	        {
-	            ds_list_delete(global.bnvib_instances, v1--);
+	            ds_list_delete(global.bnvib_instances, i--);
 	            continue;
 	        }
 	        
-	        var v3 = v2[$ "values"][v2[$ "position"]];
-	        var v4 = v3[0] * global.option_vibration;
-	        var v5 = v3[1];
-	        var v6 = v3[2] * global.option_vibration;
-	        var v7 = v3[3];
+	        var _position = _bnvib_inst[$ "values"][_bnvib_inst[$ "position"]];
+	        var _low_amp = _position[0] * global.option_vibration;
+	        var _low_freq = _position[1];
+	        var _high_amp = _position[2] * global.option_vibration;
+	        var _high_freq = _position[3];
 	        
-	        var v8 = 1;
-	        var v9 = 1;
-	        if (v2[$ "is_3d"])
+	        var _pan_right = 1;
+	        var _pan_left = 1;
+	        if (_bnvib_inst[$ "is_3d"])
 	        {
-	            var v10 = obj_screensizer.actual_width / 2;
-	            // unknown, could be empty
-	            // unknown, could be empty
-	            v8 = v2[$ "x"] / v10;
-	            v9 = (obj_screensizer.actual_width - v2[$ "x"]) / v10;
+	            var _center = SCREEN_WIDTH / 2;
+				
+	            _pan_right = _bnvib_inst[$ "x"] / _center;
+	            _pan_left = (SCREEN_WIDTH - _bnvib_inst[$ "x"]) / _center;
 	        }
 	        
-	        switch_controller_vibrate_hd(v2[$ "pad_id"], switch_controller_motor_left, v4 * clamp(v9, 0, 1), v5, v6 * clamp(v9, 0, 1), v7);
+	        switch_controller_vibrate_hd(_bnvib_inst[$ "pad_id"], switch_controller_motor_left, _low_amp * clamp(_pan_left, 0, 1), _low_freq, _high_amp * clamp(_pan_left, 0, 1), _high_freq);
 	        
-	        if (v2[$ "pad_type"] != switch_controller_joycon_left && v2[$ "pad_type"] != switch_controller_joycon_right) {
-	            switch_controller_vibrate_hd(v2[$ "pad_id"], switch_controller_motor_right, v4 * clamp(v8, 0, 1), v5, v6 * clamp(v8, 0, 1), v7);
+	        if (_bnvib_inst[$ "pad_type"] != switch_controller_joycon_left && _bnvib_inst[$ "pad_type"] != switch_controller_joycon_right)
+			{
+	            switch_controller_vibrate_hd(_bnvib_inst[$ "pad_id"], switch_controller_motor_right, _low_amp * clamp(_pan_right, 0, 1), _low_freq, _high_amp * clamp(_pan_right, 0, 1), _high_freq);
 	        }
-	        v2[$ "position"]++;
+			
+	        _bnvib_inst[$ "position"]++;
 	    }
 	}
 }

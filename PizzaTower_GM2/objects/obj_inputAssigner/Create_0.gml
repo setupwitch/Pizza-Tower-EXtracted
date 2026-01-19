@@ -28,7 +28,7 @@ switch_get_single_player = function(_device)
 {
 	while (true)
 	{
-		//Switch Export only functions
+		// switch export only functions
 		switch_controller_joycon_set_holdtype(switch_controller_joycon_holdtype_horizontal);
 		switch_controller_set_supported_styles(switch_controller_handheld | 
 											   switch_controller_pro_controller | 

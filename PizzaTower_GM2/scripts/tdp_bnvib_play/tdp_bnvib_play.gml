@@ -1,59 +1,75 @@
-function tdp_bnvib_play_3d(a0, a1, a2) { // Decompiled by yours truly, x64dbg.ru
-	if (IS_SWITCH) {
-	    var v1 = camera_get_view_x(view_camera);
-	    var v2 = camera_get_view_y(view_camera);
-	    var v3 = camera_get_view_width(view_camera);
-	    var v4 = camera_get_view_height(view_camera);
-	    var v5 = 20;
-	    if (a0 <= v1 - v5 || a0 >= v1 + v3 + v5 || a1 <= v2 - v5) return noone; // jmp label1
-	    if (a1 < v2 + v4 + v5) {
-	        var v6 = tdp_bnvib_play(a2);
+function tdp_bnvib_play_3d(_x, _y, _bnvib_name) // Decompiled by yours truly, x64dbg.ru
+{ 
+	if (IS_SWITCH)
+	{
+	    var _view_x = camera_get_view_x(view_camera);
+	    var _view_y = camera_get_view_y(view_camera);
+	    var _view_w = camera_get_view_width(view_camera);
+	    var _view_h = camera_get_view_height(view_camera);
+	    var _view_padding = 20;
+		
+	    if (_x <= _view_x - _view_padding || _x >= _view_x + _view_w + _view_padding || _y <= _view_y - _view_padding)
+			return noone; // jmp label1
+		
+	    if (_y < _view_y + _view_h + _view_padding)
+		{
+	        var _bnvib_inst = tdp_bnvib_play(_bnvib_name);
         
-	        v6.x = a0 - v1; // there was a variable declaration here seemingly but maybe im schizo
-	        v6.y = a1 - v2; // same thing here
-	        v6.is_3d = true;
+	        _bnvib_inst.x = _x - _view_x; // there was a variable declaration here seemingly but maybe im schizo
+	        _bnvib_inst.y = _y - _view_y; // same thing here
+	        _bnvib_inst.is_3d = true;
 
-	        return v6;
+	        return _bnvib_inst;
 	    }
 
 	    return noone; // label1
 	}
 }
 
-function tdp_bnvib_play(a0) {
-	if (IS_SWITCH) { // trace.line = 25;
-	    var v1 = ds_map_find_value(global.bnvib_map, a0);
+function tdp_bnvib_play(_bnvib_name)
+{
+	if (IS_SWITCH)
+	{
+	    var _bnvib_data = global.bnvib_map[? _bnvib_name];
     
-	    if (is_undefined(v1))
-	        exit; // jump out
-	    var v2 = 0; // unkInputDevice
+	    if (is_undefined(_bnvib_data))
+	        exit;
+			
+	    var _pad_id = 0;
 	    if (instance_exists(obj_inputAssigner))
-	        v2 = obj_inputAssigner.player_input_device[obj_inputAssigner.player_index]
+	        _pad_id = obj_inputAssigner.player_input_device[obj_inputAssigner.player_index]
 
-	    if (v2 < 0)
-	        v2 = 0;
+	    if (_pad_id < 0)
+	        _pad_id = 0;
+		
+	    var _pad_type = switch_controller_handheld;
+	    var _desc = gamepad_get_description(_pad_id);
+		
+	    if (_desc == "Handheld")
+	        _pad_type = switch_controller_handheld;
+		else if (_desc == "Pro Controller")
+	        _pad_type = switch_controller_pro_controller;
+		else if (_desc == "Joy-Con")
+	        _pad_type = switch_controller_joycon_dual;
+		else if (_desc == "Joy-Con (L)")
+	        _pad_type = switch_controller_joycon_left;
+		else if (_desc == "Joy-Con (R)")
+	        _pad_type = switch_controller_joycon_right;
     
-	    var v3 = switch_controller_handheld;
-	    var v4 = gamepad_get_description(v2);
-	    if (v4 == "Handheld") // ??? no this is not a switch statement and yes it BARELY matches the trace line info.
-	        v3 = switch_controller_handheld; else if (v4 == "Pro Controller")
-	        v3 = switch_controller_pro_controller; else if (v4 == "Joy-Con")
-	        v3 = switch_controller_joycon_dual; else if (v4 == "Joy-Con (L)")
-	        v3 = switch_controller_joycon_left; else if (v4 == "Joy-Con (R)")
-	        v3 = switch_controller_joycon_right;
-    
-	    var v5 = {
+	    var _bnvib_inst =
+		{
 	        position: 0,
-	        values: v1.values,
-	        length: v1.length,
+	        values: _bnvib_data.values,
+	        length: _bnvib_data.length,
 	        x: 0,
 	        y: 0,
 	        is_3d: false,
-	        pad_id: v2,
-	        pad_type: v3
+	        pad_id: _pad_id,
+	        pad_type: _pad_type
 	    }
-	    ds_list_add(global.bnvib_instances, v5);
+		
+	    ds_list_add(global.bnvib_instances, _bnvib_inst);
     
-	    return v5;
+	    return _bnvib_inst;
 	}
 }
