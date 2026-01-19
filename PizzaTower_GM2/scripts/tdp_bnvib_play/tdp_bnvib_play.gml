@@ -33,14 +33,14 @@ function tdp_bnvib_play(a0) {
 	    if (v2 < 0)
 	        v2 = 0;
     
-	    var v3 = (1 << 0);
+	    var v3 = switch_controller_handheld;
 	    var v4 = gamepad_get_description(v2);
 	    if (v4 == "Handheld") // ??? no this is not a switch statement and yes it BARELY matches the trace line info.
-	        v3 = (1 << 0); else if (v4 == "Pro Controller")
-	        v3 = (1 << 1); else if (v4 == "Joy-Con")
-	        v3 = (1 << 2); else if (v4 == "Joy-Con (L)")
-	        v3 = (1 << 3); else if (v4 == "Joy-Con (R)")
-	        v3 = (1 << 4);
+	        v3 = switch_controller_handheld; else if (v4 == "Pro Controller")
+	        v3 = switch_controller_pro_controller; else if (v4 == "Joy-Con")
+	        v3 = switch_controller_joycon_dual; else if (v4 == "Joy-Con (L)")
+	        v3 = switch_controller_joycon_left; else if (v4 == "Joy-Con (R)")
+	        v3 = switch_controller_joycon_right;
     
 	    var v5 = {
 	        position: 0,
