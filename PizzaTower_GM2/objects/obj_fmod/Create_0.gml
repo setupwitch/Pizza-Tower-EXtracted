@@ -1,7 +1,7 @@
 var maxChannels = 256;
 trace("Initializing FMOD: ", fmod_init(maxChannels));
 fmod_set_num_listeners(1);
-var plat = "Desktop";
+var plat = PLATFORM;
 var banks = [concat("sound/", plat, "/Master.bank"), concat("sound/", plat, "/music.bank"), concat("sound/", plat, "/sfx.bank"), concat("sound/", plat, "/Master.strings.bank")];
 trace("Loading banks! Platform -> ", plat);
 for (var i = 0; i < array_length(banks); i++)

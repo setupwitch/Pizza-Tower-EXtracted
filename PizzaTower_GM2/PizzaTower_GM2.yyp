@@ -7420,7 +7420,9 @@
   "isEcma": false,
   "configs": {
     "name": "Default",
-    "children": [],
+    "children": [
+      {"name":"Switch","children":[],},
+    ],
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Loadiingroom","path":"rooms/Loadiingroom/Loadiingroom.yy",},},
@@ -8742,7 +8744,7 @@
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Montserrat-SemiBold.ttf","CopyToMask":-1,"filePath":"datafiles/lang/fonts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Montserrat-Regular.ttf","CopyToMask":-1,"filePath":"datafiles/lang/fonts",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"NotoSansJP-Bold.ttf","CopyToMask":-1,"filePath":"datafiles/lang/fonts",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"NotoSansJP-Bold.ttf","CopyToMask":3035426170322551022,"filePath":"datafiles/lang/fonts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"NotoSansJP-Regular.ttf","CopyToMask":-1,"filePath":"datafiles/lang/fonts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"NotoSansJP-SemiBold.ttf","CopyToMask":-1,"filePath":"datafiles/lang/fonts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"NotoSansKR-Bold.ttf","CopyToMask":-1,"filePath":"datafiles/lang/fonts",},
@@ -8828,10 +8830,10 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"NotoSansSC.OFL.txt","CopyToMask":-1,"filePath":"datafiles/licenses",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"NotoSansTC.OFL.txt","CopyToMask":-1,"filePath":"datafiles/licenses",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"RussoOne.OFL.txt","CopyToMask":-1,"filePath":"datafiles/licenses",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Master.bank","CopyToMask":-1,"filePath":"datafiles/sound/Desktop",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Master.strings.bank","CopyToMask":-1,"filePath":"datafiles/sound/Desktop",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"music.bank","CopyToMask":-1,"filePath":"datafiles/sound/Desktop",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"sfx.bank","CopyToMask":-1,"filePath":"datafiles/sound/Desktop",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Master.bank","CopyToMask":192,"filePath":"datafiles/sound/Desktop",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Master.strings.bank","CopyToMask":192,"filePath":"datafiles/sound/Desktop",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"music.bank","CopyToMask":192,"filePath":"datafiles/sound/Desktop",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"sfx.bank","CopyToMask":192,"filePath":"datafiles/sound/Desktop",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"credits.txt","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"noisecredits.txt","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"steam_api64.dll","CopyToMask":-1,"filePath":"datafiles",},
