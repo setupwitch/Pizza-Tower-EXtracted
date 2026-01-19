@@ -114,8 +114,12 @@
       ],"constants":[],"ProxyFiles":[
         {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"fmod_gms.nro","TargetMask":57,},
       ],"copyToTargets":64,"usesRunnerInterface":false,"order":[],},
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"fmod.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[],"copyToTargets":64,"usesRunnerInterface":false,"order":[],},
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"fmodstudio.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[],"copyToTargets":64,"usesRunnerInterface":false,"order":[],},
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"fmod.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[
+        {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"libfmod.a","TargetMask":6,},
+      ],"copyToTargets":64,"usesRunnerInterface":false,"order":[],},
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"fmodstudio.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[
+        {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"libfmodstudio.a","TargetMask":57,},
+      ],"copyToTargets":64,"usesRunnerInterface":false,"order":[],},
     {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","filename":"fmod_gms.nrr","origname":"","init":"","final":"","kind":4,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[],"copyToTargets":144115188075855872,"usesRunnerInterface":false,"order":[],},
   ],
   "HTML5CodeInjection": "",
