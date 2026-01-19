@@ -104,7 +104,7 @@
 
   <img src=".github/SwitchGuide1.png">
 
-  5. In the Included Files tab, double click all bank files, disable exporting for all but the Nintendo Switch export.
+  5. In the Included Files tab, double click all (Switch related) bank files, disable exporting for all but the Nintendo Switch export.
 
   <img src=".github/SwitchGuide2.png">
 
