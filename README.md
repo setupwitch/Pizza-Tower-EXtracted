@@ -96,9 +96,9 @@
   
   1. You need to obtain and extract the NSP, I cannot tell you any methods on how to do that.
 
-  2. From the extracted NSP, fetch the `sound` directory, take those banks and put them in the datafiles directory in the project, it should look like this `PizzaTower_GM2/datafiles/sound/Switch/{BANK_FILES_HERE}`.
+  2. From the extracted NSP, fetch the `sound` directory, take those banks and put them in the datafiles directory in the project, it should look like this: `PizzaTower_GM2/datafiles/sound/Switch/{BANK_FILES_HERE}`.
 
-  3. Also from the extracted NSP, fetch the `bnvib` directory, throw it in the datafiles directory, it should look like this `PizzaTower_GM2/datafiles/{BNVIB_FILES_HERE}`.
+  3. Also from the extracted NSP, fetch the `bnvib` directory, throw it in the datafiles directory, it should look like this: `PizzaTower_GM2/datafiles/{BNVIB_FILES_HERE}`.
   
   4. Open GameMaker LTS 2022.0.1.31 and open the project.
 
