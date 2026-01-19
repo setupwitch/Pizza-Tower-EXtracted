@@ -88,6 +88,30 @@
   <img src=".github/Guide5.png">
   
   6. Edit or remove the .gitignore file from the repository, this will allow you to commit the assets in git.
+
+
+  <details>
+  <summary><h2>Want to make builds for the Nintendo Switch?</h2></summary>
+  Theres a bit more custom setup required for the Nintendo Switch version.
+  
+  1. You need to obtain and extract the NSP, I cannot tell you any methods on how to do that.
+
+  2. From the extracted NSP, fetch the sound directory, take those banks and put them in the datafiles directory in the project, it should look like this `PizzaTower_GM2/datafiles/sound/Switch/{BANK_FILES_HERE}`.
+
+  3. Open GameMaker LTS 2022.0.1.31 and open the project.
+
+  4. Go to the Included Files tab in the Asset Browser and press "Included Files"
+
+  <img src=".github/SwitchGuide1.png">
+
+  5. In the Included Files tab, double click all bank files, disable exporting for all but the Nintendo Switch export.
+
+  <img src=".github/SwitchGuide2.png">
+
+  </details>
+
+</details>
+
 </details>
 
 # Find an issue or inaccuracy?
