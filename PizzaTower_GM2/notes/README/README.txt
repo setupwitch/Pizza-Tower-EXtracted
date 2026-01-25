@@ -7,10 +7,5 @@ you need to enable debug mode on the Steamworks extension!
 
 The unused folders *do* contain assets that are referenced in code, but in unused rooms.
 
-
-
-CREDITS TO:
-crystallizedsparkle - project lead and most of the work
-obj_shaggy - project organization
-TheWilmster - washing dishes and small help with code
-Traxter64 - old instanceCC
+Some files may have weird contents like differing syntax, random comments styled like "// PADDINGPADDINGPADDING".
+This is because of an odd gamemaker compiler quirk with anonymous functions.

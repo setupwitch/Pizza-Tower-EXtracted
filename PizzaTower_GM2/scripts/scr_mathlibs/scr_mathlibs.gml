@@ -1,53 +1,50 @@
-function Vector2(_x, _y) constructor
+
+///@summary A Vector with two values.
+///@param {Real} x The X value.
+///@param {Real} y The y value.
+function Vector2(_x, _y) constructor 
 {
+	///@summary Updates values in the vector
 	static Update = function(_x, _y)
 	{
 		x = _x;
 		y = _y;
 	};
-	
-	static UpdateVector = function(_vec)
+	static UpdateVector = function(_vector)
 	{
-		x = _vec.x;
-		y = _vec.y;
+		x = _vector.x;
+		y = _vector.y;
 	};
-	
 	static Add = function(_x, _y)
 	{
 		x += _x;
 		y += _y;
 	};
-	
-	static AddVector = function(_vec)
+	static AddVector = function(_vector)
 	{
-		x += _vec.x;
-		y += _vec.y;
+		x += _vector.x;
+		y += _vector.y;
 	};
-	
 	static Multiply = function(_x, _y)
 	{
 		x *= _x;
 		y *= _y;
 	};
-	
 	static Divide = function(_x, _y)
 	{
 		x /= _x;
 		y /= _y;
 	};
-	
-	static MultiplyVector = function(_vec)
+	static MultiplyVector = function(_vector)
 	{
-		x *= _vec.x;
-		y *= _vec.y;
+		x *= _vector.x;
+		y *= _vector.y;
 	};
-	
-	static DivideVector = function(_vec)
+	static DivideVector = function(_vector)
 	{
-		x /= _vec.x;
-		y /= _vec.y;
+		x /= _vector.x;
+		y /= _vector.y;
 	};
-	
 	x = _x;
 	y = _y;
 }

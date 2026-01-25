@@ -50,7 +50,7 @@ enum notifications
 	bazooka_explosion = 47,
 	wartimer_finished = 48,
 	totem_reactivated = 49,
-	boss_defeated = 50,
+	bosskill = 50,
 	combo_end = 51,
 	achievement_unlocked = 52,
 	crouched_in_poo = 53,
@@ -743,7 +743,7 @@ for (var i = 0; i < array_length(pats); i++)
 		{
 			count.value++;
 		}
-		else if (type == notifications.boss_defeated && arr[0] == pattern[2] && count.value <= 0)
+		else if (type == notifications.bosskill && arr[0] == pattern[2] && count.value <= 0)
 		{
 			palette_unlock(name, pattern[0], pattern[1], noone, false);
 		}

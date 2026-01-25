@@ -101,7 +101,7 @@ function scr_palette_texture(_spr, _imageindex, _x, _y, _xscale, _yscale, _rotat
 	{
 		exit;
 	}
-	if (event_type == ev_draw && event_number == 64)
+	if (event_type == ev_draw && event_number == ev_gui)
 	{
 		_is_gui = true;
 	}

@@ -1,5 +1,9 @@
+/// @summary A level editor level.
 function EditorLevel() constructor
 {
+	// there is some commented out code here! thanks yyg
+	
+	
 	static destroy = function()
 	{
 		ds_list_destroy(rooms);

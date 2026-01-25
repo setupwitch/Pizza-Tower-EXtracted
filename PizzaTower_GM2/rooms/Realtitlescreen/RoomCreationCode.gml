@@ -318,6 +318,7 @@ enum states
 }
 
 #macro ANIMATION_END floor(image_index) == (image_number - 1)
+#macro ev_draw_normal 0
 
 global.coop = false;
 global.currentsavefile = 1;

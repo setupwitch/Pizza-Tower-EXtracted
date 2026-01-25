@@ -4,7 +4,7 @@ function scr_panicbg_start()
 	{
 		global.panicbg_surface = surface_create(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
 	}
-	if (event_type == ev_draw && event_number == 0)
+	if (event_type == ev_draw && event_number == ev_draw_normal)
 	{
 		surface_set_target(global.panicbg_surface);
 		draw_clear_alpha(c_black, 0);
