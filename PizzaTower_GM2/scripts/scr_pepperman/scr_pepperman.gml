@@ -836,5 +836,7 @@ function scr_pepperman_phase1hurt()
 {
 	sprite_index = spr_pepperman_hurtplayer;
 	image_speed = 0.35;
+	// PADDING
+
 	scr_boss_phase1hurt(function() {});
 }

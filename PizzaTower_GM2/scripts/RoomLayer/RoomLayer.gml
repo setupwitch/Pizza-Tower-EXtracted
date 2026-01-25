@@ -5,14 +5,12 @@ function room_layer_add(_layerid)
 		if (ID == _layerid)
 		{
 			if (global.current_level.current_room == noone)
-			{
 				exit;
-			}
+				
 			var arr = global.current_level.current_room.backgrounds;
 			if (_layerid == 1)
-			{
 				arr = global.current_level.current_room.tiles;
-			}
+			
 			var lowest_depth = -100;
 			if (array_length(arr) > 0)
 			{
@@ -20,9 +18,7 @@ function room_layer_add(_layerid)
 				{
 					var b = arr[i];
 					if (b.depth > lowest_depth)
-					{
 						lowest_depth = b.depth;
-					}
 				}
 			}
 			else
@@ -32,13 +28,9 @@ function room_layer_add(_layerid)
 			var _layer = new RoomLayer();
 			_layer.depth = lowest_depth + 1;
 			if (_layer.depth == 0)
-			{
 				_layer.depth++;
-			}
 			if (_layerid == 1)
-			{
 				_layer.layer_type = layertypes.tile;
-			}
 			array_push(arr, _layer);
 			dirty = true;
 		}
@@ -52,14 +44,12 @@ function room_layer_delete(_layerid)
 		if (ID == _layerid && selected_item != noone)
 		{
 			if (global.current_level.current_room == noone)
-			{
 				exit;
-			}
+				
 			var arr = global.current_level.current_room.backgrounds;
 			if (_layerid == 1)
-			{
 				arr = global.current_level.current_room.tiles;
-			}
+			
 			for (var i = 0; i < array_length(arr); i++)
 			{
 				var b = arr[i];
@@ -83,14 +73,12 @@ function room_layer_move_up(_layerid)
 		{
 			var _room = global.current_level.current_room;
 			if (_room == noone)
-			{
 				exit;
-			}
+			
 			var _arr = _room.backgrounds;
 			if (_layerid == 1)
-			{
 				_arr = _room.tiles;
-			}
+			
 			for (var i = 0; i < array_length(_arr); i++)
 			{
 				var b = _arr[i];
@@ -109,9 +97,8 @@ function room_layer_move_up(_layerid)
 function room_layer_move_down(_layerid)
 {
 	if (global.current_level.current_room == noone)
-	{
 		exit;
-	}
+		
 	with (obj_itemlist)
 	{
 		if (ID == _layerid && selected_item != noone)
@@ -119,9 +106,8 @@ function room_layer_move_down(_layerid)
 			var _room = global.current_level.current_room;
 			var _arr = _room.backgrounds;
 			if (_layerid == 1)
-			{
 				_arr = _room.tiles;
-			}
+			
 			for (var i = 0; i < array_length(_arr); i++)
 			{
 				var b = _arr[i];
@@ -140,9 +126,8 @@ function room_layer_move_down(_layerid)
 function room_layer_item_dirty(_layerid)
 {
 	if (global.current_level.current_room == noone)
-	{
 		exit;
-	}
+	
 	ds_list_clear(items);
 	var _arr = array_create(0);
 	with (global.current_level.current_room)
@@ -156,30 +141,19 @@ function room_layer_item_dirty(_layerid)
 				case layertypes.tile:
 					_name = "Tile ";
 					if (b.depth < 0)
-					{
 						_name = "Tile FG ";
-					}
 					break;
 				case layertypes.background:
 					_name = "Background ";
 					if (b.depth < 0)
-					{
 						_name = "Foreground ";
-					}
 					break;
 			}
 			_name += string(abs(b.depth));
-			array_push(_arr, 
-			{
-				name: _name,
-				depth: b.depth
-			});
+			array_push(_arr, { name: _name, depth: b.depth } );
 		}
 	}
-	array_sort(_arr, function(_inst1, _inst2)
-	{
-		return _inst1.depth - _inst2.depth;
-	});
+	array_sort(_arr, function(_inst1, _inst2) { return _inst1.depth - _inst2.depth; });
 	for (var i = 0; i < array_length(_arr); i++)
 	{
 		ds_list_add(items, _arr[i]);
@@ -190,16 +164,17 @@ function room_layer_item_dirty(_layerid)
 	}
 }
 
+/// @summary A room layer for the level editor.
 function RoomLayer() constructor
 {
+	// layers!
 	static move_up = function(_layer = noone)
 	{
 		var old_depth = depth;
 		depth--;
 		if (depth == 0)
-		{
 			depth--;
-		}
+			
 		if (_layer != noone)
 		{
 			for (var i = 0; i < array_length(_layer); i++)
@@ -216,13 +191,9 @@ function RoomLayer() constructor
 						}
 					}
 					else if (sign(b.depth) == sign(old_depth))
-					{
 						b.move_up();
-					}
 					else if (sign(b.depth) == sign(depth))
-					{
 						b.move_up();
-					}
 				}
 			}
 		}
@@ -233,9 +204,7 @@ function RoomLayer() constructor
 		var old_depth = depth;
 		depth++;
 		if (depth == 0)
-		{
 			depth++;
-		}
 		if (_layer != noone)
 		{
 			for (var i = 0; i < array_length(_layer); i++)
@@ -252,13 +221,9 @@ function RoomLayer() constructor
 						}
 					}
 					else if (sign(b.depth) == sign(old_depth))
-					{
 						b.move_down();
-					}
 					else if (sign(b.depth) == sign(depth))
-					{
 						b.move_down();
-					}
 				}
 			}
 		}

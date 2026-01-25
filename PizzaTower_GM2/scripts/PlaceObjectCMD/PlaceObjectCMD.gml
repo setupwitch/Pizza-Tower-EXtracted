@@ -1,5 +1,6 @@
 function PlaceObject(_inst) : Command() constructor
 {
+	/// @summary Place the instance
 	static execute = function()
 	{
 		placed = true;
@@ -13,7 +14,6 @@ function PlaceObject(_inst) : Command() constructor
 		placed = false;
 		instance_deactivate_object(inst);
 	};
-	
 	static destroy = function()
 	{
 		if (!placed)

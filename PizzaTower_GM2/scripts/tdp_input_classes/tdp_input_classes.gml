@@ -1,5 +1,10 @@
+/// @summary Declare a key for input.
+/// @param {String} _keyname The name of the key.
+/// @param {Struct.tdp_input_action} _action The actions to use.
 function tdp_input_key(_keyname, _actions = noone) constructor
 {
+	
+	/// @param {Real} _device The controller ID to use for input checking.
 	static update = function(_device = -1)
 	{
 		pressed = false;
@@ -11,34 +16,25 @@ function tdp_input_key(_keyname, _actions = noone) constructor
 			var b = actions[i];
 			b.update(_device);
 			if (b.pressed)
-			{
 				pressed = true;
-			}
 			if (b.held)
-			{
 				held = true;
-			}
 			if (b.released)
-			{
 				released = true;
-			}
+				
 			actions[i] = b;
 		}
 	};
-	
 	static has_value = function(_type, _value, _joystickdir = 0)
 	{
 		for (var i = 0; i < array_length(actions); i++)
 		{
 			var b = actions[i];
 			if (b.type == _type && b.value == _value)
-			{
 				if (_type != tdp_input_actiontypes.gamepad_axis || b.joystick_direction == _joystickdir)
-				{
 					return true;
-				}
-			}
 		}
+	
 		return false;
 	};
 	
@@ -62,8 +58,20 @@ function tdp_input_key(_keyname, _actions = noone) constructor
 	}
 }
 
+/*
+
+	PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDIN
+
+*/
+
+/// @summary Declare an action for an input key.
+/// @param {Enum.tdp_input_actiontypes} _type The type of the action.
+/// @param {Struct.tdp_input_action} _action The actions to use.
+/// @param {Real} _joystickdir The direction of the joystick.
 function tdp_input_action(_type, _value, _joystickdir = 0) constructor
 {
+	/// @summary Update the action, sets the variables in the input.
+	/// @param The keyboard key/vkey to check in the action.
 	static update = function(_button = -1)
 	{
 		switch (type)

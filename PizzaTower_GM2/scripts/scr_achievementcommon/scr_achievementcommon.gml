@@ -20,12 +20,16 @@ function add_secrets_achievement(_secret, _level_array)
 				
 				var s = ini_read_real("Secret", b, 0);
 				// secret amount 
-				if (s < 3)
+				if (s < 3) 
+				{
 					_unfinished = true;
+				}
 			}
 			ini_close();
 			if (!_unfinished)
+			{
 				achievement_unlock(name, noone, spr_achievement_farm, 0);
+			}
 		}
 	});
 	b.levelarray = _level_array;
@@ -61,9 +65,7 @@ function add_rank_achievements(_world, _rank, _spr, _index, _level_array)
 			ds_map_destroy(map);
 			ini_close();
 			if (_finished)
-			{
 				achievement_unlock(name, "", sprite, index);
-			}
 		}
 	});
 	b.rank = _rank;
@@ -71,12 +73,9 @@ function add_rank_achievements(_world, _rank, _spr, _index, _level_array)
 	b.sprite = _spr;
 	b.index = _index;
 }
-
-function add_boss_achievements(_boss, _bossroom, _spr, _index)
+function add_boss_achievements(_boss, _rm, _spr, _ind) 
 {
-	var b = add_achievement_notify(_boss, 
-	noone, 
-	function(_achievement)
+	var b = add_achievement_notify(_boss, noone, function(_achievement)
 	{
 		var type = _achievement[0];
 		var arr = _achievement[1];
@@ -84,13 +83,15 @@ function add_boss_achievements(_boss, _bossroom, _spr, _index)
 			achievement_unlock(name, "", sprite, index);
 	});
 	b.sprite = _spr;
-	b.index = _index;
-	b.bossroom = _bossroom;
+	b.index = _ind;
+	b.bossroom = _rm;
 }
 
-function scr_custom_notification_destructibles()
+function scr_custom_notification_destructibles() 
 {
 	active = false;
+	
+	
 	step = function()
 	{
 		if (!active)

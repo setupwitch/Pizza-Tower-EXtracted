@@ -19,50 +19,36 @@ function string_split(_str, _splitter)
 	return _list;
 }
 
-function function_overload(_array, _func)
+function function_overload(_arr, _func)
 {
-	var _size = array_length(_array);
+	var _size = array_length(_arr);
 	switch (_size)
 	{
-		case 0:
-			_func();
-			break;
-		case 1:
-			_func(_array[0]);
-			break;
-		case 2:
-			_func(_array[0], _array[1]);
-			break;
-		case 3:
-			_func(_array[0], _array[1], _array[2]);
-			break;
-		case 4:
-			_func(_array[0], _array[1], _array[2], _array[3]);
-			break;
-		case 5:
-			_func(_array[0], _array[1], _array[2], _array[3], _array[4]);
-			break;
-		case 6:
-			_func(_array[0], _array[1], _array[2], _array[3], _array[4], _array[5]);
-			break;
-		case 7:
-			_func(_array[0], _array[1], _array[2], _array[3], _array[4], _array[5], _array[6]);
-			break;
+		case 0: _func(); break;
+		case 1: _func(_arr[0]); break;
+		case 2: _func(_arr[0], _arr[1]); break;
+		case 3: _func(_arr[0], _arr[1], _arr[2]); break;
+		case 4: _func(_arr[0], _arr[1], _arr[2], _arr[3]); break;
+		case 5: _func(_arr[0], _arr[1], _arr[2], _arr[3], _arr[4]); break;
+		case 6: _func(_arr[0], _arr[1], _arr[2], _arr[3], _arr[4], _arr[5]); break;
+		case 7: _func(_arr[0], _arr[1], _arr[2], _arr[3], _arr[4], _arr[5], _arr[6]); break;
 	}
 }
 
-function DebugCommand(_command_id, _desc, _format, _func) constructor
+function DebugCommand(_cmd, _desc, _format, _func) constructor
 {
-	command_id = _command_id;
+	command_id = _cmd;
 	description = _desc;
 	format = _format;
 	func = _func;
 	
-	Invoke = function(_command_id)
+	// PADDING
+	
+	Invoke = function(_cmd)
 	{
-		if (_command_id != undefined)
+		if (_cmd != undefined)
 		{
-			function_overload(_command_id, func);
+			function_overload(_cmd, func);
 		}
 		else
 		{
