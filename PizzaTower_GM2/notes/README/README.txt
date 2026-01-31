@@ -1,4 +1,4 @@
-Thank you for using PT:EX!
+Thank you for using Pizza Tower Extracted!
 
 Some things to note before using:
 
@@ -9,3 +9,14 @@ The unused folders *do* contain assets that are referenced in code, but in unuse
 
 Some files may have weird contents like differing syntax, random comments styled like "// PADDINGPADDINGPADDING".
 This is because of an odd gamemaker compiler quirk with anonymous functions.
+
+Rooms can have instances that are disabled, when the GameMaker asset compiler goes through them,
+it ignores the asset completely and still ticks the unique instance ID up.
+This means that there are random disabled assets inside some rooms,
+Most are placed with the context of older builds of the game or from surrounding instances.
+
+CREDITS TO:
+crystallizedsparkle - project lead and most of the work
+obj_shaggy - project organization
+TheWilmster - washing dishes and small help with code
+Traxter64 - old instanceCC
