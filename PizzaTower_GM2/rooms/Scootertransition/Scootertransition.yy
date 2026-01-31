@@ -17,6 +17,7 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Compatibility_Instances_Depth_0","instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24CA6272","properties":[],"isDnd":false,"objectId":{"name":"obj_introscooter","path":"objects/obj_introscooter/obj_introscooter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":448.0,"y":402.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6FA7074A","properties":[],"isDnd":false,"objectId":{"name":"obj_doorA","path":"objects/obj_doorA/obj_doorA.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-128.0,"y":320.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3285DC76","properties":[],"isDnd":false,"objectId":{"name":"obj_santasleight2","path":"objects/obj_santasleight2/obj_santasleight2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-224.0,"y":256.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -30,6 +31,7 @@
   "instanceCreationOrder": [
     {"name":"inst_6FA7074A","path":"rooms/Scootertransition/Scootertransition.yy",},
     {"name":"inst_3285DC76","path":"rooms/Scootertransition/Scootertransition.yy",},
+    {"name":"inst_24CA6272","path":"rooms/Scootertransition/Scootertransition.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
