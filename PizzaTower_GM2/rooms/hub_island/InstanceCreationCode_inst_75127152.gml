@@ -40,6 +40,7 @@ else if (global.levelcomplete && !global.beachcutscene && global.levelcompletena
 		[cutscene_player_float, true],
 		[cutscene_set_player_pos, 923, 281],
 		[cutscene_wait, 60],
+		//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPAD
 		[function()
 		{
 			boatactorID = instance_create(632, 32, obj_actor);
@@ -50,6 +51,7 @@ else if (global.levelcomplete && !global.beachcutscene && global.levelcompletena
 			peppermanactorID.sprite_index = spr_pepperman_idle;
 			cutscene_end_action();
 		}],
+		//PADDINGPADDINGPADDINGPADDINGPADDINGP
 		[function()
 		{
 			var _finish = false;
@@ -73,6 +75,7 @@ else if (global.levelcomplete && !global.beachcutscene && global.levelcompletena
 				cutscene_end_action();
 			}
 		}],
+		//PADDINGPADDINGPADDINGPADDIN
 		[function()
 		{
 			var _finish = false;

@@ -1,6 +1,6 @@
 if (global.levelcomplete && !global.streetcutscene)
 {
-	currentroom = room;
+	currentroom = room
 	scene_info =
 	[
 		[function()

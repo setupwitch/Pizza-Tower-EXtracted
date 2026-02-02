@@ -61,6 +61,7 @@ else if (global.levelcomplete && !global.chateaucutscene)
 		[cutscene_wait, 100],
 		[cutscene_change_room, currentroom],
 		[cutscene_set_player_visible, true],
+		//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDIN
 		[function()
 		{
 			with (obj_player)

@@ -1,4 +1,6 @@
 ef_dialog[0] = [dialog_create("The exit fee is a bajillion dollars, sorry")];
+
+
 ef_dialog[1] = [dialog_create("Is that beer I see? Go right ahead", noone, function()
 {
 	global.exitfeecutscene = true;
@@ -6,7 +8,7 @@ ef_dialog[1] = [dialog_create("Is that beer I see? Go right ahead", noone, funct
 })];
 ef_dialog[2] = [dialog_create("Your exit fee is paid, go right ahead!")];
 sprite_index = spr_pizzaslug_idle;
-
+//P
 dialog_func = function()
 {
 	if (global.beercutscene == noone)

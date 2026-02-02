@@ -1,23 +1,18 @@
 if (global.vigilantecutscene3 == noone)
-{
 	global.vigilantecutscene3 = quick_ini_read_real(get_savefile_ini(), "cutscene", "vigilante3", false);
-}
+	
 if (!global.vigilantecutscene3)
-{
 	instance_destroy();
-}
+	
 if (global.hatcutscene1 == noone)
-{
 	global.hatcutscene1 = quick_ini_read_real(get_savefile_ini(), "cutscene", "hat1", false);
-}
+	
 if (global.hatcutscene2 == noone)
-{
 	global.hatcutscene2 = quick_ini_read_real(get_savefile_ini(), "cutscene", "hat2", false);
-}
+	
 if (global.hatcutscene3 == noone)
-{
 	global.hatcutscene3 = quick_ini_read_real(get_savefile_ini(), "cutscene", "hat3", false);
-}
+
 sprite_index = spr_playerV_idle;
 v_dialog[0] = [dialog_create("wash my darn hat", noone, function()
 {
@@ -27,9 +22,11 @@ v_dialog[0] = [dialog_create("wash my darn hat", noone, function()
 		quick_ini_write_real(get_savefile_ini(), "cutscene", "hat1", true);
 	}
 })];
+
 v_dialog[1] =
 [
 	[cutscene_do_dialog, [dialog_create("there you go, a jetpack")]],
+	//PADDINGPADDINGPAD
 	[function()
 	{
 		if (!instance_exists(obj_noisejetpack))
@@ -40,6 +37,7 @@ v_dialog[1] =
 ];
 v_dialog[2] = [dialog_create("you washed my darn hat")];
 
+//PAD
 dialog_func = function()
 {
 	if (!global.hatcutscene1 || !global.hatcutscene3)

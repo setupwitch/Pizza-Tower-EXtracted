@@ -12,12 +12,14 @@ if (global.levelcomplete && !global.kidspartycutscene)
 		[cutscene_set_player_pos, 1848, 750],
 		[cutscene_player_float, true],
 		[cutscene_wait, 50],
+		//PADDINGPA
 		[function()
 		{
 			mechactor = instance_create(1632, 416, obj_actor);
 			mechactor.sprite_index = spr_pizzamech;
 			cutscene_end_action();
 		}],
+		//PADDING
 		[function()
 		{
 			with (mechactor)
@@ -42,6 +44,7 @@ if (global.levelcomplete && !global.kidspartycutscene)
 		[cutscene_change_room, currentroom],
 		[cutscene_set_player_visible, true],
 		[cutscene_player_float, false],
+		//PADDINGPADDINGPADDINGPADDINGPADDING
 		[function()
 		{
 			with (obj_player)

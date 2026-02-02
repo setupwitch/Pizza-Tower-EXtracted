@@ -7,6 +7,7 @@ boss_hp_x += 25;
 boss_hpsprite = spr_bossfight_vigiHP;
 boss_palette = spr_bossfight_vigipalette;
 
+
 boss_func = function()
 {
 	var eh = 0;

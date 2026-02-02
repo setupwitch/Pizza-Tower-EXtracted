@@ -1,5 +1,7 @@
 sprite_index = spr_mrstick_idle;
-dialog = [dialog_create("alright lets fight", noone, function()
+
+dialog = [
+	dialog_create("alright lets fight", noone, function()
 {
 	if (!global.mrstickcutscene2)
 	{

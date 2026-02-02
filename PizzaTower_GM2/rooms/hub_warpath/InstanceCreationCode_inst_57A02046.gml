@@ -2,7 +2,7 @@ if (global.levelcomplete && !global.warcutscene)
 {
 	global.levelcomplete = false;
 	currentroom = room;
-	
+
 	explosion_func = function(_x, _y)
 	{
 		instance_create(_x, _y, obj_canonexplosion);
@@ -11,7 +11,7 @@ if (global.levelcomplete && !global.warcutscene)
 	
 	bombactor = noone;
 	planeactor = noone;
-	scene_info =
+	scene_info = 
 	[
 		[cutscene_entrance_start],
 		[cutscene_waitfor_sprite, obj_player1],
@@ -21,6 +21,7 @@ if (global.levelcomplete && !global.warcutscene)
 		[cutscene_player_float, true],
 		[cutscene_set_player_pos, 100, 100],
 		[cutscene_wait, 20],
+		//PADDINGPA
 		[function()
 		{
 			planeactor = instance_create(1056, 128, obj_actor);
@@ -29,6 +30,7 @@ if (global.levelcomplete && !global.warcutscene)
 			planeactor.hsp = -8;
 			cutscene_end_action();
 		}],
+		//PADDI
 		[function()
 		{
 			with (planeactor)
@@ -37,12 +39,11 @@ if (global.levelcomplete && !global.warcutscene)
 				if (x < (room_width / 2))
 				{
 					with (other)
-					{
 						cutscene_end_action();
-					}
 				}
 			}
 		}],
+		//PADDINGP
 		[function()
 		{
 			bombactor = instance_create(planeactor.x, planeactor.y, obj_actor);
@@ -51,6 +52,7 @@ if (global.levelcomplete && !global.warcutscene)
 			planeactor.x += planeactor.hsp;
 			cutscene_end_action();
 		}],
+		//PADDI
 		[function()
 		{
 			planeactor.x += planeactor.hsp;
@@ -70,6 +72,7 @@ if (global.levelcomplete && !global.warcutscene)
 		}],
 		[cutscene_change_room, hub_topentrance],
 		[cutscene_set_player_pos, 1350, 200],
+		//PADDINGPADDINGPADDI
 		[function()
 		{
 			bombactor = instance_create(1344, -60, obj_actor);
@@ -77,6 +80,7 @@ if (global.levelcomplete && !global.warcutscene)
 			bombactor.image_index = 0.35;
 			cutscene_end_action();
 		}],
+		//PAD
 		[function()
 		{
 			bombactor.y += 10;
@@ -104,6 +108,7 @@ if (global.levelcomplete && !global.warcutscene)
 		[cutscene_wait, 100],
 		[cutscene_change_room, currentroom],
 		[cutscene_set_player_visible, true],
+		//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPA
 		[function()
 		{
 			with (obj_player)

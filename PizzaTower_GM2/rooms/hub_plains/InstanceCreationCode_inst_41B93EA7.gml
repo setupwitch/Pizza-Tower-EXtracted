@@ -1,6 +1,6 @@
 if (global.levelcomplete && !global.mansioncutscene)
 {
-	currentroom = room;
+	currentroom = room
 	scene_info =
 	[
 		[function()

@@ -1,6 +1,10 @@
 sprite_index = spr_soldier_walk;
-g_dialog[0] = [dialog_create("Don't have anything to do")];
-g_dialog[1] = [dialog_create("The robot is busted", noone, function()
+g_dialog[0] =
+[
+	dialog_create("Don't have anything to do")
+];
+g_dialog[1] = [
+dialog_create("The robot is busted", noone, function()
 {
 	if (!global.mrstickcutscene1)
 	{
@@ -8,20 +12,23 @@ g_dialog[1] = [dialog_create("The robot is busted", noone, function()
 		quick_ini_write_real(get_savefile_ini(), "cutscene", "mrstick1", true);
 	}
 })];
-g_dialog[2] = [dialog_create("The robot has no gasoline")];
-g_dialog[3] = [dialog_create("Go right ahead", noone, function()
-{
-	if (!global.ghostsoldiercutscene)
-	{
-		global.ghostsoldiercutscene = true;
-		quick_ini_write_real(get_savefile_ini(), "cutscene", "ghostsoldier", true);
-	}
-	with (obj_pizzamech)
-	{
-		poweredon = true;
-	}
-})];
 
+g_dialog[2] = [dialog_create("The robot has no gasoline")];
+g_dialog[3] =
+[
+	dialog_create("Go right ahead", noone,
+	function()
+	{
+		if (!global.ghostsoldiercutscene)
+		{
+			global.ghostsoldiercutscene = true;
+			quick_ini_write_real(get_savefile_ini(), "cutscene", "ghostsoldier", true);
+		}
+		with (obj_pizzamech)
+			poweredon = true;
+	})
+];
+//PAD
 dialog_func = function()
 {
 	if (!global.kidspartycutscene)

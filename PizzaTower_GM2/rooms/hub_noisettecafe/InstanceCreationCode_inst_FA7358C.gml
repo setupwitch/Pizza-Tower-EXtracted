@@ -1,7 +1,7 @@
 dialog[0] = dialog_create("no");
 loop = true;
 persistent = false;
-scene_info =
+scene_info = 
 [
 	[function()
 	{

@@ -1,7 +1,7 @@
 dialog[0] = dialog_create("You gotta pay your fee!");
 loop = true;
 persistent = false;
-scene_info =
+scene_info = 
 [
 	[function()
 	{
@@ -12,9 +12,7 @@ scene_info =
 				if (x > other.x)
 				{
 					with (other)
-					{
 						cutscene_end_action();
-					}
 				}
 			}
 		}

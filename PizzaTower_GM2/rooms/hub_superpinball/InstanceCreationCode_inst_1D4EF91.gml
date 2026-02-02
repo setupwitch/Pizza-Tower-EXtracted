@@ -1,4 +1,5 @@
 sprite_index = spr_ufogrounded_walk;
+
 dialog[0] = dialog_create("Go ahead!", noone, function()
 {
 	if (global.superpinballcutscene == noone || !global.superpinballcutscene)

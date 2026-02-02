@@ -7,8 +7,14 @@ pm_scene_info =
 	[cutscene_waitfor_dialog],
 	[cutscene_set_player_actor],
 	[cutscene_set_object_pos, inst_157F4874, 1696, 576],
-	[cutscene_do_dialog, [dialog_create("Go ahead", noone, function() {})]]
+	[cutscene_do_dialog, 
+		[
+			dialog_create("Go ahead", noone, 
+			function() { })
+		]
+	]
 ];
+
 
 dialog_func = function()
 {

@@ -19,7 +19,7 @@ if (!obj_secretmanager.init)
 			secret_open_portal(1);
 		}
 	});
-	//PADDINGPADDIN	
+	//PADDINGPADDIN
 	secret_add(noone,
 	function()
 	{

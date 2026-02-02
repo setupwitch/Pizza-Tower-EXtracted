@@ -1,5 +1,8 @@
 sprite_index = spr_playerN_idle;
-n_dialog[0] = [dialog_create("fight the noise", noone, function()
+
+
+n_dialog[0] = [dialog_create("fight the noise", noone,
+function()
 {
 	if (!global.noisecutscene1)
 	{
@@ -8,7 +11,7 @@ n_dialog[0] = [dialog_create("fight the noise", noone, function()
 	}
 })];
 n_dialog[1] = [dialog_create("you fought the noise")];
-
+//PADDINGP
 dialog_func = function()
 {
 	if (!global.noisecutscene2)

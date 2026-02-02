@@ -1,11 +1,9 @@
 if (global.ruincutscene == noone)
-{
 	global.ruincutscene = quick_ini_read_real(get_savefile_ini(), "cutscene", "ruin", false);
-}
+
 if (!global.ruincutscene)
-{
 	instance_destroy();
-}
+	
 sprite_index = spr_pizzagoblin_idle;
 dialog = noone;
 pb_dialog[0] =
@@ -23,14 +21,13 @@ pb_dialog[1] =
 		global.ruincutscene2 = true;
 		quick_ini_write_real(get_savefile_ini(), "cutscene", "ruin2", true);
 		if (!instance_exists(obj_baddiespawner))
-		{
 			with (instance_create(864, 960, obj_baddiespawner))
-			{
 				content = obj_pizzagoblinbomb;
-			}
-		}
 	})
 ];
+
+
+
 
 dialog_func = function()
 {
