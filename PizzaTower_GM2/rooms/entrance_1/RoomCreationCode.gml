@@ -5,28 +5,26 @@
 	{
 		trace("secret init");
 		obj_secretmanager.init = true;
-	
+		// PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPPA
 		secret_add(
+		function() { touchedtriggers = 0; }, //P
 		function()
 		{
-			touchedtriggers = 0;
-		},
-		function()
-		{
-			if (touchedtriggers >= 4)
+			if (touchedtriggers >= 4) 
 			{
 				secret_open_portal(0);
 			}
 		});
-	
+		
 		secret_add(
-		noone,
+		noone, 
 		function()
 		{
 			secret_open_portal(1);
 		});
 		secret_add(
 		noone, 
+		//PADDINGPADDINGP
 		function()
 		{
 			if (secret_check_trigger(2))

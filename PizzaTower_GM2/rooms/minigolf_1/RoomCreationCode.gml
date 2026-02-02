@@ -4,11 +4,15 @@ global.gameframe_caption_text = lang_get_value("caption_minigolf");
 if (!obj_secretmanager.init)
 {
 	obj_secretmanager.init = true;
-	secret_add(noone, function()
+	//PADDINGPADDINGPA
+	secret_add(noone,
+	function()
 	{
 		secret_open_portal(0);
 	});
-	secret_add(noone, function()
+	//PADDINGPADDING
+	secret_add(noone,
+	function()
 	{
 		if (secret_check_trigger(1))
 		{
