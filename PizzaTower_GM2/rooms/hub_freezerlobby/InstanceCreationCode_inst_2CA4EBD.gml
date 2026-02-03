@@ -12,6 +12,7 @@ if (global.levelcomplete && !global.freezercutscene)
 	[
 		[cutscene_medieval_start],
 		[cutscene_waitfor_sprite, obj_player1],
+		//PADD
 		[function()
 		{
 			with (obj_actor)
@@ -29,6 +30,7 @@ if (global.levelcomplete && !global.freezercutscene)
 		[cutscene_player_float, true],
 		[cutscene_player_pos_lerp, 832, 288, 0.07],
 		[cutscene_wait, 40],
+		//PADDINGPADDINGPAD
 		[function()
 		{
 			with (dragonactor)
@@ -42,6 +44,7 @@ if (global.levelcomplete && !global.freezercutscene)
 			}
 			cutscene_end_action();
 		}],
+
 		[function()
 		{
 			with (dragonactor)
@@ -60,6 +63,7 @@ if (global.levelcomplete && !global.freezercutscene)
 		[cutscene_set_player_visible, false],
 		[cutscene_set_player_pos, 1407, 415],
 		[cutscene_wait, 20],
+		//PADD
 		[function()
 		{
 			dragonactor = instance_create(1407, -125, obj_actor);
@@ -67,6 +71,7 @@ if (global.levelcomplete && !global.freezercutscene)
 			dragonactor.image_speed = 0.35;
 			cutscene_end_action();
 		}],
+		//PADDINGPADDINGP
 		[function()
 		{
 			with (dragonactor)
@@ -83,6 +88,7 @@ if (global.levelcomplete && !global.freezercutscene)
 				}
 			}
 		}],
+		//PAD
 		[function()
 		{
 			with (dragonactor)
@@ -103,11 +109,12 @@ if (global.levelcomplete && !global.freezercutscene)
 		}],
 		[cutscene_soundeffect, sfx_groundpound],
 		[cutscene_camera_shake, 5, 3 / room_speed],
+	
 		[function()
 		{
 			with (dragonactor)
 			{
-				if (floor(image_index) == (image_number - 1))
+				if (ANIMATION_END)
 				{
 					sprite_index = spr_cheesedragon_idle;
 					with (other)
@@ -118,6 +125,7 @@ if (global.levelcomplete && !global.freezercutscene)
 			}
 		}],
 		[cutscene_wait, 50],
+		//PADDINGPADDINGPADDINGPA
 		[function()
 		{
 			with (obj_freezerblock)
@@ -133,6 +141,7 @@ if (global.levelcomplete && !global.freezercutscene)
 		[cutscene_soundeffect, sfx_groundpound],
 		[cutscene_camera_shake, 5, 3 / room_speed],
 		[cutscene_wait, 50],
+		//PADDINGPADD
 		[function()
 		{
 			with (obj_freezerblock)
@@ -146,6 +155,7 @@ if (global.levelcomplete && !global.freezercutscene)
 		[cutscene_set_player_pos, backx, backy],
 		[cutscene_set_player_visible, true],
 		[cutscene_player_float, false],
+		// PADDINGPADDIN
 		[function()
 		{
 			instance_destroy(obj_actor);

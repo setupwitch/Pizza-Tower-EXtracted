@@ -3,7 +3,9 @@ global.roommessage = "PIZZA TOWER ISLAND";
 if (!obj_secretmanager.init)
 {
 	obj_secretmanager.init = true;
-	secret_add(noone, function()
+	//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPA
+	secret_add(noone,
+	function()
 	{
 		if (secret_check_trigger(1))
 		{
@@ -14,10 +16,11 @@ if (!obj_secretmanager.init)
 			secret_close_portal(1);
 		}
 	});
-	secret_add(function()
-	{
-		touchedtriggers = 0;
-	}, function()
+	//
+	secret_add(
+	function() { touchedtriggers = 0; },
+
+	function()
 	{
 		if (touchedtriggers >= 6)
 		{

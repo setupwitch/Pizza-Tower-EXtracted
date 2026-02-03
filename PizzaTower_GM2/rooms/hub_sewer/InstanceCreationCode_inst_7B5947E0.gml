@@ -10,7 +10,9 @@ if (global.levelcomplete && !global.sewercutscene)
 		[cutscene_set_player_visible, false],
 		[cutscene_player_float, true],
 		[cutscene_set_player_pos, 320, 288],
-		[cutscene_wait, 39], [function()
+		[cutscene_wait, 39], 
+		//PADDINGP
+		[function()
 		{
 			with (obj_hubwater)
 			{

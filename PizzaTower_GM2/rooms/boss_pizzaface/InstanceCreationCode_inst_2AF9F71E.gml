@@ -4,6 +4,7 @@ vstitle = spr_vstitle_pizzaface;
 boss_hpsprite = spr_bossfight_pizzafaceHP;
 boss_palette = spr_bossfight_pizzafacepalette;
 
+
 boss_func = function()
 {
 	var eh = 0;

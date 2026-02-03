@@ -7,11 +7,14 @@ with (obj_secretbigblock)
 if (!obj_secretmanager.init)
 {
 	obj_secretmanager.init = true;
-	secret_add(noone, function()
+	secret_add(noone, 
+	function()
 	{
 		secret_open_portal(0);
 	});
-	secret_add(noone, function()
+	secret_add(noone,
+	// PADDINGPADDIN
+	function()
 	{
 		secret_open_portal(1);
 	});

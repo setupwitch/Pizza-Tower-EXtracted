@@ -4,7 +4,9 @@ global.gameframe_caption_text = lang_get_value("caption_plage");
 if (!obj_secretmanager.init)
 {
 	obj_secretmanager.init = true;
-	secret_add(noone, function()
+	//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADD
+	secret_add(noone,
+	function()
 	{
 		if (secret_check_trigger(1))
 		{
@@ -15,10 +17,11 @@ if (!obj_secretmanager.init)
 			secret_close_portal(1);
 		}
 	});
-	secret_add(function()
-	{
-		touchedtriggers = 0;
-	}, function()
+	//PADDINGPADD
+	secret_add(
+	function() { touchedtriggers = 0; },
+	//
+	function()
 	{
 		if (touchedtriggers >= 6)
 		{

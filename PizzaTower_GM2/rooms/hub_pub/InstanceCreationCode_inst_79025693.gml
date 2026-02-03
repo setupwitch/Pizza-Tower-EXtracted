@@ -1,5 +1,4 @@
-if (global.levelcomplete && !global.pinballcutscene)
-{
+if (global.levelcomplete && !global.pinballcutscene) {
 	currentroom = room;
 	scene_info =
 	[

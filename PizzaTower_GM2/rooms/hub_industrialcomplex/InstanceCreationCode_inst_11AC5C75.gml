@@ -5,10 +5,11 @@ scene_info =
 	[cutscene_waitfor_dialog],
 	[cutscene_set_player_actor],
 	[cutscene_wait, 20],
+	// PADDIN
 	[function()
 	{
 		anarchist = inst_11AC5C75;
-		with (anarchist)
+		with anarchist
 		{
 			with (instance_create(x, y, obj_pizzagoblinbomb))
 			{
@@ -33,6 +34,7 @@ scene_info =
 		global.anarchistcutscene2 = true;
 		quick_ini_write_real(get_savefile_ini(), "cutscene", "anarchist2", true);
 	})]],
+		
 	[cutscene_waitfor_dialog],
 	[cutscene_set_player_actor],
 	[function()
@@ -44,14 +46,12 @@ scene_info =
 			{
 				instance_destroy();
 				with (other)
-				{
 					cutscene_end_action();
-				}
 			}
 		}
 	}],
 	[cutscene_set_player_normal]
-];
+]
 
 dialog_func = function()
 {

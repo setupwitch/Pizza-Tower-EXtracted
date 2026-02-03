@@ -1,5 +1,4 @@
-if (global.levelcomplete && !global.golfcutscene)
-{
+if (global.levelcomplete && !global.golfcutscene) {
 	currentroom = room;
 	scene_info =
 	[

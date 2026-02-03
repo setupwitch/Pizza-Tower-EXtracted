@@ -4,17 +4,20 @@ global.gameframe_caption_text = lang_get_value("caption_saloon");
 if (!obj_secretmanager.init)
 {
 	obj_secretmanager.init = true;
-	secret_add(function()
-	{
-		touchedtriggers = 0;
-	}, function()
+	secret_add(
+	//PADDINGPADDINGPADDINGPADD
+	function() { touchedtriggers = 0 },
+	//P
+	function()
 	{
 		if (touchedtriggers >= 6)
 		{
 			secret_open_portal(0);
 		}
 	});
-	secret_add(noone, function()
+	secret_add(noone,
+	//PADDINGPADD
+	function()
 	{
 		if (secret_check_trigger(1))
 		{

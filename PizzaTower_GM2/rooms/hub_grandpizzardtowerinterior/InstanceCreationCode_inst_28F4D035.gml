@@ -3,6 +3,7 @@ if (global.chateauswap == noone)
 {
 	global.chateauswap = quick_ini_read_real(get_savefile_ini(), "cutscene", "chateauswap", false);
 }
+
 dialog = [dialog_create("Abracadabra", noone, function()
 {
 	global.chateauswap = !global.chateauswap;
