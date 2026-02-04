@@ -32,10 +32,11 @@ if (DEBUG)
 {
 	active = false;
 	showoverlay = false;
+	//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDING
 	SET_GAME_SPEED = new DebugCommand("set_game_speed", "Sets the game speed", "<int>", function(_int)
 	{
 		game_set_speed(floor(real(_int)), gamespeed_fps);
-	});
+	})
 	TEST_P_RANK = new DebugCommand("test_p_rank", "", "", function()
 	{
 		global.collect = global.srank + 5000;
@@ -47,89 +48,80 @@ if (DEBUG)
 		global.combotime = 60;
 		global.combo = 99;
 		global.panic = true;
-	});
+	}); 
 	KILL_BOSS = new DebugCommand("kill_boss", "", "", function()
 	{
 		instance_destroy(obj_baddie);
-	});
+	}); 
 	SET_BOSS_HP = new DebugCommand("set_boss_hp", "", "<int>", function(_int)
 	{
-		with (obj_baddie)
-		{
-			elitehit = real(_int);
-		}
+		with (obj_baddie) elitehit = real(_int);
 	});
 	SWITCH_CHAR = new DebugCommand("switch_char", "Switches character", "", function()
 	{
-		with (obj_player)
+		with obj_player
 		{
-			character = "P";
-			ispeppino = !ispeppino;
-			scr_characterspr();
+			character = "P"
+			ispeppino = !ispeppino
+			scr_characterspr()
 		}
 	});
 	FILL_GATESWITCH = new DebugCommand("gateswitchmax", "", "", function()
 	{
-		global.gateswitch = global.gateswitchmax;
-	});
+		global.gateswitch = global.gateswitchmax
+	})
 	SHOW_DEBUG_OVERLAY = new DebugCommand("show_debug_overlay", "Toggles debug overlay", "", function()
 	{
 		show_debug_overlay(!showoverlay);
-		showoverlay = !showoverlay;
-	});
+		showoverlay = !showoverlay
+	})
 	ROOMCHECK = new DebugCommand("roomcheck", "", "", function()
 	{
-		instance_create_unique(0, 0, obj_roomcheck);
+		instance_create_unique(0,0,obj_roomcheck);
 	});
-	UNLOCK_TOPPINS = new DebugCommand("unlock_toppins", "Unlocks the toppins of the given level", "<level_name_ini>", function(_level_name_ini)
+	UNLOCK_TOPPINS = new DebugCommand("unlock_toppins", "Unlocks the toppins of the given level", "<level_name_ini>", function(_ini)
 	{
-		if (is_undefined(_level_name_ini))
+		if (is_undefined(_ini)) 
 		{
 			exit;
 		}
+		
 		ini_open_from_string(obj_savesystem.ini_str);
-		ini_write_real("Toppin", concat(_level_name_ini, 1), true);
-		ini_write_real("Toppin", concat(_level_name_ini, 2), true);
-		ini_write_real("Toppin", concat(_level_name_ini, 3), true);
-		ini_write_real("Toppin", concat(_level_name_ini, 4), true);
-		ini_write_real("Toppin", concat(_level_name_ini, 5), true);
+		ini_write_real("Toppin", concat(_ini, 1), true);
+		ini_write_real("Toppin", concat(_ini, 2), true);
+		ini_write_real("Toppin", concat(_ini, 3), true);
+		ini_write_real("Toppin", concat(_ini, 4), true);
+		ini_write_real("Toppin", concat(_ini, 5), true);
 		obj_savesystem.ini_str = ini_close();
 		gamesave_async_save();
 	});
-	UNLOCK_BOSS_KEY = new DebugCommand("unlock_boss_key", "Unlocks the boss key of the given world (1, 2, 3, 4)", "<number>", function(_number)
+	UNLOCK_BOSS_KEY = new DebugCommand("unlock_boss_key", "Unlocks the boss key of the given world (1, 2, 3, 4)", "<number>", function(_numb)
 	{
-		if (is_undefined(_number))
-		{
+		if (is_undefined(_numb))
 			exit;
-		}
-		_number = real(_number);
+
+		_numb = real(_numb);
 		ini_open_from_string(obj_savesystem.ini_str);
-		var n = concat("w", _number, "stick");
+		var n = concat("w", _numb, "stick");
 		ini_write_real(n, "bosskey", true);
 		obj_savesystem.ini_str = ini_close();
 		gamesave_async_save();
 	});
 	LOCKCAMERA = new DebugCommand("lockcam", "", "", function()
 	{
-		with (obj_camera)
-		{
-			lock = !lock;
-		}
+		
+		with (obj_camera) { lock = !lock; };
 	});
-	BOSSINVINCIBLE = new DebugCommand("bossinv", "", "", function()
-	{
+	BOSSINVINCIBLE = new DebugCommand("bossinv", "", "", function() {
 		global.boss_invincible = !global.boss_invincible;
 	});
-	HIDETILES = new DebugCommand("hidetiles", "", "<bool>", function(_bool)
+	HIDETILES = new DebugCommand("hidetiles", "", "<bool>", function(_hidetile)
 	{
-		if (is_undefined(_bool))
-		{
+		if (is_undefined(_hidetile))
 			global.hidetiles = !global.hidetiles;
-		}
 		else
-		{
-			global.hidetiles = _bool;
-		}
+			global.hidetiles = _hidetile;
+		
 		layer_set_visible("Tiles_BG", !global.hidetiles);
 		layer_set_visible("Tiles_BG2", !global.hidetiles);
 		layer_set_visible("Tiles_BG3", !global.hidetiles);
@@ -141,16 +133,12 @@ if (DEBUG)
 		layer_set_visible("Tiles_Foreground2", !global.hidetiles);
 		layer_set_visible("Tiles_Foreground3", !global.hidetiles);
 	});
-	THROWARC = new DebugCommand("throwarc", "", "<bool>", function(_bool)
+	THROWARC = new DebugCommand("throwarc", "", "<bool>", function(_throw)
 	{
-		if (is_undefined(_bool))
-		{
+		if (is_undefined(_throw))
 			global.throwarc = !global.throwarc;
-		}
-		else
-		{
-			global.throwarc = _bool;
-		}
+		else // yes
+			global.throwarc = _throw;
 	});
 	GOTOEDITOR = new DebugCommand("editor", "", "", function()
 	{
@@ -160,9 +148,11 @@ if (DEBUG)
 			targetDoor = "A";
 		}
 		instance_create_unique(0, 0, obj_fadeout);
+
 	});
 	NOCLIP = new DebugCommand("noclip", "", "", function()
 	{
+		//PADDINGPADDINGPADD
 		with (obj_player1)
 		{
 			state = states.debugstate;
@@ -170,10 +160,12 @@ if (DEBUG)
 	});
 	GIVEKEY = new DebugCommand("givekey", "", "", function()
 	{
+		//PADDING
 		global.key_inv = true;
 	});
 	LOADTEST = new DebugCommand("loadtest", "", "", function()
 	{
+		//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADD
 		with (obj_debugcontroller)
 		{
 			DoCommand("player_room rm_testing4 A");
@@ -182,6 +174,7 @@ if (DEBUG)
 	});
 	OTHERTEST = new DebugCommand("othertest", "", "", function()
 	{
+		// PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDI
 		with (obj_debugcontroller)
 		{
 			DoCommand("showcollisions 1");
@@ -192,6 +185,7 @@ if (DEBUG)
 	});
 	SETCOMBO = new DebugCommand("set_combo", "Set the combo", "<combo> <combotime:optional>", function(_combo, _combotime)
 	{
+		// PADDINGPADDINGPADDINGPADDI
 		if (_combo == undefined)
 		{
 			exit;
@@ -209,10 +203,12 @@ if (DEBUG)
 	});
 	GIVEHEAT = new DebugCommand("giveheat", "Gives heat", "", function()
 	{
+		//PADDINGPADDING
 		global.style += 100;
 	});
 	ALLTOPPINS = new DebugCommand("alltoppins", "Adds all the toppins", "", function()
 	{
+		//PADDI
 		if (!instance_exists(obj_pizzakincheese))
 		{
 			instance_create(obj_player1.x, obj_player1.y, obj_pizzakincheese);
@@ -241,6 +237,7 @@ if (DEBUG)
 	});
 	PANIC = new DebugCommand("panic", "Toggles pizza time", "<fill>", function(_fill)
 	{
+		//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDI
 		if (_fill != undefined && _fill != "")
 		{
 			_fill = get_number_string(_fill);
@@ -259,6 +256,7 @@ if (DEBUG)
 	});
 	SHOW_COLLISIONS = new DebugCommand("showcollisions", "Shows the collisions", "<bool>", function(_bool)
 	{
+		//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDIN
 		if (_bool == undefined)
 		{
 			exit;
@@ -303,6 +301,10 @@ if (DEBUG)
 			}
 		}
 	});
+	// There is an unused command or two here
+	//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDING
+	//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDING
+	//PADDINGPADDINGPADDI
 	PLAYER_ROOM = new DebugCommand("player_room", "Go to given room", "<targetRoom> <targetDoor>", function(_targetRoom, _targetDoor)
 	{
 		if (_targetRoom == undefined)
@@ -325,8 +327,11 @@ if (DEBUG)
 		}
 		instance_create(x, y, obj_fadeout);
 	});
+	//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDIN
+	//PADDINGPADDINGPADDINGPADDIN
 	CAMERA_ZOOM = new DebugCommand("camera_zoom", "Zoom", "<targetzoom> <spd>", function(_targetzoom, _spd)
 	{
+		//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPAD
 		if (_targetzoom == undefined)
 		{
 			exit;
@@ -347,6 +352,7 @@ if (DEBUG)
 	});
 	DESTROYICE = new DebugCommand("destroyice", "", "", function()
 	{
+		//PADDINGPADDINGPADDINGPA
 		instance_destroy(obj_iceblock);
 		instance_destroy(obj_iceblockslope);
 	});
@@ -367,6 +373,7 @@ if (DEBUG)
 			}
 		}
 	});
+	//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADD
 	PLAYER_SET_STATE = new DebugCommand("player_set_state", "Changes the player state", "<states.state>", function(_state)
 	{
 		if (_state == undefined)

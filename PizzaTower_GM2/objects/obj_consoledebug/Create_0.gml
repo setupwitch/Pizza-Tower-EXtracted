@@ -12,7 +12,7 @@ depth = -999;
 commands = array_create(0);
 state = 0;
 movebuffer = 0;
-
+//PADDINGP
 create_command = function(_name, _args, _func)
 {
 	var b = 
@@ -26,35 +26,30 @@ create_command = function(_name, _args, _func)
 
 var rooms = scr_getallrooms();
 for (var i = 0; i < array_length(rooms); i++)
-{
 	rooms[i] = room_get_name(rooms[i]);
-}
+
 create_command("NOCLIP", [], function()
 {
 	with (obj_player1)
 	{
 		state = states.debugstate;
 	}
-});
+})
 create_command("CHANGE_CHARACTER", [], function()
 {
 	with (obj_player1)
 	{
 		if (character == "P")
-		{
 			character = "N";
-		}
 		else
-		{
 			character = "P";
-		}
 		scr_characterspr();
 	}
-});
+})
 create_command("ROOM GOTO", [rooms, ["A", "B", "C", "D", "E", "F", "G"]], function(_room, _door)
 {
 	_room = asset_get_index(_room);
-	with (obj_player)
+	with (obj_player) 
 	{
 		targetDoor = _door;
 		lastroom = room;
@@ -68,40 +63,33 @@ create_command("ROOM GOTO", [rooms, ["A", "B", "C", "D", "E", "F", "G"]], functi
 create_command("UNLOCK WORLD", [[1, 2, 3, 4, 5]], function(_world)
 {
 	ini_open_from_string(obj_savesystem.ini_str);
+	
 	for (var i = 0; i < _world; i++)
 	{
 		var save = concat("w", i + 1, "stick");
 		ini_write_real(save, "door", true);
 		ini_write_real(save, "bosskey", true);
 	}
+	
 	obj_savesystem.ini_str = ini_close();
+	
 	gamesave_async_save();
 });
 create_command("DEBUG OVERLAY", [["TRUE", "FALSE"]], function(_bool)
 {
-	if (_bool == "TRUE")
-	{
-		show_debug_overlay(true);
-	}
-	else
-	{
-		show_debug_overlay(false);
-	}
+	if (_bool == "TRUE") show_debug_overlay(true);
+	else show_debug_overlay(false);
+	
 });
 create_command("SWITCH CHAR", [["NOISE", "PEP"]], function(_char)
 {
 	with (obj_player1)
 	{
 		character = "P";
-		if (_char == "NOISE")
-		{
-			ispeppino = false;
-		}
-		else
-		{
-			ispeppino = true;
-		}
+		if (_char == "NOISE") ispeppino = false;
+		else ispeppino = true;
 		scr_characterspr();
+	
 	}
 });
 create_command("TEST PANIC", [], function(arg0)
@@ -109,26 +97,18 @@ create_command("TEST PANIC", [], function(arg0)
 	global.panic = true;
 	global.fill = 4000;
 	with (obj_camera)
-	{
 		alarm[1] = 60;
-	}
 	with (obj_tv)
-	{
 		chunkmax = global.fill;
-	}
 });
 create_command("TEST PIZZAFACE", [], function(arg0)
 {
 	global.panic = true;
 	global.fill = 100;
 	with (obj_camera)
-	{
 		alarm[1] = 60;
-	}
 	with (obj_tv)
-	{
 		chunkmax = global.fill;
-	}
 });
 create_command("ROOMCHECK", [], function(arg0)
 {

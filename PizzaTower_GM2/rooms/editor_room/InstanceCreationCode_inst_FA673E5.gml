@@ -7,36 +7,30 @@ with (instance_create_depth(0, 0, depth - 1, obj_itemlist))
 	image_yscale = other.image_yscale;
 	value = noone;
 	item_height = 32;
-	
+	//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADD
 	on_dirty = function()
 	{
 		dirty = false;
-		ds_list_clear(items);
-		ds_list_copy(items, obj_editor.backgrounds_list);
+		lst_clr(items);
+		lst_copy(items, obj_editor.backgrounds_list);
 	};
-	
-	on_item_click = function(_item_index)
+	//PADDI
+	on_item_click = function(_ind)
 	{
-		if (_item_index < ds_list_size(items))
-		{
+		if (_ind < lst_size(items)) {
 			var _room = global.current_level.current_room;
-			if (_room == noone)
-			{
-				exit;
-			}
+			if (_room == noone) exit;
 			var _arr = _room.backgrounds;
-			for (var i = 0; i < array_length(_arr); i++)
-			{
+			for (var i = 0; i < array_length(_arr); i++) {
 				var b = _arr[i];
-				if (b.depth == value.depth)
-				{
-					b.sprite_index = ds_list_find_value(items, _item_index);
+				if (b.depth == value.depth) {
+					b.sprite_index = lst_find(items, _ind);
 					break;
 				}
 			}
 		}
 	};
-	
+	 
 	on_item_draw = function(_x, _y, _item, _is_transparent)
 	{
 		var a = 1;

@@ -11,16 +11,18 @@ if (_first)
 	bossspr = spr_vsfakepep2;
 	vstitle = spr_vstitle_fakepep2;
 }
-else
+else 
 {
 	bossspr = spr_vsfakepep;
 	vstitle = spr_vstitle_fakepep;
 }
+
 boss_hp = 10;
 boss_hpsprite = spr_bossfight_fakepephp;
 boss_palette = spr_bossfight_fakepeppalette;
 boss_columnmax = 3;
 boss_hp_x += 50;
+
 if (!obj_player1.ispeppino || global.swapmode)
 {
 	bossspr = spr_vsfakepep;

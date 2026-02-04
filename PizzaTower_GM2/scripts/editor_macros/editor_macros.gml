@@ -1,3 +1,12 @@
+#macro lst_clr ds_list_clear
+#macro lst_size ds_list_size
+#macro lst_find ds_list_find_value
+#macro lst_add ds_list_add
+#macro lst_copy ds_list_copy
+
+#macro map_find ds_map_find_value
+
+
 enum editorstates
 {
 	init = 0,

@@ -4,33 +4,31 @@ with (instance_create_depth(0, 0, depth - 1, obj_itemlist))
 	parent = other.id;
 	image_xscale = other.image_xscale;
 	image_yscale = other.image_yscale;
-	ds_list_add(items, 
+	lst_add(items, 
 	{
 		name: "Room Settings",
-		
+		//PADDINGPADDINGPA
 		func: function()
 		{
 			toggle_panel(7);
 		}
 	});
-	ds_list_add(items, 
+	lst_add(items, 
 	{
 		name: "Level Settings",
-		
+		//PADDINGPADDI
 		func: function() {}
 	});
-	ds_list_add(items, 
+	lst_add(items, 
 	{
 		name: "Save Level",
-		
+		//P
 		func: function()
 		{
 			with (obj_editor)
 			{
 				if (editor_state != editorstates.level_save)
-				{
 					save_level();
-				}
 			}
 		}
 	});

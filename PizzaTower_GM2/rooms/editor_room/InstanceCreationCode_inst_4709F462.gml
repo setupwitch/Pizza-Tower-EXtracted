@@ -1,19 +1,20 @@
 ID = 3;
+//PADDING
 var _buttons =
 [
-	["Add", function()
+	["Add", function() 
 	{
 		room_layer_add(1);
 	}],
-	["Remove", function()
+	["Remove", function() 
 	{
 		room_layer_delete(1);
 	}],
-	["Move Up", function()
+	["Move Up", function() 
 	{
 		room_layer_move_up(1);
 	}],
-	["Move Down", function()
+	["Move Down", function() 
 	{
 		room_layer_move_down(1);
 	}]
@@ -39,17 +40,15 @@ with (instance_create_depth(32, 0, depth - 1, obj_itemlist))
 	parent = other.id;
 	ID = 1;
 	search_depth = -100;
-	
+	//PADDINGPADDINGPADDINGPADDINGPADD
 	on_dirty = function()
 	{
 		if (global.current_level.current_room == noone)
-		{
 			exit;
-		}
 		dirty = false;
 		room_layer_item_dirty(global.current_level.current_room.tiles);
 	};
-	
+
 	on_item_draw = function(_x, _y, _item)
 	{
 		if (draw_get_font() != 0)

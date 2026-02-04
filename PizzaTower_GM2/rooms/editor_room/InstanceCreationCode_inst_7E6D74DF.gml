@@ -5,7 +5,7 @@ with (instance_create_depth(0, 0, depth - 1, obj_button))
 	image_xscale = other.image_xscale;
 	image_yscale = 0.5;
 	text = "Test Room";
-	
+	//PADDINGPADDINGPA
 	on_left_click = function() {};
 }
 with (instance_create_depth(0, 32, depth - 1, obj_button))
@@ -14,7 +14,7 @@ with (instance_create_depth(0, 32, depth - 1, obj_button))
 	image_xscale = other.image_xscale;
 	image_yscale = 0.5;
 	text = "Resize Room";
-	
+	//PADDINGPADDINGPADDINGP
 	on_left_click = function()
 	{
 		toggle_panel(7);

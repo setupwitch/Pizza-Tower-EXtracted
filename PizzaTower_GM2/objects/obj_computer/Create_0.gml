@@ -91,6 +91,7 @@ grannyID.background_spr = spr_computerbackground;
 grannyID.bubble_spr = spr_computerbubble;
 grannyID.text_color = make_color_rgb(171, 255, 0);
 
+//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPADDING
 update_text = function()
 {
 	var str;

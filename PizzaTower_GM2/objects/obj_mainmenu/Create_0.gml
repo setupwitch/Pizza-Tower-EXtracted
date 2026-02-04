@@ -50,7 +50,7 @@ game_icon_y = 0;
 game_icon_buffer = 0;
 game_icon_index = 0;
 punch_count = 0;
-
+//PADDINGPADDINGPADDINGPADDINGPADDINGPAD
 unlock_noise = function(_showpopup)
 {
 	for (var i = 0; i < 3; i++)
@@ -66,9 +66,7 @@ unlock_noise = function(_showpopup)
 		ini_open_from_string(obj_savesystem.ini_str_options);
 		_showpopup = ini_read_real("Game", "beaten", 0) > 0;
 		if (!_showpopup)
-		{
 			_showpopup = ini_read_real("Game", "noiseunlocked", 0);
-		}
 		ini_close();
 	}
 	if (_showpopup)
@@ -83,12 +81,9 @@ unlock_noise = function(_showpopup)
 			gamesave_async_save_options();
 		}
 		else
-		{
 			ini_close();
-		}
 	}
 };
-
 unlock_swap = function(_showpopup)
 {
 	for (var i = 0; i < 3; i++)

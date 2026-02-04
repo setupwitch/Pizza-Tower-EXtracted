@@ -12,10 +12,13 @@ character = "P";
 alarm[0] = 5;
 taunttimer = 0;
 tauntID = noone;
+
 breakdance_pressed = 0;
 breakdance_speed = 0.25;
 breakdance_index = 0;
+
 notecreate = 0;
+
 grabbuffer = 0;
 steppybuffer = 0;
 

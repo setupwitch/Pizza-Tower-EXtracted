@@ -1,6 +1,7 @@
 event_inherited();
 active = true;
 
+
 func = function()
 {
 	with (obj_soundtest)

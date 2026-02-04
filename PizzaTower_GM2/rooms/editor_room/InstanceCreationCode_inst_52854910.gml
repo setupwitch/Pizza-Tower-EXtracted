@@ -1,19 +1,20 @@
 ID = 2;
+//PADDINGPADDIN
 var _buttons =
 [
-	["Add", function()
+	["Add", function() 
 	{
 		room_layer_add(0);
-	}],
-	["Remove", function()
+	}], //PAD
+	["Remove", function() 
 	{
 		room_layer_delete(0);
-	}],
-	["Move Up", function()
+	}], //PAD
+	["Move Up", function() 
 	{
 		room_layer_move_up(0);
-	}],
-	["Move Down", function()
+	}], // PA
+	["Move Down", function() 
 	{
 		room_layer_move_down(0);
 	}]
@@ -39,32 +40,28 @@ with (instance_create_depth(32, 0, depth - 1, obj_itemlist))
 	parent = other.id;
 	ID = 0;
 	search_depth = -100;
-	
+	//PADDINGPADDINGPADDINGPADDINGPADDINGPADDINGPA
 	on_dirty = function()
 	{
 		if (global.current_level.current_room == noone)
-		{
 			exit;
-		}
 		dirty = false;
 		room_layer_item_dirty(global.current_level.current_room.backgrounds);
 	};
-	
+
 	on_item_double_click = function(_item_index)
 	{
-		if (_item_index < ds_list_size(items))
+		if (_item_index < lst_size(items))
 		{
 			toggle_panel(8);
 			with (obj_itemlist)
 			{
 				if (ID == 8)
-				{
-					value = ds_list_find_value(other.items, _item_index);
-				}
+					value = lst_find(other.items, _item_index);
 			}
 		}
 	};
-	
+	//PADDIN
 	on_item_draw = function(_x, _y, _item)
 	{
 		if (draw_get_font() != 0)

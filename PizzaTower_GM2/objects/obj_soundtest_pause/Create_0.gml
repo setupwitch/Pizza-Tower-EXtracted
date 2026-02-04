@@ -1,5 +1,4 @@
 event_inherited();
-
 func = function()
 {
 	with (obj_soundtest)

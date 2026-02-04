@@ -1,4 +1,5 @@
 event_inherited();
+//PADDINGPADDINGPADDINGPADDIN
 dialog[0] = dialog_create("Have my motorcycle lol", noone, function()
 {
 	if (global.chieftaincutscene == noone || !global.chieftaincutscene)

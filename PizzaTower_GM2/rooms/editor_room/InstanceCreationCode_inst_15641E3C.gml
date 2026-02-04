@@ -1,27 +1,26 @@
+// they HAD to have had macros for this
 ID = 1;
-var _categories = array_create(0);
+var _ctgs = [];
 var size = ds_map_size(obj_editor.object_map);
 var key = ds_map_find_first(obj_editor.object_map);
 for (var i = 0; i < size; i++)
 {
-	array_push(_categories, key);
+	array_push(_ctgs, key);
 	key = ds_map_find_next(obj_editor.object_map, key);
 }
-array_sort(_categories, function(elm1, elm2)
+//PADDINGPAD
+array_sort(_ctgs, function(a, b) { return map_find(obj_editor.object_order_map, a) - map_find(obj_editor.object_order_map, b) });
+for (var i = 0;i < array_length(_ctgs); i++)
 {
-	return ds_map_find_value(obj_editor.object_order_map, elm1) - ds_map_find_value(obj_editor.object_order_map, elm2);
-});
-for (var i = 0; i < array_length(_categories); i++)
-{
-	var b = _categories[i];
-	with (instance_create_depth(0, 32 * i, depth - 1, obj_button))
+	var b = _ctgs[i];
+	with (instance_create_depth(0,32*i,depth-1,obj_button))
 	{
 		name = b;
 		value = b;
 		parent = other.id;
 		image_xscale = 0.5;
 		image_yscale = 0.5;
-		
+		//PADDINGPA
 		on_left_click = function()
 		{
 			with (obj_itemlist)
@@ -40,26 +39,24 @@ with (instance_create_depth(32, 0, depth - 1, obj_itemlist))
 	image_yscale = other.image_yscale;
 	image_xscale = (other.sprite_width - 32) / 64;
 	parent = other.id;
-	value = _categories[0];
+	value = _ctgs[0];
 	ID = 2;
 	item_height = 48;
-	
+	//PADDINGPADDINGPADDINGPADDING
 	on_dirty = function()
 	{
 		dirty = false;
-		ds_list_clear(items);
-		var list = ds_map_find_value(obj_editor.object_map, value);
-		for (var i = 0; i < ds_list_size(list); i++)
-		{
-			ds_list_add(items, ds_list_find_value(list, i));
-		}
-	};
-	
-	on_item_click = function(_item_index)
+		lst_clr(items);
+		var list = map_find(obj_editor.object_map, value);
+		for (var i = 0;i < lst_size(list); i++)
+			lst_add(items, lst_find(list, i));
+	}
+	//PADDINGPA
+	on_item_click = function(_ind)
 	{
-		if (_item_index < ds_list_size(items))
+		if (_ind < lst_size(items))
 		{
-			var item = ds_list_find_value(items, _item_index);
+			var item = lst_find(items, _ind);
 			with (obj_editor)
 			{
 				selected_object = item;
@@ -68,7 +65,8 @@ with (instance_create_depth(32, 0, depth - 1, obj_itemlist))
 			toggle_panel(1);
 		}
 	};
-	
+
+
 	on_item_draw = function(_x, _y, _item)
 	{
 		if (draw_get_font() != 0)
