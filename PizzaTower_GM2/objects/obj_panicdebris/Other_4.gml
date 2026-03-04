@@ -6,7 +6,7 @@ var lay_id3 = layer_get_id("Backgrounds_3");
 var back_id3 = layer_background_get_id(lay_id3);
 if (global.panic == true && layer_background_get_sprite(back_id) == bg_castle3)
 {
-	layer_background_sprite(back_id, bg_castle3escape   );
+	layer_background_sprite(back_id, bg_castle3escape);
 }
 if (global.panic == true && layer_background_get_sprite(back_id) == bg_castle4)
 {
