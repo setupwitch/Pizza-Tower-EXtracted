@@ -1,7 +1,7 @@
 {
     "OpenFileBrowser": true, // To open the windows file browser or not, unsupported on most operating systems
     "ProjectPath": "PizzaTower_GM2/PizzaTower_GM2.yyp", // A relative path to the project from where the script is ran
-    "CopyIncludedFiles":  true, // Whether to copy the included files of the project.
+    "CopyIncludedFiles": true, // Whether to copy the included files of the project.
     "SpriteIgnore": [
         // this is a list of sprite names to ignore when dumping, great for images that have been modified.
     ],
