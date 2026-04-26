@@ -1427,7 +1427,7 @@ add_achievement_notify("farm3", function()
 {
 	var type = _array[0];
 	var arr = _array[1];
-	if ((type == notifications.hurt || type == notifications.fell_into_pit) && (arr[1] == notifications.flush_done || arr[1] == notifications.special_destroyable_destroyed || arr[1] == notifications.treasureguy_uncovered || arr[1] == notifications.baddie_killed_projectile))
+	if ((type == notifications.hurt || type == notifications.fell_into_pit) && (arr[1] == states.mort || arr[1] == states.mortjump || arr[1] == states.mortattack || arr[1] == states.morthook))
 	{
 		achievement_get_variable("f3_hurted").value = true;
 	}
