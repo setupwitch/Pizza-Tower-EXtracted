@@ -2,6 +2,11 @@
 
 ## A semi-accurate decompilation of Pizza Tower
 
+## Disclaimer
+This project is an unofficial, non-commercial reverse-engineering and decompilation effort for educational and modding purposes.
+
+All intellectual property, source code logic, art assets, and characters from *Pizza Tower* belong entirely to Tour de Pizza. No copyright infringement is intended.
+
 
 # Dependencies
 - [Pizza Tower release data file](https://store.steampowered.com/app/2231450/Pizza_Tower/)
