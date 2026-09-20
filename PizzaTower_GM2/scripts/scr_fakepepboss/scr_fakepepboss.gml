@@ -834,7 +834,7 @@ function scr_fakepepboss_freefall()
 	if (sprite_index != spr_fakepeppino_bodyslamland && !bodyslam)
 	{
 		var t = sign(targetplayer.x - x);
-		hsp = Approach(hsp, t * spr_introasset2, 0.5);
+		hsp = Approach(hsp, t * 4, 0.5);
 		if (hsp != 0)
 		{
 			image_xscale = sign(hsp);
