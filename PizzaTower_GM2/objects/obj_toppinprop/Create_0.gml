@@ -10,7 +10,7 @@ grav = 0.5;
 platformid = noone;
 idlespr = spr_toppincheese;
 movespr = spr_toppincheese_run;
-tauntspr = 300;
+tauntspr = spr_toppincheese_taunt;
 depth = 1;
 while (scr_solid(x, y))
 {
